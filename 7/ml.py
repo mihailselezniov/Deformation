@@ -21,25 +21,18 @@ print(X[0], y[0])
 # split data into train and test sets
 x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
 
+def fit_model(model):
+    # fit model on training data
+    model.fit(x_train, y_train)
+    y_pred = model.predict(x_test)
+    # make predictions for test data
+    predictions = [round(value) for value in y_pred]
+    # evaluate predictions
+    accuracy = accuracy_score(y_test, predictions)
+    print("Accuracy: %.2f%%" % (accuracy * 100.0))
+
 ### Linear Regression 89.61% ###
-clf = LinearRegression(normalize=True)
-clf.fit(x_train, y_train)
-y_pred = clf.predict(x_test)
-print(r2_score(y_test, y_pred)) #0.5099823026228494
-
-predictions = [round(value) for value in y_pred]
-# evaluate predictions
-accuracy = accuracy_score(y_test, predictions)
-print("Accuracy: %.2f%%" % (accuracy * 100.0))
-
+fit_model(LinearRegression(normalize=True))
 
 ### XGBoost 97.30% ###
-# fit model no training data
-model = XGBClassifier()
-model.fit(x_train, y_train)
-# make predictions for test data
-y_pred = model.predict(x_test)
-predictions = [round(value) for value in y_pred]
-# evaluate predictions
-accuracy = accuracy_score(y_test, predictions)
-print("Accuracy: %.2f%%" % (accuracy * 100.0))
+fit_model(XGBClassifier())
