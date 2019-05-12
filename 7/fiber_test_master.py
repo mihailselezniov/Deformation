@@ -87,7 +87,7 @@ if __name__ == '__main__':
                                     list_params.append(all_params(par))
 
     print(len(list_params))
-    process_data(list_params)
+    #process_data(list_params)
 
 
 
