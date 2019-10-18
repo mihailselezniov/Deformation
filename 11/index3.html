@@ -1,0 +1,95 @@
+<style>body{background-color: #d0d0d0;}</style>
+<canvas id="myChart" width="193" height="100"></canvas>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script>
+var speedCanvas = document.getElementById("myChart");
+
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 18;
+
+var d1 = {
+    label: "length",
+    data: [19308, 17395, 20937, 14971, 18607, 20705, 25406, 30185, 26012, 30213],
+    lineTension: 0,
+    fill: false,
+    borderColor: '#5c5c60'
+  };
+
+var d2 = {
+    label: "diameter",
+    data: [7398, 14759, 15597, 17081, 13466, 14756, 25475, 27108, 36302, 51797],
+    lineTension: 0,
+    fill: false,
+    borderColor: '#7294ae'
+  };
+
+var d3 = {
+    label: "young",
+    data: [13904, 12324, 9081, 21048, 15915, 21783, 22954, 38147, 34061, 34522],
+    lineTension: 0,
+    fill: false,
+    borderColor: '#8e8741'
+  };
+
+var d4 = {
+    label: "density",
+    data: [13797, 20246, 23813, 21779, 20531, 19455, 22536, 23157, 28372, 30053],
+    lineTension: 0,
+    fill: false,
+    borderColor: '#bd986b'
+  };
+
+var d5 = {
+    label: "pressure time",
+    data: [0, 35140, 25353, 30085, 34241, 23986, 21614, 18010, 16669, 18641],
+    lineTension: 0,
+    fill: false,
+    borderColor: '#522232'
+  };
+
+var d6 = {
+    label: "pressure radius",
+    data: [0, 83824, 20991, 17609, 17612, 17121, 16906, 16709, 16545, 16422],
+    lineTension: 0,
+    fill: false,
+    borderColor: '#132a3c'
+  };
+
+var d7 = {
+    label: "pressure amplitude",
+    data: [0, 94964, 17265, 15930, 15930, 15930, 15930, 15930, 15930, 15930],
+    lineTension: 0,
+    fill: false,
+    borderColor: '#c54c3c'
+  };
+
+var d8 = {
+    label: "strength",
+    data: [14356, 23123, 23241, 23265, 23280, 23287, 23288, 23294, 23301, 23304],
+    lineTension: 0,
+    fill: false,
+    borderColor: '#679774'
+  };
+
+var speedData = {
+  labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+  datasets: [d1, d2, d3, d4, d5, d6, d7, d8]
+};
+
+var chartOptions = {
+  legend: {
+    display: true,
+    position: 'top',
+    labels: {
+      boxWidth: 80,
+      fontColor: 'black'
+    }
+  }
+};
+
+var lineChart = new Chart(speedCanvas, {
+  type: 'line',
+  data: speedData,
+  options: chartOptions
+});
+</script>
