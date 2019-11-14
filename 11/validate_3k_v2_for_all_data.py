@@ -11,6 +11,7 @@ for i, val in enumerate(data_is_broken):
     Y.extend([i%2]*val)
 n = list(range(10))
 i = 0
+a, b = 0, 0
 for i0 in n:
     for i1 in n:
         for i2 in n:
@@ -21,13 +22,12 @@ for i0 in n:
                             for i7 in n:
                                 if 0 not in [i4, i5, i6]:
                                     if not Y[i]:
+                                        b += 1
                                         l.add(make_str([i0, i1, i2, i3, i4, i5, i6, i7]))
-                                        #repair pressure_time
-                                        for i in range(1, i4):
-                                            l.add(make_str([i0, i1, i2, i3, i, i5, i6, i7]))
+                                    a += 1
                                 i += 1
     print(i0)
-
+print(a, b)
 
 
 #def cut_pressure_time(data):
@@ -81,6 +81,7 @@ print(len(all_ways))
 
 '''
 without cut
+72900000 9381309
 9381309
 255
 16
