@@ -60,7 +60,7 @@ for i0 in n:
     a = np.append(a, np.array(X), axis=0)
     X = []
     print(i0)
-    break
+    #break
 
 print('!!!')
 X, Y = a, np.array(y)
@@ -78,7 +78,7 @@ threads = {
 }
 
 for _ in range(721):#64
-    print(_)
+    print('#', _)
     x_train, y_train = [], []
 
     for i in threads:
