@@ -46,7 +46,7 @@ threads = {
     1: [[0,0,0,0,1,1,1,0],[2,0,7,4,5,7,7,7],[4,0,3,6,3,4,9,9],[5,8,2,0,5,8,5,3],[6,4,8,8,4,2,7,7],[7,5,0,6,9,1,3,6],[8,4,1,5,3,4,8,3]]
 }
 
-for _ in range(721):#64
+for _ in range(715):#72-14=58-1=57 729-14=715-1=714
     print('#', _)
     x_train, y_train = [], []
 
@@ -75,7 +75,7 @@ for _ in range(721):#64
     #print(y_pred)
     print(dict(collections.Counter(y_pred)))
 
-    if _ in [0, 63, 720]:
+    if _ in [0, 57, 714]:
         print('')
         cm = confusion_matrix(Y, y_pred)
         print('Confusion matrix:\n{}'.format(cm))
