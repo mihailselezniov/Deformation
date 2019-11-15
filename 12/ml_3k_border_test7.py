@@ -6,11 +6,13 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import LinearSVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import cross_val_score, StratifiedShuffleSplit
+from sklearn.externals import joblib
 import collections
 import copy
 import math
 import pickle
 import sys
+
 
 ml_type = int(sys.argv[1])
 
@@ -22,6 +24,12 @@ def make_set(data):
 def make_list(data):
     return [int(i) for i in data]
 
+way_dict = joblib.load('border_vars/way_dict.j')
+zero_keys = joblib.load('border_vars/zero_keys.j')
+X_key_indexs = joblib.load('border_vars/X_key_indexs.j')
+X = joblib.load('border_vars/X.j')
+Y = joblib.load('border_vars/Y.j')
+'''
 with open('border_vars/way_dict.p', 'rb') as f:
     way_dict = pickle.load(f)
 with open('border_vars/zero_keys.p', 'rb') as f:
@@ -32,7 +40,7 @@ with open('border_vars/X.p', 'rb') as f:
     X = pickle.load(f)
 with open('border_vars/Y.p', 'rb') as f:
     Y = pickle.load(f)
-
+'''
 print(X.shape, Y.shape)
 print('all', dict(collections.Counter(Y)))
 
