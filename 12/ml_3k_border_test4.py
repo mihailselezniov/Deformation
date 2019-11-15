@@ -59,7 +59,8 @@ for i0 in n:
                                         way_dict[key] = make_set(get_ways(l0))
                                         break
                                 i += 1
-    a = np.append(a, np.array(X), axis=0)
+    if len(X):
+        a = np.append(a, np.array(X), axis=0)
     X = []
     print(i0)
     #break
