@@ -6,6 +6,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import LinearSVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import cross_val_score, StratifiedShuffleSplit
+from sklearn.externals import joblib
 import collections
 import copy
 import math
@@ -85,6 +86,12 @@ for i in range(len(X)):
         print(i)
 way_dict = tuple(way_dict)
 
+joblib.dump(way_dict, 'border_vars/way_dict.j')
+joblib.dump(zero_keys, 'border_vars/zero_keys.j') 
+joblib.dump(X_key_indexs, 'border_vars/X_key_indexs.j') 
+joblib.dump(X, 'border_vars/X.j') 
+joblib.dump(Y, 'border_vars/Y.j')
+'''
 with open('border_vars/way_dict.p', 'wb') as f:
     pickle.dump(way_dict, f)
 with open('border_vars/zero_keys.p', 'wb') as f:
@@ -95,7 +102,7 @@ with open('border_vars/X.p', 'wb') as f:
     pickle.dump(X, f)
 with open('border_vars/Y.p', 'wb') as f:
     pickle.dump(Y, f)
-
+'''
 
 
 
