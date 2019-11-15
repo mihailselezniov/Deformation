@@ -25,8 +25,8 @@ def get_ways(l0):
     ways = []
     for i in range(len(l0)):
         l1, l2 = copy.copy(l0), copy.copy(l0)
-        l1[i] += 1
-        l2[i] -= 1
+        l1[i] += 2
+        l2[i] -= 2
         ways.append(l1)
         ways.append(l2)
     return [i for i in ways if (10 not in i) and (-1 not in i) and (0 not in [i[4],i[5],i[6]])]
@@ -50,12 +50,14 @@ for i0 in n:
                             for i7 in n:
                                 if 0 not in [i4, i5, i6]:
                                     l0 = [i0, i1, i2, i3, i4, i5, i6, i7]
-                                    X.append(l0)
-                                    y.append(Y[i])
-                                    key = make_str(l0)
-                                    if Y[i] == 0:
-                                        ls.add(key)
-                                    way_dict[key] = make_set(get_ways(l0))
+                                    if sum([i%2 for i in l0]) == 8:
+                                        X.append(l0)
+                                        y.append(Y[i])
+                                        key = make_str(l0)
+                                        if Y[i] == 0:
+                                            ls.add(key)
+                                        way_dict[key] = make_set(get_ways(l0))
+                                        break
                                 i += 1
     a = np.append(a, np.array(X), axis=0)
     X = []
