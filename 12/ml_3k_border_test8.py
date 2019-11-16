@@ -83,7 +83,7 @@ for _ in range(715):#72-14=58-1=57 729-14=715-1=714
     #print(y_pred)
     print(dict(collections.Counter(y_pred)))
 
-    if _ in [10, 57, 714]:
+    if _ in [0, 57, 714]:
         print('')
         cm = confusion_matrix(Y, y_pred)
         print('Confusion matrix:\n{}'.format(cm))
@@ -100,8 +100,6 @@ for _ in range(715):#72-14=58-1=57 729-14=715-1=714
 
 
     find = 1 if len(threads[0]) > len(threads[1]) else 0
-
-
 
 
     #find_set, border_threads = set(), set()
