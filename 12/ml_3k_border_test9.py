@@ -34,6 +34,7 @@ model = ''
 def gen_train():
     global x_train
     global y_train
+    x_train, y_train = [], []
     for i in threads:
         for thread in threads[i]:
             x_train.append(thread)
