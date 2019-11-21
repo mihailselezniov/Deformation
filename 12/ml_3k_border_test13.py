@@ -58,11 +58,12 @@ if __name__ == "__main__":
 
     with open('border_vars/way_dict.txt', 'r') as f:
         way = f.readlines()
-    print('load way_dict')
-    print(way[0])
-    print(way[1])
-    print(way[2])
-    way_dict = []
+    print('way')
+    #print(way[0])
+    #print(way[1])
+    #print(way[2])
+    #way_dict = []
+
     #for row in way:
     #    way_dict.append(tuple(map(int, row.split(','))))
     #print(len(way_dict), way_dict[0])
@@ -71,18 +72,18 @@ if __name__ == "__main__":
 
 
 
-    print('way_dict')
+    #print('way_dict')
     X = joblib.load('border_vars/X.j')
     print('X')
     Y = joblib.load('border_vars/Y.j')
     print('Y')
 
-    print(sys.getsizeof(way_dict))
+    #print(sys.getsizeof(way_dict))
     print(X.shape, Y.shape)
     print('all', dict(collections.Counter(Y)))
     print(sys.getsizeof(X), sys.getsizeof(Y))
 
-'''
+
     # import warnings filter
     from warnings import simplefilter
     # ignore all future warnings
@@ -132,7 +133,8 @@ if __name__ == "__main__":
         pi_id = 0
         for i in range(len(y_pred)):
             if y_pred[i] == 0:
-                for j in way_dict[i]:
+                #for j in way_dict[i]:
+                for j in map(int, way[i].split(',')):
                     if y_pred[j] == 1:
                         t_id = j if find else i
                         threads_arr[pi_id%num_proc].append(list(X[t_id]))
@@ -170,7 +172,7 @@ if __name__ == "__main__":
         joblib.dump(threads, threads_f_name)
         #print(threads)
         #break
-'''
+
 
 
 
