@@ -1,25 +1,7 @@
 import multiprocessing
-import copy
 
-def get_ways(l0):
-    ways = []
-    for i in range(len(l0)):
-        l1, l2 = copy.copy(l0), copy.copy(l0)
-        l1[i] += 1
-        l2[i] -= 1
-        ways.append(l1)
-        ways.append(l2)
-    return [i for i in ways if (10 not in i) and (-1 not in i) and (0 not in [i[4],i[5],i[6]])]
 
-def calc_distance(pi, y_predict, result_dis_workers, result_ids_workers):
-
-    for t_id in range(1, len(y_predict), 6):
-        if y_predict[t_id] == 0:
-            ts = str(t_id)
-            l0 = list(map(int, '0'*(8-len(ts))+ts))
-            get_ways(l0)
-            #!!!
-
+def calc_distance(pi, threads, threads_arr, result_dis_workers, result_ids_workers):
     for l0 in threads_arr:
         dis = min([math.sqrt(sum(map(lambda x: (x[0] - x[1])**2, zip(thread, l0)))) for thread in threads])
         if dis > result_dis_workers[pi]:
@@ -59,6 +41,7 @@ if __name__ == "__main__":
     threads = joblib.load(threads_f_name)
     len_threads = len(threads[0]) + len(threads[1])
     print('threads', len_threads)
+    print(sys.getsizeof(threads))
 
     way_dict = joblib.load('border_vars/way_dict.j')
     X = joblib.load('border_vars/X.j')
@@ -66,7 +49,9 @@ if __name__ == "__main__":
 
     print(X.shape, Y.shape)
     print('all', dict(collections.Counter(Y)))
+    print(sys.getsizeof(X), sys.getsizeof(Y))
 
+'''
     # import warnings filter
     from warnings import simplefilter
     # ignore all future warnings
@@ -154,7 +139,7 @@ if __name__ == "__main__":
         joblib.dump(threads, threads_f_name)
         #print(threads)
         #break
-
+'''
 
 
 
