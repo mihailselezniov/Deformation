@@ -46,6 +46,14 @@ if __name__ == "__main__":
     #way_dict = joblib.load('border_vars/way_dict.j')
     with open('border_vars/way_dict.p', 'rb') as f:
         way_dict = pickle.load(f)
+
+    print('way_dict')
+    way_dict = list(way_dict)
+    joblib.dump(way_dict, 'border_vars/way_dict2.j')
+
+
+
+
     print('way_dict')
     X = joblib.load('border_vars/X.j')
     print('X')
