@@ -59,10 +59,13 @@ if __name__ == "__main__":
     with open('border_vars/way_dict.txt', 'r') as f:
         way = f.readlines()
     print('load way_dict')
+    print(way[0])
+    print(way[1])
+    print(way[2])
     way_dict = []
-    for row in way:
-        way_dict.append(tuple(map(int, row.split(','))))
-    print(len(way_dict), way_dict[0])
+    #for row in way:
+    #    way_dict.append(tuple(map(int, row.split(','))))
+    #print(len(way_dict), way_dict[0])
 
 
 
