@@ -50,9 +50,10 @@ if __name__ == "__main__":
     print('way_dict')
     #way_dict = list(way_dict)
     #joblib.dump(way_dict, 'border_vars/way_dict2.j')
+    print(len(way_dict), way_dict[0])
     with open('border_vars/way_dict.txt', 'a') as f:
         for i in way_dict:
-            f.write(','.join(list(map(str, i))))
+            f.write(','.join(list(map(str, i)))+'\n')
 
 
 
