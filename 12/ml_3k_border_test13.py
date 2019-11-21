@@ -48,8 +48,11 @@ if __name__ == "__main__":
         way_dict = pickle.load(f)
 
     print('way_dict')
-    way_dict = list(way_dict)
-    joblib.dump(way_dict, 'border_vars/way_dict2.j')
+    #way_dict = list(way_dict)
+    #joblib.dump(way_dict, 'border_vars/way_dict2.j')
+    with open('border_vars/way_dict.txt', 'a') as f:
+        for i in way_dict:
+            f.write(','.join(list(map(str, i))))
 
 
 
