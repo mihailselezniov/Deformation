@@ -1,11 +1,11 @@
 import multiprocessing
 
 def calc_distance(pi, threads, threads_arr, result_dis_workers, result_ids_workers):
-    for l0 in threads_arr:
+    for tid, l0 in threads_arr:
         dis = min([math.sqrt(sum(map(lambda x: (x[0] - x[1])**2, zip(thread, l0)))) for thread in threads])
         if dis > result_dis_workers[pi]:
             result_dis_workers[pi] = dis
-            result_ids_workers[pi] = int(''.join(map(str, l0)))
+            result_ids_workers[pi] = tid
 
 
 
@@ -137,7 +137,7 @@ if __name__ == "__main__":
                 for j in map(int, way[i].split(',')):
                     if y_pred[j] == 1:
                         t_id = j if find else i
-                        threads_arr[pi_id%num_proc].append(list(X[t_id]))
+                        threads_arr[pi_id%num_proc].append([t_id, list(X[t_id])])
                         pi_id += 1
 
 
