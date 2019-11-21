@@ -47,6 +47,7 @@ if __name__ == "__main__":
     X = joblib.load('border_vars/X.j')
     Y = joblib.load('border_vars/Y.j')
 
+    print(sys.getsizeof(way_dict))
     print(X.shape, Y.shape)
     print('all', dict(collections.Counter(Y)))
     print(sys.getsizeof(X), sys.getsizeof(Y))
