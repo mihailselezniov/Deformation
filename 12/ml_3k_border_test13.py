@@ -44,16 +44,26 @@ if __name__ == "__main__":
     print(sys.getsizeof(threads))
 
     #way_dict = joblib.load('border_vars/way_dict.j')
-    with open('border_vars/way_dict.p', 'rb') as f:
-        way_dict = pickle.load(f)
+    #with open('border_vars/way_dict.p', 'rb') as f:
+    #    way_dict = pickle.load(f)
 
-    print('way_dict')
+    #print('way_dict')
     #way_dict = list(way_dict)
     #joblib.dump(way_dict, 'border_vars/way_dict2.j')
+
+    #print(len(way_dict), way_dict[0])
+    #with open('border_vars/way_dict.txt', 'a') as f:
+    #    for i in way_dict:
+    #        f.write(','.join(list(map(str, i)))+'\n')
+
+    with open('border_vars/way_dict.txt', 'r') as f:
+        way = f.readlines()
+    print('load way_dict')
+    way_dict = []
+    for row in way:
+        way_dict.append(tuple(map(int, row.split(','))))
     print(len(way_dict), way_dict[0])
-    with open('border_vars/way_dict.txt', 'a') as f:
-        for i in way_dict:
-            f.write(','.join(list(map(str, i)))+'\n')
+
 
 
 
