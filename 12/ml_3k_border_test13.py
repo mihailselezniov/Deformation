@@ -1,4 +1,6 @@
 import multiprocessing
+import gc
+
 
 
 def calc_distance(pi, threads, threads_arr, result_dis_workers, result_ids_workers):
@@ -42,10 +44,17 @@ if __name__ == "__main__":
     len_threads = len(threads[0]) + len(threads[1])
     print('threads', len_threads)
     print(sys.getsizeof(threads))
+    gc.collect()
 
     way_dict = joblib.load('border_vars/way_dict.j')
+    print('way_dict')
+    gc.collect()
     X = joblib.load('border_vars/X.j')
+    print('X')
+    gc.collect()
     Y = joblib.load('border_vars/Y.j')
+    print('Y')
+    gc.collect()
 
     print(sys.getsizeof(way_dict))
     print(X.shape, Y.shape)
