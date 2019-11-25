@@ -167,8 +167,11 @@ if __name__ == "__main__":
         len_threads = len(threads[0]) + len(threads[1])
         if len_threads == 72:
             joblib.dump(threads, threads72_f_name)
-        if len_threads == 729:
+        elif len_threads == 729:
             joblib.dump(threads, threads729_f_name)
+        else:
+            threadsN_f_name = '{}_{}.j'.format(threads_f, len_threads)
+            joblib.dump(threads, threadsN_f_name)
         joblib.dump(threads, threads_f_name)
         #print(threads)
         #break

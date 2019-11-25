@@ -89,7 +89,31 @@ fit_model(XGBClassifier())
     #fit_model(KNeighborsClassifier(n_neighbors=6))
 
 '''
+(72900000, 8) (72900000,)
+all {1: 63518691, 0: 9381309}
+threads 343
+(343,) (72900000,)
+y_test {1: 63518691, 0: 9381309} y_train {0: 147, 1: 196}
 
+ ---------- XGBClassifier ----------
+y_pred {1: 65004587, 0: 7895413}
+Accuracy: 0.9501913031550069
+Confusion matrix:
+[[ 6822834  2558475]
+ [ 1072579 62446112]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.86      0.73      0.79   9381309
+           1       0.96      0.98      0.97  63518691
+
+    accuracy                           0.95  72900000
+   macro avg       0.91      0.86      0.88  72900000
+weighted avg       0.95      0.95      0.95  72900000
+
+ROC AUC: 0.8551967462194058
+Precision-recall: 0.9591332109683488
+---------- End XGBClassifier ----------
 '''
 
 
