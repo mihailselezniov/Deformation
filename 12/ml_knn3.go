@@ -4,19 +4,20 @@ import (
 	"fmt"
 	"math"
 	"sync"
+	"time"
 )
 
 func (s *State) hypot(p1 []float64, p2 []float64) float64{
-	return math.Sqrt(math.Pow(p1[0]-p2[0], 2) + math.Pow(p1[1]-p2[1], 2) + math.Pow(p1[2]-p2[2], 2) + math.Pow(p1[3]-p2[3], 2) + math.Pow(p1[4]-p2[4], 2) + math.Pow(p1[5]-p2[5], 2) + math.Pow(p1[6]-p2[6], 2) + math.Pow(p1[7]-p2[7], 2))
+	return math.Pow(p1[0]-p2[0], 2) + math.Pow(p1[1]-p2[1], 2) + math.Pow(p1[2]-p2[2], 2) + math.Pow(p1[3]-p2[3], 2) + math.Pow(p1[4]-p2[4], 2) + math.Pow(p1[5]-p2[5], 2) + math.Pow(p1[6]-p2[6], 2) + math.Pow(p1[7]-p2[7], 2)
 }
 
 func (s *State) calc_distance(a1 int, point []float64) {
-	s.tmp_dis[a1] = 999.0
-	for i := 0; i < len(s.zero); i++ {
+	s.tmp_dis[a1] = 99999.0
+	for i := 0; i < s.len_zero; i++ {
 		s.tmp_dis[a1] = math.Min(s.hypot(s.zero[i], point), s.tmp_dis[a1])
-		fmt.Println(a1, "..0", s.hypot(s.zero[i], point), point)
+		//fmt.Println(a1, "..0", s.hypot(s.zero[i], point), point)
 	}
-	for i := 0; i < len(s.one); i++ {
+	for i := 0; i < s.len_one; i++ {
 		if s.tmp_dis[a1] > s.hypot(s.one[i], point) {
 			//fmt.Println(a1, "..1")
 			return
@@ -27,13 +28,39 @@ func (s *State) calc_distance(a1 int, point []float64) {
 		s.result_points[a1] = point
 	}
 
-	fmt.Println(s.tmp_dis[a1], point)
+	//fmt.Println(s.tmp_dis[a1], point)
 }
 
-func (s *State) go_calc(a1 int) {
-	fmt.Println(a1)
-	point := []float64{float64(a1), 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 8.0}
-	s.calc_distance(a1, point)
+func (s *State) go_calc(a0 int) {
+	//fmt.Println(a0)
+	start_goroutine_time := time.Now()
+
+	for a1 := 0; a1 < s.len_n; a1++ {
+		for a2 := 0; a2 < s.len_n; a2++ {
+			for a3 := 0; a3 < s.len_n; a3++ {
+				for a4 := 0; a4 < s.len_n; a4++ {
+					for a5 := 0; a5 < s.len_n; a5++ {
+						for a6 := 0; a6 < s.len_n; a6++ {
+							for a7 := 0; a7 < s.len_n; a7++ {
+								if (a4 != 0 && a5 != 0 && a6 != 0) {
+									point := []float64{s.n[a0], s.n[a1], s.n[a2], s.n[a3], s.n[a4], s.n[a5], s.n[a6], s.n[a7]}
+									s.calc_distance(a0, point)
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	fmt.Println("End goroutine", time.Since(start_goroutine_time))
+
+	//point := []float64{5.0, 0.0, 0.0, 0.0, 1.0, 2.0, 3.0, 9.0}
+	//s.calc_distance(a0, point)
+
+	//point := []float64{float64(a1), 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 8.0}
+	//s.calc_distance(a1, point)
 	//point = []float64{float64(a1), 1.0, 5.0, 3.0, 7.0, 5.0, 6.0, 7.0}
 	//s.calc_distance(a1, point)
 	//point = []float64{float64(a1), 3.0, 3.0, 3.0, 6.0, 9.0, 9.0, 8.0}
@@ -51,18 +78,23 @@ type State struct {
     max_dis float64
     max_point []float64
     n [10]float64
+    len_n, len_zero, len_one int
     wg sync.WaitGroup
+    //a0, a1 int
 }
 
 func init_state() *State {
     s := new(State)
     s.n = [10]float64{0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0}
+    s.len_n = len(s.n)
     s.result_dis = [10]float64{-1, -1, -1, -1, -1, -1, -1, -1, -1, -1}
+    //s.a0 = 0
     return s
 }
 
 func main() {
 
+	start_time := time.Now()
 	s := init_state()
 
 	s.zero = [][]float64{
@@ -75,19 +107,22 @@ func main() {
 		{9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 8.0},
 		{9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 7.0},
 	}
+	s.len_zero, s.len_one = len(s.zero), len(s.one)
 
 	//a0 := 0
 	//n := [10]float64{0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0}
 	//point := [8]float64{0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0}
 
 
+	for a0 := 0; a0 < s.len_n; a0++ {
+		s.wg.Add(1)
+		go s.go_calc(a0)
+	}
 
-	s.wg.Add(1)
-	go s.go_calc(0)
 	//s.wg.Add(1)
 	//go s.go_calc(1)
 	//s.wg.Add(1)
-	//go s.go_calc(2)
+	//go s.go_calc(0)
 	s.wg.Wait()
 
 	s.max_dis = -1
@@ -99,7 +134,7 @@ func main() {
 	}
 
 	fmt.Println(s.max_dis, s.max_point)
-	fmt.Println("End")
+	fmt.Println("End", time.Since(start_time))
 
 
 	/*
@@ -120,7 +155,8 @@ func main() {
 				}
 			}
 		}
-	}*/
+	}
+	*/
 
 	//c := make(chan int, 10)
 	//go fibonacci(cap(c), c)

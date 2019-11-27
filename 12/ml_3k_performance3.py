@@ -112,6 +112,32 @@ weighted avg       0.92      0.92      0.92  72899665
 ROC AUC: 0.7609437481730126
 Precision-recall: 0.9341371876474559
 ---------- End XGBClassifier ----------
+
+(72900000, 8) (72900000,)
+all {1: 63518691, 0: 9381309}
+!!! 4.71e-06 !!!
+(343,) (72899657,)
+y_test {1: 63518391, 0: 9381266} y_train {1: 300, 0: 43}
+
+ ---------- XGBClassifier ----------
+y_pred {1: 66524543, 0: 6375114}
+Accuracy: 0.9241617556581919
+Confusion matrix:
+[[ 5113899  4267367]
+ [ 1261215 62257176]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.80      0.55      0.65   9381266
+           1       0.94      0.98      0.96  63518391
+
+    accuracy                           0.92  72899657
+   macro avg       0.87      0.76      0.80  72899657
+weighted avg       0.92      0.92      0.92  72899657
+
+ROC AUC: 0.7626311573419088
+Precision-recall: 0.934571239912142
+---------- End XGBClassifier ----------
 '''
 
 

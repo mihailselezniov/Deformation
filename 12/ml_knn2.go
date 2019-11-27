@@ -14,7 +14,7 @@ func (s *State) calc_distance(a1 int, point []float64) {
 	s.tmp_dis[a1] = 999.0
 	for i := 0; i < len(s.zero); i++ {
 		s.tmp_dis[a1] = math.Min(s.hypot(s.zero[i], point), s.tmp_dis[a1])
-		fmt.Println(a1, "..0", s.hypot(s.zero[i], point), point)
+		//fmt.Println(a1, "..0", s.hypot(s.zero[i], point), point)
 	}
 	for i := 0; i < len(s.one); i++ {
 		if s.tmp_dis[a1] > s.hypot(s.one[i], point) {
@@ -27,13 +27,31 @@ func (s *State) calc_distance(a1 int, point []float64) {
 		s.result_points[a1] = point
 	}
 
-	fmt.Println(s.tmp_dis[a1], point)
+	//fmt.Println(s.tmp_dis[a1], point)
 }
 
 func (s *State) go_calc(a1 int) {
 	fmt.Println(a1)
-	point := []float64{float64(a1), 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 8.0}
-	s.calc_distance(a1, point)
+
+	for a2 := 0; a2 < s.len_n; a2++ {
+		for a3 := 0; a3 < s.len_n; a3++ {
+			for a4 := 0; a4 < s.len_n; a4++ {
+				for a5 := 0; a5 < s.len_n; a5++ {
+					for a6 := 0; a6 < s.len_n; a6++ {
+						for a7 := 0; a7 < s.len_n; a7++ {
+							if (a4 != 0 && a5 != 0 && a6 != 0) {
+								point := []float64{s.n[s.a0], s.n[a1], s.n[a2], s.n[a3], s.n[a4], s.n[a5], s.n[a6], s.n[a7]}
+								s.calc_distance(a1, point)
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//point := []float64{float64(a1), 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 8.0}
+	//s.calc_distance(a1, point)
 	//point = []float64{float64(a1), 1.0, 5.0, 3.0, 7.0, 5.0, 6.0, 7.0}
 	//s.calc_distance(a1, point)
 	//point = []float64{float64(a1), 3.0, 3.0, 3.0, 6.0, 9.0, 9.0, 8.0}
@@ -51,13 +69,17 @@ type State struct {
     max_dis float64
     max_point []float64
     n [10]float64
+    len_n int
     wg sync.WaitGroup
+    a0, a1 int
 }
 
 func init_state() *State {
     s := new(State)
     s.n = [10]float64{0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0}
+    s.len_n = len(s.n)
     s.result_dis = [10]float64{-1, -1, -1, -1, -1, -1, -1, -1, -1, -1}
+    s.a0 = 0
     return s
 }
 
@@ -81,9 +103,10 @@ func main() {
 	//point := [8]float64{0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0}
 
 
-
-	s.wg.Add(1)
-	go s.go_calc(0)
+	for a1 := 0; a1 < s.len_n; a1++ {
+		s.wg.Add(1)
+		go s.go_calc(a1)
+	}
 	//s.wg.Add(1)
 	//go s.go_calc(1)
 	//s.wg.Add(1)
