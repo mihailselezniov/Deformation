@@ -215,6 +215,7 @@ func main() {
     s.load_threads(s.f_threads)
 
     for {
+        fmt.Println("#", s.len_zero + s.len_one, "(", s.len_zero, s.len_one, ")", time.Since(start_time))
         s.goroutines_calc()
         s.calc_max_dis()
         //s.max_i_point = 3579389
@@ -223,7 +224,6 @@ func main() {
         s.make_row_thread()
         s.save_thread_to_file()
         s.clean_state()
-        fmt.Println("#", s.len_zero + s.len_one, "(", s.len_zero, s.len_one, ")", time.Since(start_time))
     }
     
 
