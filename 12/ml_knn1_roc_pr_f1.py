@@ -16,9 +16,9 @@ simplefilter(action='ignore', category=FutureWarning)
 
 ml_type = int(sys.argv[1])
 
-f_name = '4_{}.txt'.format(ml_type)
+f_name = '4_1_{}.txt'.format(ml_type)
 metrics_f = 'metrics/' + f_name
-source_f = 'ml_threads/' + f_name
+source_f = 'ml_threads/4_1.txt'
 
 X = joblib.load('border_vars/X.j')
 Y = joblib.load('border_vars/Y.j')
