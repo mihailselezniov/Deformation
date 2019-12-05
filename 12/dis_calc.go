@@ -165,7 +165,7 @@ type State struct {
     max_dis, max_dis1 float64
     max_i_point int
     n [10]float64
-    y [10][729000]bool
+    y [10][7290000]bool
     val_bool [10]bool
     i_y, i_broken [10]int
     len_n, len_zero, len_one int
