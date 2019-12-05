@@ -18,7 +18,7 @@ from warnings import simplefilter
 simplefilter(action='ignore', category=FutureWarning)
 
 f_name = 'ml_threads/6_1.txt'
-
+n_cors = 6
 
 
 X = joblib.load('border_vars/X.j')
