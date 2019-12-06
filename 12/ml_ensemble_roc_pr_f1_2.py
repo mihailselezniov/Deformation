@@ -24,9 +24,10 @@ X = joblib.load('border_vars/X.j')
 Y = joblib.load('border_vars/Y.j')
 print(X.shape, Y.shape)
 
+n_cors = 6
 model = ''
 if ml_type == 1:
-    model = XGBClassifier()
+    model = XGBClassifier(n_jobs=n_cors)
 elif ml_type == 2:
     model = LogisticRegression()
 elif ml_type == 3:
