@@ -27,7 +27,7 @@ print(X.shape, Y.shape)
 n_cors = 6
 model = ''
 if ml_type == 1:
-    model = XGBClassifier(n_jobs=n_cors)
+    model = XGBClassifier(random_state=42, n_jobs=n_cors)
 elif ml_type == 2:
     model = LogisticRegression()
 elif ml_type == 3:
