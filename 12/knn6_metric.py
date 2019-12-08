@@ -1,6 +1,6 @@
 import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_auc_score, average_precision_score
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_auc_score, average_precision_score, f1_score
 from xgboost import XGBClassifier, XGBRegressor
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.svm import LinearSVC, SVC
@@ -48,12 +48,15 @@ row_metrics = []
 
 roc = roc_auc_score(Y, y_pred)
 row_metrics.append(roc)
+print(roc)
 
 pr = average_precision_score(Y, y_pred)
 row_metrics.append(pr)
+print(pr)
 
 f1 = f1_score(Y, y_pred, average=None)
 row_metrics.append(f1[0])
+print(f1[0])
 
 row_metrics = ','.join(list(map(lambda x: str(round(float(x), 4)), row_metrics)))
 print('#{} ({}) {}'.format(ml_type, cut, row_metrics))
