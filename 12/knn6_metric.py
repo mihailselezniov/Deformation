@@ -59,10 +59,13 @@ row_metrics.append(f1[0])
 print(f1[0])
 
 row_metrics = ','.join(list(map(lambda x: str(round(float(x), 4)), row_metrics)))
-print('#{} ({}) {}'.format(ml_type, cut, row_metrics))
+print(row_metrics)
 
 
 
 '''
-
+(72900000, 8) (72900000,)
+0.594854006137005
+0.8951520083067506
+0.2675444045542221
 '''
