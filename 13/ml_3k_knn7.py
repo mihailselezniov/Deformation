@@ -70,7 +70,7 @@ def fit_model(model):
     # fit model on training data
     model.fit(x_train, y_train)
 
-    joblib.dump(model, 'dump_models/KNN7.j')
+    #joblib.dump(model, 'dump_models/KNN7.j')
 
     y_pred = model.predict(x_test)
     print('y_pred', dict(collections.Counter(y_pred)))
