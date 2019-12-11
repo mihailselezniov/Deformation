@@ -48,7 +48,7 @@ for i0 in n:
                             for i7 in n:
                                 if 0 not in [i4, i5, i6]:
                                     X.append([i0, i1, i2, i3, i4, i5, i6, i7])
-                                    y.append(Y[i])
+                                    y_.append(Y[i])
                                 i += 1
     a = np.append(a, np.array(X), axis=0)
     X = []
