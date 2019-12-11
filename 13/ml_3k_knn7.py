@@ -49,11 +49,11 @@ for i0, l in enumerate(get_list(**par['length'])):
                                     X.append([l, di, y, de, pt, pr, pa, s])
     a = np.append(a, np.array(X), axis=0)
     X = []
-    print(i)
+    print(i0)
     #break
 
 print('!!!')
-X, Y = a, np.array(y)
+X, Y = a, np.array(Y)
 print(X.shape, Y.shape)
 print('all', dict(collections.Counter(Y)))
 
@@ -88,7 +88,7 @@ def fit_model(model):
     print('-'*10, 'End',  model.__class__.__name__, '-'*10)
 
 
-print('!!! {} !!!'.format(i))
+#print('!!! {} !!!'.format(i))
 x_train, x_test, y_train, y_test = train_test_split(X, Y, train_size=0.01, random_state=42)
 print(y_train.shape, y_test.shape)
 print('y_test', dict(collections.Counter(y_test)), 'y_train', dict(collections.Counter(y_train)))
