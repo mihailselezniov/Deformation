@@ -99,7 +99,7 @@ def fit_model(model):
 x_train, x_test, y_train, y_test = train_test_split(X, Y, train_size=0.01, random_state=42)
 print(y_train.shape, y_test.shape)
 print('y_test', dict(collections.Counter(y_test)), 'y_train', dict(collections.Counter(y_train)))
-fit_model(KNeighborsClassifier(n_neighbors=7, n_jobs=-1))
+fit_model(KNeighborsClassifier(n_neighbors=6, n_jobs=-1))
 
 
 
@@ -127,6 +127,26 @@ weighted avg       0.86      0.88      0.87  72171000
 
 ROC AUC: 0.6546261908408766
 PR AUC: 0.9074918814235522
+---------- End KNeighborsClassifier ----------
+
+ ---------- KNeighborsClassifier ----------
+y_pred {1: 66329253, 0: 5841747}
+Accuracy: 0.8835848470992503
+Confusion matrix:
+[[ 3363573  5923624]
+ [ 2478174 60405629]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.58      0.36      0.44   9287197
+           1       0.91      0.96      0.93  62883803
+
+    accuracy                           0.88  72171000
+   macro avg       0.74      0.66      0.69  72171000
+weighted avg       0.87      0.88      0.87  72171000
+
+ROC AUC: 0.6613821635530078
+PR AUC: 0.9091418479091472
 ---------- End KNeighborsClassifier ----------
 '''
 
