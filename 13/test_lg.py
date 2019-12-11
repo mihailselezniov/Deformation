@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_auc_score, average_precision_score
-from sklearn.linear_model import LogisticRegression
 from sklearn.externals import joblib
-import collections
 
 model = joblib.load('dump_models/LogReg.j')
 
