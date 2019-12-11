@@ -91,8 +91,6 @@ def fit_model(model):
 
     y_pred = model.predict(x_test)
     print('y_pred', dict(collections.Counter(y_pred)))
-    # make predictions for test data
-    y_pred = [round(value) for value in y_pred]
     # evaluate predictions
     accuracy = accuracy_score(y_test, y_pred)
     print('Accuracy: {}'.format(accuracy))
