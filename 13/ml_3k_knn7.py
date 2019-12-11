@@ -58,7 +58,6 @@ for i0, l in enumerate(get_list(**par['length'])):
 
 print('!!!')
 X, Y = a, np.array(y_)
-X = (X - X.min(axis=0)) / (X.max(axis=0) - X.min(axis=0))
 print(X.shape, Y.shape)
 print('all', dict(collections.Counter(Y)))
 
