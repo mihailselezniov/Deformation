@@ -76,7 +76,7 @@ for i0, l in enumerate(get_list(**par['length'])):
     a = np.append(a, np.array(X), axis=0)
     X = []
     print(i0)
-    break
+    #break
 
 print('!!!')
 X, Y = a, np.array(y_)
