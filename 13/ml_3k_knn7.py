@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import numpy as np
+from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_auc_score, average_precision_score
 from sklearn.neighbors import KNeighborsClassifier
@@ -60,6 +61,10 @@ print(X.shape, Y.shape)
 print('all', dict(collections.Counter(Y)))
 
 
+# normalize the data attributes
+X = preprocessing.normalize(X)
+
+
 def fit_model(model):
     print('\n', '-'*10, model.__class__.__name__, '-'*10)
     # fit model on training data
@@ -99,7 +104,30 @@ fit_model(KNeighborsClassifier(n_neighbors=7, n_jobs=-1))
 
 
 '''
+(72900000, 8) (72900000,)
+all {1: 63518691, 0: 9381309}
+(729000,) (72171000,)
+y_test {1: 62883803, 0: 9287197} y_train {0: 94112, 1: 634888}
 
+ ---------- KNeighborsClassifier ----------
+y_pred {1: 66368482, 0: 5802518}
+Accuracy: 0.8809584874811213
+Confusion matrix:
+[[ 3249185  6038012]
+ [ 2553333 60330470]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.56      0.35      0.43   9287197
+           1       0.91      0.96      0.93  62883803
+
+    accuracy                           0.88  72171000
+   macro avg       0.73      0.65      0.68  72171000
+weighted avg       0.86      0.88      0.87  72171000
+
+ROC AUC: 0.6546261908408766
+PR AUC: 0.9074918814235522
+---------- End KNeighborsClassifier ----------
 '''
 
 
