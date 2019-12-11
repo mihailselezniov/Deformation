@@ -40,6 +40,7 @@ data_is_broken = list(map(int, data_is_broken))
 def make_str(data):
     return ''.join(map(str, data))
 
+'''
 X, Y = [], []
 for i, val in enumerate(data_is_broken):
     Y.extend([i%2]*val)
@@ -76,9 +77,9 @@ print('\n', '-'*10, 'index + normalize', '-'*10)
 for i in range(20):
     print(X[i])
 
-
-
 '''
+
+
 X, Y = [], []
 for i, val in enumerate(data_is_broken):
     Y.extend([i%2]*val)
@@ -110,11 +111,12 @@ print('\n', '-'*10, 'data', '-'*10)
 for i in range(20):
     print(X[i])
 
-X = preprocessing.normalize(X)
+#X = preprocessing.normalize(X)
+X = (X - X.min()) / (X.max() - X.min())
 print('\n', '-'*10, 'data + normalize', '-'*10)
 for i in range(20):
     print(X[i])
-'''
+
 
 
 
