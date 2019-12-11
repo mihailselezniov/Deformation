@@ -64,6 +64,8 @@ for i0 in n:
     X = []
     print(i0)
 
+X, Y = a, np.array(y_)
+
 print('\n', '-'*10, 'index', '-'*10)
 for i in range(20):
     print(X[i])
@@ -101,6 +103,7 @@ for i0, l in enumerate(get_list(**par['length'])):
     print(i0)
     #break
 
+X, Y = a, np.array(y_)
 
 print('\n', '-'*10, 'data', '-'*10)
 for i in range(20):
