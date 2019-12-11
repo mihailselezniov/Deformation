@@ -38,6 +38,22 @@ n = tuple(map(float, range(10)))
 i = 0
 y_ = []
 a = np.empty((0,8), dtype=np.float64)
+for i0 in n:
+    for i1 in n:
+        for i2 in n:
+            for i3 in n:
+                for i4 in n:
+                    for i5 in n:
+                        for i6 in n:
+                            for i7 in n:
+                                if 0 not in [i4, i5, i6]:
+                                    X.append([i0, i1, i2, i3, i4, i5, i6, i7])
+                                    y.append(Y[i])
+                                i += 1
+    a = np.append(a, np.array(X), axis=0)
+    X = []
+    print(i0)
+'''
 for i0, l in enumerate(get_list(**par['length'])):
     for i1, di in enumerate(get_list(**par['diameter'])):
         for i2, y in enumerate(get_list(**par['young'])):
@@ -54,6 +70,7 @@ for i0, l in enumerate(get_list(**par['length'])):
     X = []
     print(i0)
     #break
+'''
 
 print('!!!')
 X, Y = a, np.array(y_)
