@@ -20,7 +20,7 @@ par['density'] = {'Min': 1000.0, 'Max': 2000.0}
 par['strength'] = {'Min': 0.2, 'Max': 10.0}
 
 def get_list(Min, Max):
-    return list(map(lambda x: round(x, 2), np.arange(Min, Max+0.01, (Max-Min)/(parts-1))))
+    return tuple(map(lambda x: round(x, 2), np.arange(Min, Max+0.01, (Max-Min)/(parts-1))))
 
 
 with open('../11/fib_all_data.txt', 'r') as f:
@@ -38,14 +38,26 @@ n = tuple(map(float, range(10)))
 i = 0
 y_ = []
 a = np.empty((0,8), dtype=np.float64)
-for i0, l in enumerate(get_list(**par['length'])):
-    for i1, di in enumerate(get_list(**par['diameter'])):
-        for i2, y in enumerate(get_list(**par['young'])):
-            for i3, de in enumerate(get_list(**par['density'])):
-                for i4, pt in enumerate(get_list(**par['pressure_time'])):
-                    for i5, pr in enumerate(get_list(**par['pressure_radius'])):
-                        for i6, pa in enumerate(get_list(**par['pressure_amplitude'])):
-                            for i7, s in enumerate(get_list(**par['strength'])):
+
+
+e0 = tuple(enumerate(get_list(**par['length'])))
+e1 = tuple(enumerate(get_list(**par['diameter'])))
+e2 = tuple(enumerate(get_list(**par['young'])))
+e3 = tuple(enumerate(get_list(**par['density'])))
+e4 = tuple(enumerate(get_list(**par['pressure_time'])))
+e5 = tuple(enumerate(get_list(**par['pressure_radius'])))
+e6 = tuple(enumerate(get_list(**par['pressure_amplitude'])))
+e7 = tuple(enumerate(get_list(**par['strength'])))
+
+
+for i0, l in e0:
+    for i1, di in e1:
+        for i2, y in e2:
+            for i3, de in e3:
+                for i4, pt in e4:
+                    for i5, pr in e5:
+                        for i6, pa in e6:
+                            for i7, s in e7:
                                 if 0 not in [i4, i5, i6]:
                                     X.append([l, di, y, de, pt, pr, pa, s])
                                     y_.append(Y[i])
