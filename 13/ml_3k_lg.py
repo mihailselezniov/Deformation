@@ -14,16 +14,16 @@ def make_set(data):
 source_f = '../12/ml_threads/6_1.txt'
 with open(source_f, 'r') as f:
     threads = f.readlines()
-x_train, y_train = [], []
-for t in threads:
-    tr = list(map(int, t.replace('\n', '').split(',')))
-    x_train.append(tr[:-1])
-    y_train.append(tr[-1])
-
-x_train_set = make_set(x_train)
-print(x_train_set)
+x_train_, y_train_ = [], []
 cut = 200
-x_train, y_train = np.array(x_train[:cut]), np.array(y_train[:cut])
+for t in threads[:cut]:
+    tr = list(map(int, t.replace('\n', '').split(',')))
+    x_train_.append(tr[:-1])
+    y_train_.append(tr[-1])
+
+x_train_set = make_set(x_train_)
+#print(x_train_set)
+
 
 
 par = {}
@@ -52,7 +52,8 @@ for i, val in enumerate(data_is_broken):
 
 n = tuple(map(float, range(10)))
 i = 0
-y = []
+y_ = []
+x_train, y_train = [], []
 a = np.empty((0,8), dtype=np.float64)
 for i0, l in enumerate(get_list(**par['length'])):
     for i1, di in enumerate(get_list(**par['diameter'])):
@@ -63,14 +64,19 @@ for i0, l in enumerate(get_list(**par['length'])):
                         for i6, pa in enumerate(get_list(**par['pressure_amplitude'])):
                             for i7, s in enumerate(get_list(**par['strength'])):
                                 if 0 not in [i4, i5, i6]:
+                                    if make_str([i0, i1, i2, i3, i4, i5, i6, i7]) in x_train_set:
+                                        x_train.append([l, di, y, de, pt, pr, pa, s])
+                                        y_train.append(y_train_[i])
                                     X.append([l, di, y, de, pt, pr, pa, s])
+                                    y_.append(Y[i])
+                                i += 1
     a = np.append(a, np.array(X), axis=0)
     X = []
     print(i0)
     break
 
 print('!!!')
-X, Y = a, np.array(y)
+X, Y = a, np.array(y_)
 print(X.shape, Y.shape)
 print('all', dict(collections.Counter(Y)))
 
