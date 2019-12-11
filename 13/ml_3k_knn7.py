@@ -163,6 +163,31 @@ weighted avg       0.87      0.88      0.87  72171000
 ROC AUC: 0.6613821635530078
 PR AUC: 0.9091418479091472
 ---------- End KNeighborsClassifier ----------
+
+(72900000, 8) (72900000,)
+all {1: 63518691, 0: 9381309}
+(729000,) (72171000,)
+y_test {1: 62883803, 0: 9287197} y_train {0: 94112, 1: 634888}
+
+ ---------- KNeighborsClassifier ----------
+y_pred {1: 62576054, 0: 9594946}
+Accuracy: 0.9705783902121351
+Confusion matrix:
+[[ 8379378   907819]
+ [ 1215568 61668235]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.87      0.90      0.89   9287197
+           1       0.99      0.98      0.98  62883803
+
+    accuracy                           0.97  72171000
+   macro avg       0.93      0.94      0.94  72171000
+weighted avg       0.97      0.97      0.97  72171000
+
+ROC AUC: 0.9414600511044751
+PR AUC: 0.9832854881439556
+---------- End KNeighborsClassifier ----------
 '''
 
 
