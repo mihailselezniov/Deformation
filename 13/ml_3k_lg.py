@@ -2,9 +2,21 @@
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_auc_score, average_precision_score
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.externals import joblib
 import collections
+
+
+source_f = '../12/ml_threads/6_1.txt'
+with open(source_f, 'r') as f:
+    threads = f.readlines()
+x_train, y_train = [], []
+for t in threads:
+    tr = list(map(int, t.replace('\n', '').split(',')))
+    x_train.append(tr[:-1])
+    y_train.append(tr[-1])
+cut = 200
+x_train, y_train = np.array(x_train[:cut]), np.array(y_train[:cut])
 
 
 par = {}
@@ -50,7 +62,7 @@ for i0, l in enumerate(get_list(**par['length'])):
     a = np.append(a, np.array(X), axis=0)
     X = []
     print(i)
-    #break
+    break
 
 print('!!!')
 X, Y = a, np.array(y)
@@ -63,7 +75,7 @@ def fit_model(model):
     # fit model on training data
     model.fit(x_train, y_train)
 
-    joblib.dump(model, 'dump_models/KNN7.j')
+    joblib.dump(model, 'dump_models/LogReg.j')
 
     y_pred = model.predict(x_test)
     print('y_pred', dict(collections.Counter(y_pred)))
@@ -89,10 +101,14 @@ def fit_model(model):
 
 
 print('!!! {} !!!'.format(i))
-x_train, x_test, y_train, y_test = train_test_split(X, Y, train_size=0.01, random_state=42)
+
+
+
+x_test, y_test = X, Y
 print(y_train.shape, y_test.shape)
 print('y_test', dict(collections.Counter(y_test)), 'y_train', dict(collections.Counter(y_train)))
-fit_model(KNeighborsClassifier(n_neighbors=7, n_jobs=-1))
+fit_model(LogisticRegression())
+
 
 
 
