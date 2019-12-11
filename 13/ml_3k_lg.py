@@ -6,6 +6,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.externals import joblib
 import collections
 
+def make_str(data):
+    return ''.join(map(str, data))
+def make_set(data):
+    return {make_str(i) for i in data}
 
 source_f = '../12/ml_threads/6_1.txt'
 with open(source_f, 'r') as f:
@@ -15,6 +19,9 @@ for t in threads:
     tr = list(map(int, t.replace('\n', '').split(',')))
     x_train.append(tr[:-1])
     y_train.append(tr[-1])
+
+x_train_set = make_set(x_train)
+print(x_train_set)
 cut = 200
 x_train, y_train = np.array(x_train[:cut]), np.array(y_train[:cut])
 
@@ -38,8 +45,6 @@ with open('../11/fib_all_data.txt', 'r') as f:
     data_is_broken = f.readlines()
 data_is_broken = list(map(int, data_is_broken))
 
-def make_str(data):
-    return ''.join(map(str, data))
 
 X, Y = [], []
 for i, val in enumerate(data_is_broken):
@@ -61,7 +66,7 @@ for i0, l in enumerate(get_list(**par['length'])):
                                     X.append([l, di, y, de, pt, pr, pa, s])
     a = np.append(a, np.array(X), axis=0)
     X = []
-    print(i)
+    print(i0)
     break
 
 print('!!!')
