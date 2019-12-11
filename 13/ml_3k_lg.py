@@ -124,7 +124,30 @@ fit_model(LogisticRegression())
 
 
 '''
+(72900000, 8) (72900000,)
+all {1: 63518691, 0: 9381309}
+(200,) (72900000,)
+y_test {1: 63518691, 0: 9381309} y_train {1: 69, 0: 131}
 
+ ---------- LogisticRegression ----------
+y_pred {1: 56870504, 0: 16029496}
+Accuracy: 0.8785569410150892
+Confusion matrix:
+[[ 8278803  1102506]
+ [ 7750693 55767998]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.52      0.88      0.65   9381309
+           1       0.98      0.88      0.93  63518691
+
+    accuracy                           0.88  72900000
+   macro avg       0.75      0.88      0.79  72900000
+weighted avg       0.92      0.88      0.89  72900000
+
+ROC AUC: 0.8802281033189825
+PR AUC: 0.967276579925729
+---------- End LogisticRegression ----------
 '''
 
 
