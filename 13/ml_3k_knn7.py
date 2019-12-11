@@ -48,6 +48,7 @@ for i0, l in enumerate(get_list(**par['length'])):
                                 if 0 not in [i4, i5, i6]:
                                     X.append([l, di, y, de, pt, pr, pa, s])
                                     y_.append(Y[i])
+                                i += 1
     a = np.append(a, np.array(X), axis=0)
     X = []
     print(i0)

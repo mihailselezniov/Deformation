@@ -16,12 +16,14 @@ with open(source_f, 'r') as f:
     threads = f.readlines()
 x_train_, y_train_ = [], []
 cut = 200
+x_train_dict = {}
 for t in threads[:cut]:
     tr = list(map(int, t.replace('\n', '').split(',')))
     x_train_.append(tr[:-1])
     y_train_.append(tr[-1])
+    x_train_dict[make_str(tr[:-1])] = tr[-1]
 
-x_train_set = make_set(x_train_)
+#x_train_set = make_set(x_train_)
 #print(x_train_set)
 
 
@@ -64,9 +66,10 @@ for i0, l in enumerate(get_list(**par['length'])):
                         for i6, pa in enumerate(get_list(**par['pressure_amplitude'])):
                             for i7, s in enumerate(get_list(**par['strength'])):
                                 if 0 not in [i4, i5, i6]:
-                                    if make_str([i0, i1, i2, i3, i4, i5, i6, i7]) in x_train_set:
+                                    key = make_str([i0, i1, i2, i3, i4, i5, i6, i7])
+                                    if key in x_train_dict:
                                         x_train.append([l, di, y, de, pt, pr, pa, s])
-                                        y_train.append(y_train_[i])
+                                        y_train.append(x_train_dict[key])
                                     X.append([l, di, y, de, pt, pr, pa, s])
                                     y_.append(Y[i])
                                 i += 1
@@ -77,6 +80,7 @@ for i0, l in enumerate(get_list(**par['length'])):
 
 print('!!!')
 X, Y = a, np.array(y_)
+x_train, y_train = np.array(x_train), np.array(y_train)
 print(X.shape, Y.shape)
 print('all', dict(collections.Counter(Y)))
 
@@ -109,10 +113,6 @@ def fit_model(model):
     print('PR AUC: {}'.format(pr))
 
     print('-'*10, 'End',  model.__class__.__name__, '-'*10)
-
-
-print('!!! {} !!!'.format(i))
-
 
 
 x_test, y_test = X, Y
