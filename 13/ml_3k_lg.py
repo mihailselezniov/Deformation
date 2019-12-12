@@ -15,7 +15,7 @@ source_f = '../12/ml_threads/6_1.txt'
 with open(source_f, 'r') as f:
     threads = f.readlines()
 x_train_, y_train_ = [], []
-cut = 200
+cut = 500
 x_train_dict = {}
 for t in threads[:cut]:
     tr = list(map(int, t.replace('\n', '').split(',')))
