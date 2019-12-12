@@ -57,14 +57,24 @@ i = 0
 y_ = []
 x_train, y_train = [], []
 a = np.empty((0,8), dtype=np.float64)
-for i0, l in enumerate(get_list(**par['length'])):
-    for i1, di in enumerate(get_list(**par['diameter'])):
-        for i2, y in enumerate(get_list(**par['young'])):
-            for i3, de in enumerate(get_list(**par['density'])):
-                for i4, pt in enumerate(get_list(**par['pressure_time'])):
-                    for i5, pr in enumerate(get_list(**par['pressure_radius'])):
-                        for i6, pa in enumerate(get_list(**par['pressure_amplitude'])):
-                            for i7, s in enumerate(get_list(**par['strength'])):
+
+e0 = tuple(enumerate(get_list(**par['length'])))
+e1 = tuple(enumerate(get_list(**par['diameter'])))
+e2 = tuple(enumerate(get_list(**par['young'])))
+e3 = tuple(enumerate(get_list(**par['density'])))
+e4 = tuple(enumerate(get_list(**par['pressure_time'])))
+e5 = tuple(enumerate(get_list(**par['pressure_radius'])))
+e6 = tuple(enumerate(get_list(**par['pressure_amplitude'])))
+e7 = tuple(enumerate(get_list(**par['strength'])))
+
+for i0, l in e0:
+    for i1, di in e1:
+        for i2, y in e2:
+            for i3, de in e3:
+                for i4, pt in e4:
+                    for i5, pr in e5:
+                        for i6, pa in e6:
+                            for i7, s in e7:
                                 if 0 not in [i4, i5, i6]:
                                     key = make_str([i0, i1, i2, i3, i4, i5, i6, i7])
                                     if key in x_train_dict:
