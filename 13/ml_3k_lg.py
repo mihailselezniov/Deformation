@@ -92,7 +92,10 @@ print('!!!')
 X, Y = a, np.array(y_)
 X = (X - X.min(axis=0)) / (X.max(axis=0) - X.min(axis=0))
 x_train, y_train = np.array(x_train), np.array(y_train)
+print('x_train =', x_train)
+
 x_train = (x_train - X.min(axis=0)) / (X.max(axis=0) - X.min(axis=0))
+print('x_train =', x_train)
 print(X.shape, Y.shape)
 print('all', dict(collections.Counter(Y)))
 
