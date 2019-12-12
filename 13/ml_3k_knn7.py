@@ -84,7 +84,7 @@ def fit_model(model):
     # fit model on training data
     model.fit(x_train, y_train)
 
-    #joblib.dump(model, 'dump_models/KNN7.j')
+    joblib.dump(model, 'dump_models/KNN7.j')
 
     y_pred = model.predict(x_test)
     print('y_pred', dict(collections.Counter(y_pred)))
@@ -184,6 +184,32 @@ weighted avg       0.97      0.97      0.97  72171000
 
 ROC AUC: 0.9414600511044751
 PR AUC: 0.9832854881439556
+---------- End KNeighborsClassifier ----------
+
+
+(72900000, 8) (72900000,)
+all {1: 63518691, 0: 9381309}
+(729000,) (72171000,)
+y_test {1: 62883803, 0: 9287197} y_train {0: 94112, 1: 634888}
+
+ ---------- KNeighborsClassifier ----------
+y_pred {1: 63560794, 0: 8610206}
+Accuracy: 0.9701871527344779
+Confusion matrix:
+[[ 7872890  1414307]
+ [  737316 62146487]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.91      0.85      0.88   9287197
+           1       0.98      0.99      0.98  62883803
+
+    accuracy                           0.97  72171000
+   macro avg       0.95      0.92      0.93  72171000
+weighted avg       0.97      0.97      0.97  72171000
+
+ROC AUC: 0.9179946388336552
+PR AUC: 0.97650083115388
 ---------- End KNeighborsClassifier ----------
 '''
 
