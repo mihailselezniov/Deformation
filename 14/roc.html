@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['%', 'XGBClassifier', 'LogisticRegression', 'LinearSVC', 'KNeighborsClassifier', 'SGDClassifier', 'BernoulliNB', 'RandomForestClassifier', 'MLPClassifier', 'SVC'],
+          ['100', 0.6795, 0.8068, 0.6315, 0.5366, 0.8197, 0.5, 0.5173, 0.8218, 0.5],
+          ['200', 0.7249, 0.7548, 0.6219, 0.5346, 0.7364, 0.5, 0.4999, 0.7233, 0.5],
+          ['300', 0.7101, 0.7031, 0.6164, 0.5235, 0.5712, 0.5, 0.5402, 0.6247, 0.5],
+          ['400', 0.7443, 0.6935, 0.6233, 0.5291, 0.6157, 0.5, 0.5639, 0.637, 0.5],
+          ['500', 0.7687, 0.6342, 0.6014, 0.5511, 0.5082, 0.5, 0.6404, 0.5877, 0.5]
+        ]);
+
+        var options = {
+          title: 'ROC',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1300px; height: 700px"></div>
+  </body>
+</html>
+      
