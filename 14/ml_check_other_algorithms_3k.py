@@ -40,7 +40,7 @@ for i0 in n:
     a = np.append(a, np.array(X), axis=0)
     X = []
     print(i0)
-    break
+    #break
 
 
 print('!!!')
