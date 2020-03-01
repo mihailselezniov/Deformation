@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 #sns.set(style="ticks", color_codes=True)
 
-with open('../11/fib_all_data.txt', 'r') as f:
+with open('../../11/fib_all_data.txt', 'r') as f:
     data_is_broken = f.readlines()
 data_is_broken = list(map(int, data_is_broken))
 
