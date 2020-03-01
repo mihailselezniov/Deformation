@@ -2,7 +2,7 @@
 import seaborn as sns
 import numpy as np
 import pandas as pd
-sns.set(style="ticks", color_codes=True)
+#sns.set(style="ticks", color_codes=True)
 
 with open('../11/fib_all_data.txt', 'r') as f:
     data_is_broken = f.readlines()
@@ -36,6 +36,12 @@ for i0 in n:
 
 print(a.shape)
 df = pd.DataFrame(a)
-g = sns.pairplot(df)
-g.savefig('pairplot.png')
+
+
+
+#g = sns.pairplot(df)
+g = sns.PairGrid(df)
+g = g.map_diag(sns.kdeplot)#, color="r")
+g = g.map_offdiag(sns.kdeplot)#, color="r")
+g.savefig('pairplot_all.png')
 #export QT_QPA_PLATFORM='offscreen'
