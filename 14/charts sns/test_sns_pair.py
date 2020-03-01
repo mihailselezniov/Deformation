@@ -1,6 +1,7 @@
 #import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+np.seterr(divide='ignore', invalid='ignore')
 import pandas as pd
 #sns.set(style="ticks", color_codes=True)
 
