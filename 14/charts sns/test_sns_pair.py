@@ -30,7 +30,9 @@ for i0 in n:
                                     if not Y[i]:
                                         X.append([i0, i1, i2, i3, i4, i5, i6, i7])
                                 i += 1
-    a = np.append(a, np.array(X), axis=0)
+        a = np.append(a, np.array(X), axis=0)
+        break
+    #a = np.append(a, np.array(X), axis=0)
     X = []
     print(i0)
     break
