@@ -66,9 +66,9 @@ with open('data3k_2.txt', 'r') as f:
     data_is_broken = f.readlines()
 data_is_broken = list(map(int, data_is_broken))
 
-y_test = []
+Y_test = []
 for i, val in enumerate(data_is_broken):
-    y_test.extend([i%2]*val)
+    Y_test.extend([i%2]*val)
 
 new_parts = 19
 def get_new_list(Min, Max):
@@ -83,8 +83,8 @@ e2_5 = tuple(enumerate(get_new_list(**par['pressure_radius'])))
 e2_6 = tuple(enumerate(get_new_list(**par['pressure_amplitude'])))
 e2_7 = tuple(enumerate(get_new_list(**par['strength'])))
 
-
-x_test = []
+i = 0
+x_test, y_test = [], []
 for i0, l in e2_0:
     for i1, di in e2_1:
         for i2, y in e2_2:
@@ -95,6 +95,8 @@ for i0, l in e2_0:
                             for i7, s in e2_7:
                                 if 0 in [i4, i5, i6]:
                                     x_test.append([l, di, y, de, pt, pr, pa, s])
+                                    y_test.append(Y_test[i])
+                                i += 1
     print(i0)
 x_test, y_test = np.array(x_test), np.array(y_test)
 x_test = (x_test - extreme_values.min(axis=0)) / (extreme_values.max(axis=0) - extreme_values.min(axis=0))
