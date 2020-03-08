@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['%', 'XGBClassifier', 'LogisticRegression', 'LinearSVC', 'KNeighborsClassifier', 'SGDClassifier', 'BernoulliNB', 'RandomForestClassifier', 'MLPClassifier', 'SVC'],
+          ['100', 0.9122, 0.9209, 0.9224, 0.8145, 0.9151, 0.7736, 0.8164, 0.932, 0.7736],
+          ['200', 0.9123, 0.9352, 0.9197, 0.8194, 0.9218, 0.7736, 0.8388, 0.9373, 0.7736],
+          ['300', 0.9177, 0.9348, 0.9243, 0.8184, 0.9282, 0.7736, 0.8825, 0.9395, 0.7736],
+          ['400', 0.9152, 0.9341, 0.9242, 0.8195, 0.8876, 0.7736, 0.8445, 0.9387, 0.7736],
+          ['500', 0.9272, 0.9305, 0.9186, 0.8249, 0.9153, 0.7736, 0.8927, 0.9334, 0.7738]
+        ]);
+
+        var options = {
+          title: 'PR 3k2 all',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1300px; height: 700px"></div>
+  </body>
+</html>
+      

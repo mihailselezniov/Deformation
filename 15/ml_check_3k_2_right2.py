@@ -94,7 +94,7 @@ for i0, l in e2_0:
                     for i5, pr in e2_5:
                         for i6, pa in e2_6:
                             for i7, s in e2_7:
-                                if 0 not in [i4, i5, i6]:
+                                if 0 not in [i0, i1, i2, i3, i4, i5, i6, i7]:
                                     x_test.append([l, di, y, de, pt, pr, pa, s])
                                     y_test.append(Y_test[i])
                                 i += 1
