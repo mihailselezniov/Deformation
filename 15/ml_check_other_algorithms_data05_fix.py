@@ -11,6 +11,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.externals import joblib
 from xgboost import XGBClassifier, XGBRegressor
 import collections
+from numpy import genfromtxt
 
 
 fix_rows = '''
