@@ -214,7 +214,7 @@ for cut in [100, 200, 300, 400, 500]:
     #print(x_train)
 
     def make_test(num):
-        data = genfromtxt('data0{}.csv'.format(num), delimiter=';', skip_header=True)
+        data = genfromtxt('../14/data0{}.csv'.format(num), delimiter=';', skip_header=True)
         x_test, y_test = [], []
         for i, d in enumerate(data):
             #pressure_time;pressure_radius;pressure_amplitude;young;density;strength;length;diameter;is_broken
