@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['%', 'XGBoost', 'Logistic Regression', 'Linear SVC', 'K-neighbors'],
+          ['100', 0.93, 0.96, 0.96, 0.91],
+          ['1000', 0.96, 0.96, 0.96, 0.94],
+          ['10000', 0.97, 0.96, 0.97, 0.96],
+          ['100000', 0.97, 0.96, 0.97, 0.97],
+          ['1000000', 0.97, 0.96, 0.97, 0.98]
+        ]);
+
+        var options = {
+          title: '',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1300px; height: 700px"></div>
+  </body>
+</html>
+<!--
+          ['%', 'XGBoost', 'Logistic Regression', 'Linear SVC', 'K-neighbors'],
+          ['0.000001', 0.93, 0.96, 0.96, 0.91],
+          ['0.00001', 0.96, 0.96, 0.96, 0.94],
+          ['0.0001', 0.97, 0.96, 0.97, 0.96],
+          ['0.001', 0.97, 0.96, 0.97, 0.97],
+          ['0.01', 0.97, 0.96, 0.97, 0.98]
+-->
