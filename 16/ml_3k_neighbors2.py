@@ -116,9 +116,9 @@ while 1:
         with open(f_y_pred.format(a0), 'w') as f:
             f.write(''.join(rows_y[a0]))
 
-    print('Start Go')
+    #print('Start Go')
     stream = os.popen('go run dis_calc.go')
-    print('End Go')
+    #print('End Go')
     output = stream.read()
     print(output[:-1])
     result_id = int(output.split()[2])
