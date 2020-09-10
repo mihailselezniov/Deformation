@@ -8,7 +8,8 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neural_network import MLPClassifier
-import joblib
+#import joblib
+from sklearn.externals import joblib
 import collections
 import math
 import sys
@@ -33,9 +34,9 @@ n_cors = 4
 Y_step = 729000#0
 Y_step = 7290000
 
-X = joblib.load('border_vars/X.j')
+X = joblib.load('../12/border_vars/X.j')
 print('X')
-Y = joblib.load('border_vars/Y.j')
+Y = joblib.load('../12/border_vars/Y.j')
 print('Y')
 
 #print(sys.getsizeof(way_dict))
@@ -80,17 +81,7 @@ while 1:
     y_preds.append(fit_model(SGDClassifier(random_state=42, n_jobs=n_cors)))
     #y_preds.append(fit_model(BernoulliNB()))
     #y_preds.append(fit_model(RandomForestClassifier(random_state=42, n_jobs=n_cors)))
-    """
-    print('Start MLP')
-    try:
-        print(fit_model(MLPClassifier(max_iter=100000)))
-    except:
-        print('MLP faile')
-    print('End MLP')
-    break
-    """
     y_preds.append(fit_model(MLPClassifier(max_iter=100000, random_state=42)))
-    #y_preds.append(fit_model(SVC(random_state=42)))# Radial basis function kernel
 
 
     y_pred = [sum(i) for i in zip(*y_preds)]
