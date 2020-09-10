@@ -1,0 +1,1524 @@
+ ########## 100 ##########
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+ ---------- XGBClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 53, 0: 47}
+y_pred {1: 36259517, 0: 6787204}
+Accuracy: 0.8634102467409771
+Confusion matrix:
+[[ 5327020  4419557]
+ [ 1460184 31839960]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.78      0.55      0.64   9746577
+           1       0.88      0.96      0.92  33300144
+
+    accuracy                           0.86  43046721
+   macro avg       0.83      0.75      0.78  43046721
+weighted avg       0.86      0.86      0.85  43046721
+
+ROC AUC: 0.7513518640014419
+PR AUC: 0.8735295543672928
+---------- End XGBClassifier ----------
+
+ ---------- LogisticRegression ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 53, 0: 47}
+y_pred {1: 37682405, 0: 5364316}
+Accuracy: 0.8566711968607319
+Confusion matrix:
+[[ 4470529  5276048]
+ [  893787 32406357]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.83      0.46      0.59   9746577
+           1       0.86      0.97      0.91  33300144
+
+    accuracy                           0.86  43046721
+   macro avg       0.85      0.72      0.75  43046721
+weighted avg       0.85      0.86      0.84  43046721
+
+ROC AUC: 0.715918245668158
+PR AUC: 0.8576672922123825
+---------- End LogisticRegression ----------
+
+ ---------- LinearSVC ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 53, 0: 47}
+y_pred {1: 37347610, 0: 5699111}
+Accuracy: 0.8741584521617802
+Confusion matrix:
+[[ 5014311  4732266]
+ [  684800 32615344]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.88      0.51      0.65   9746577
+           1       0.87      0.98      0.92  33300144
+
+    accuracy                           0.87  43046721
+   macro avg       0.88      0.75      0.79  43046721
+weighted avg       0.87      0.87      0.86  43046721
+
+ROC AUC: 0.7469522251113574
+PR AUC: 0.8712408479545818
+---------- End LinearSVC ----------
+
+ ---------- KNeighborsClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 53, 0: 47}
+y_pred {1: 32945249, 0: 10101472}
+Accuracy: 0.7436758307328449
+Confusion matrix:
+[[ 4407067  5339510]
+ [ 5694405 27605739]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.44      0.45      0.44   9746577
+           1       0.84      0.83      0.83  33300144
+
+    accuracy                           0.74  43046721
+   macro avg       0.64      0.64      0.64  43046721
+weighted avg       0.75      0.74      0.75  43046721
+
+ROC AUC: 0.6405816015125253
+PR AUC: 0.8269243899250605
+---------- End KNeighborsClassifier ----------
+
+ ---------- SGDClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 53, 0: 47}
+y_pred {1: 21188727, 0: 21857994}
+Accuracy: 0.7029447376491231
+Confusion matrix:
+[[ 9408658   337919]
+ [12449336 20850808]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.43      0.97      0.60   9746577
+           1       0.98      0.63      0.77  33300144
+
+    accuracy                           0.70  43046721
+   macro avg       0.71      0.80      0.68  43046721
+weighted avg       0.86      0.70      0.73  43046721
+
+ROC AUC: 0.7957385758635162
+PR AUC: 0.9053670548680814
+---------- End SGDClassifier ----------
+
+ ---------- BernoulliNB ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 53, 0: 47}
+y_pred {0: 43046721}
+Accuracy: 0.22641856972102475
+Confusion matrix:
+[[ 9746577        0]
+ [33300144        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.23      1.00      0.37   9746577
+           1       0.00      0.00      0.00  33300144
+
+    accuracy                           0.23  43046721
+   macro avg       0.11      0.50      0.18  43046721
+weighted avg       0.05      0.23      0.08  43046721
+
+ROC AUC: 0.5
+PR AUC: 0.7735814302789753
+---------- End BernoulliNB ----------
+
+ ---------- RandomForestClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 53, 0: 47}
+y_pred {1: 36807061, 0: 6239660}
+Accuracy: 0.8485937407404387
+Confusion matrix:
+[[ 4734347  5012230]
+ [ 1505313 31794831]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.76      0.49      0.59   9746577
+           1       0.86      0.95      0.91  33300144
+
+    accuracy                           0.85  43046721
+   macro avg       0.81      0.72      0.75  43046721
+weighted avg       0.84      0.85      0.84  43046721
+
+ROC AUC: 0.7202700929401206
+PR AUC: 0.8597448551725095
+---------- End RandomForestClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 53, 0: 47}
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:582: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+y_pred {1: 37158923, 0: 5887798}
+Accuracy: 0.8756566150532116
+Confusion matrix:
+[[ 5140900  4605677]
+ [  746898 32553246]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.87      0.53      0.66   9746577
+           1       0.88      0.98      0.92  33300144
+
+    accuracy                           0.88  43046721
+   macro avg       0.87      0.75      0.79  43046721
+weighted avg       0.88      0.88      0.86  43046721
+
+ROC AUC: 0.7525138502324773
+PR AUC: 0.873756216486751
+---------- End MLPClassifier ----------
+
+ ---------- SVC ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 53, 0: 47}
+y_pred {1: 33706278, 0: 9340443}
+Accuracy: 0.8342269554050353
+Confusion matrix:
+[[ 5975517  3771060]
+ [ 3364926 29935218]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.64      0.61      0.63   9746577
+           1       0.89      0.90      0.89  33300144
+
+    accuracy                           0.83  43046721
+   macro avg       0.76      0.76      0.76  43046721
+weighted avg       0.83      0.83      0.83  43046721
+
+ROC AUC: 0.756020193960554
+PR AUC: 0.8765460185881846
+---------- End SVC ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 53, 0: 47}
+y_pred {1: 36686482, 0: 6360239}
+Accuracy: 0.8905167248395064
+Confusion matrix:
+[[ 5696960  4049617]
+ [  663279 32636865]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.90      0.58      0.71   9746577
+           1       0.89      0.98      0.93  33300144
+
+    accuracy                           0.89  43046721
+   macro avg       0.89      0.78      0.82  43046721
+weighted avg       0.89      0.89      0.88  43046721
+
+ROC AUC: 0.7822952975690664
+PR AUC: 0.8873043626332686
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 53, 0: 47}
+y_pred {1: 35352397, 0: 7694324}
+Accuracy: 0.905910440890492
+Confusion matrix:
+[[ 6695327  3051250]
+ [  998997 32301147]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.87      0.69      0.77   9746577
+           1       0.91      0.97      0.94  33300144
+
+    accuracy                           0.91  43046721
+   macro avg       0.89      0.83      0.85  43046721
+weighted avg       0.90      0.91      0.90  43046721
+
+ROC AUC: 0.8284707971055651
+PR AUC: 0.9094871958429281
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 53, 0: 47}
+y_pred {1: 36471335, 0: 6575386}
+Accuracy: 0.8931846400100951
+Confusion matrix:
+[[ 5861956  3884621]
+ [  713430 32586714]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.89      0.60      0.72   9746577
+           1       0.89      0.98      0.93  33300144
+
+    accuracy                           0.89  43046721
+   macro avg       0.89      0.79      0.83  43046721
+weighted avg       0.89      0.89      0.89  43046721
+
+ROC AUC: 0.7900065877628015
+PR AUC: 0.8909194650427126
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 53, 0: 47}
+y_pred {0: 6984328, 1: 36062393}
+Accuracy: 0.9044782295961636
+Confusion matrix:
+[[ 6309503  3437074]
+ [  674825 32625319]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.90      0.65      0.75   9746577
+           1       0.90      0.98      0.94  33300144
+
+    accuracy                           0.90  43046721
+   macro avg       0.90      0.81      0.85  43046721
+weighted avg       0.90      0.90      0.90  43046721
+
+ROC AUC: 0.8135454285572867
+PR AUC: 0.9020339821121779
+---------- End MLPClassifier ----------
+
+
+
+ ########## 200 ##########
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+ ---------- XGBClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 99, 0: 101}
+y_pred {1: 34312269, 0: 8734452}
+Accuracy: 0.8984162115390857
+Confusion matrix:
+[[ 7054090  2692487]
+ [ 1680362 31619782]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.81      0.72      0.76   9746577
+           1       0.92      0.95      0.94  33300144
+
+    accuracy                           0.90  43046721
+   macro avg       0.86      0.84      0.85  43046721
+weighted avg       0.90      0.90      0.90  43046721
+
+ROC AUC: 0.8366446996223535
+PR AUC: 0.9140642619859976
+---------- End XGBClassifier ----------
+
+ ---------- LogisticRegression ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 99, 0: 101}
+y_pred {1: 35982731, 0: 7063990}
+Accuracy: 0.8903489768709677
+Confusion matrix:
+[[ 6045225  3701352]
+ [ 1018765 32281379]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.86      0.62      0.72   9746577
+           1       0.90      0.97      0.93  33300144
+
+    accuracy                           0.89  43046721
+   macro avg       0.88      0.79      0.83  43046721
+weighted avg       0.89      0.89      0.88  43046721
+
+ROC AUC: 0.7948237089586179
+PR AUC: 0.8933553879997262
+---------- End LogisticRegression ----------
+
+ ---------- LinearSVC ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 99, 0: 101}
+y_pred {1: 36192749, 0: 6853972}
+Accuracy: 0.8946856138008746
+Confusion matrix:
+[[ 6033555  3713022]
+ [  820417 32479727]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.88      0.62      0.73   9746577
+           1       0.90      0.98      0.93  33300144
+
+    accuracy                           0.89  43046721
+   macro avg       0.89      0.80      0.83  43046721
+weighted avg       0.89      0.89      0.89  43046721
+
+ROC AUC: 0.7972032225598905
+PR AUC: 0.8943590181377394
+---------- End LinearSVC ----------
+
+ ---------- KNeighborsClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 99, 0: 101}
+y_pred {1: 23369505, 0: 19677216}
+Accuracy: 0.6394613424794887
+Confusion matrix:
+[[ 6951893  2794684]
+ [12725323 20574821]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.35      0.71      0.47   9746577
+           1       0.88      0.62      0.73  33300144
+
+    accuracy                           0.64  43046721
+   macro avg       0.62      0.67      0.60  43046721
+weighted avg       0.76      0.64      0.67  43046721
+
+ROC AUC: 0.6655624491208405
+PR AUC: 0.8395884968347738
+---------- End KNeighborsClassifier ----------
+
+ ---------- SGDClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 99, 0: 101}
+y_pred {1: 29698225, 0: 13348496}
+Accuracy: 0.8479945777983879
+Confusion matrix:
+[[ 8275869  1470708]
+ [ 5072627 28227517]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.62      0.85      0.72   9746577
+           1       0.95      0.85      0.90  33300144
+
+    accuracy                           0.85  43046721
+   macro avg       0.79      0.85      0.81  43046721
+weighted avg       0.88      0.85      0.86  43046721
+
+ROC AUC: 0.848387347870831
+PR AUC: 0.9235314742233968
+---------- End SGDClassifier ----------
+
+ ---------- BernoulliNB ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 99, 0: 101}
+y_pred {0: 43046721}
+Accuracy: 0.22641856972102475
+Confusion matrix:
+[[ 9746577        0]
+ [33300144        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.23      1.00      0.37   9746577
+           1       0.00      0.00      0.00  33300144
+
+    accuracy                           0.23  43046721
+   macro avg       0.11      0.50      0.18  43046721
+weighted avg       0.05      0.23      0.08  43046721
+
+ROC AUC: 0.5
+PR AUC: 0.7735814302789753
+---------- End BernoulliNB ----------
+
+ ---------- RandomForestClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 99, 0: 101}
+y_pred {1: 30247166, 0: 12799555}
+Accuracy: 0.8340215042163142
+Confusion matrix:
+[[ 7700651  2045926]
+ [ 5098904 28201240]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.60      0.79      0.68   9746577
+           1       0.93      0.85      0.89  33300144
+
+    accuracy                           0.83  43046721
+   macro avg       0.77      0.82      0.79  43046721
+weighted avg       0.86      0.83      0.84  43046721
+
+ROC AUC: 0.8184840812228734
+PR AUC: 0.9080476770337026
+---------- End RandomForestClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 99, 0: 101}
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:582: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+y_pred {1: 35146880, 0: 7899841}
+Accuracy: 0.9055926698807094
+Confusion matrix:
+[[ 6791246  2955331]
+ [ 1108595 32191549]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.86      0.70      0.77   9746577
+           1       0.92      0.97      0.94  33300144
+
+    accuracy                           0.91  43046721
+   macro avg       0.89      0.83      0.86  43046721
+weighted avg       0.90      0.91      0.90  43046721
+
+ROC AUC: 0.8317458392098909
+PR AUC: 0.911176419636756
+---------- End MLPClassifier ----------
+
+ ---------- SVC ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 99, 0: 101}
+y_pred {1: 30665842, 0: 12380879}
+Accuracy: 0.8660582300798242
+Confusion matrix:
+[[ 8180851  1565726]
+ [ 4200028 29100116]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.66      0.84      0.74   9746577
+           1       0.95      0.87      0.91  33300144
+
+    accuracy                           0.87  43046721
+   macro avg       0.80      0.86      0.82  43046721
+weighted avg       0.88      0.87      0.87  43046721
+
+ROC AUC: 0.8566149490521491
+PR AUC: 0.9268246998075509
+---------- End SVC ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 99, 0: 101}
+y_pred {1: 34878980, 0: 8167741}
+Accuracy: 0.9228134937385823
+Confusion matrix:
+[[ 7295846  2450731]
+ [  871895 32428249]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.89      0.75      0.81   9746577
+           1       0.93      0.97      0.95  33300144
+
+    accuracy                           0.92  43046721
+   macro avg       0.91      0.86      0.88  43046721
+weighted avg       0.92      0.92      0.92  43046721
+
+ROC AUC: 0.8611858889531652
+PR AUC: 0.9256475751905402
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 99, 0: 101}
+y_pred {1: 34539530, 0: 8507191}
+Accuracy: 0.9247122678635615
+Confusion matrix:
+[[ 7506439  2240138]
+ [ 1000752 32299392]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.88      0.77      0.82   9746577
+           1       0.94      0.97      0.95  33300144
+
+    accuracy                           0.92  43046721
+   macro avg       0.91      0.87      0.89  43046721
+weighted avg       0.92      0.92      0.92  43046721
+
+ROC AUC: 0.8700545413919576
+PR AUC: 0.9302874574164639
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 99, 0: 101}
+y_pred {1: 35308545, 0: 7738176}
+Accuracy: 0.9254885174645474
+Confusion matrix:
+[[ 7138639  2607938]
+ [  599537 32700607]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.92      0.73      0.82   9746577
+           1       0.93      0.98      0.95  33300144
+
+    accuracy                           0.93  43046721
+   macro avg       0.92      0.86      0.88  43046721
+weighted avg       0.93      0.93      0.92  43046721
+
+ROC AUC: 0.8572106019524905
+PR AUC: 0.923391970916934
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 99, 0: 101}
+y_pred {1: 35191515, 0: 7855206}
+Accuracy: 0.9243314026171703
+Confusion matrix:
+[[ 7172249  2574328]
+ [  682957 32617187]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.91      0.74      0.81   9746577
+           1       0.93      0.98      0.95  33300144
+
+    accuracy                           0.92  43046721
+   macro avg       0.92      0.86      0.88  43046721
+weighted avg       0.92      0.92      0.92  43046721
+
+ROC AUC: 0.8576822498850473
+PR AUC: 0.923704683378861
+---------- End MLPClassifier ----------
+
+
+
+ ########## 300 ##########
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+ ---------- XGBClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 149, 0: 151}
+y_pred {1: 32809062, 0: 10237659}
+Accuracy: 0.8909681413364795
+Confusion matrix:
+[[ 7645386  2101191]
+ [ 2592273 30707871]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.75      0.78      0.77   9746577
+           1       0.94      0.92      0.93  33300144
+
+    accuracy                           0.89  43046721
+   macro avg       0.84      0.85      0.85  43046721
+weighted avg       0.89      0.89      0.89  43046721
+
+ROC AUC: 0.8532859226690928
+PR AUC: 0.9233167533974137
+---------- End XGBClassifier ----------
+
+ ---------- LogisticRegression ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 149, 0: 151}
+y_pred {1: 36114056, 0: 6932665}
+Accuracy: 0.8946787143206564
+Confusion matrix:
+[[ 6072753  3673824]
+ [  859912 32440232]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.88      0.62      0.73   9746577
+           1       0.90      0.97      0.93  33300144
+
+    accuracy                           0.89  43046721
+   macro avg       0.89      0.80      0.83  43046721
+weighted avg       0.89      0.89      0.89  43046721
+
+ROC AUC: 0.7986210669188932
+PR AUC: 0.8950517474301604
+---------- End LogisticRegression ----------
+
+ ---------- LinearSVC ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 149, 0: 151}
+y_pred {1: 36190711, 0: 6856010}
+Accuracy: 0.8975923624937658
+Confusion matrix:
+[[ 6097137  3649440]
+ [  758873 32541271]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.89      0.63      0.73   9746577
+           1       0.90      0.98      0.94  33300144
+
+    accuracy                           0.90  43046721
+   macro avg       0.89      0.80      0.84  43046721
+weighted avg       0.90      0.90      0.89  43046721
+
+ROC AUC: 0.8013890631614129
+PR AUC: 0.8962990500687769
+---------- End LinearSVC ----------
+
+ ---------- KNeighborsClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 149, 0: 151}
+y_pred {1: 22056761, 0: 20989960}
+Accuracy: 0.6259195909486346
+Confusion matrix:
+[[ 7316801  2429776]
+ [13673159 19626985]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.35      0.75      0.48   9746577
+           1       0.89      0.59      0.71  33300144
+
+    accuracy                           0.63  43046721
+   macro avg       0.62      0.67      0.59  43046721
+weighted avg       0.77      0.63      0.66  43046721
+
+ROC AUC: 0.6700505417516189
+PR AUC: 0.842103727035896
+---------- End KNeighborsClassifier ----------
+
+ ---------- SGDClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 149, 0: 151}
+y_pred {1: 39228756, 0: 3817965}
+Accuracy: 0.8538241739713461
+Confusion matrix:
+[[ 3636076  6110501]
+ [  181889 33118255]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.95      0.37      0.54   9746577
+           1       0.84      0.99      0.91  33300144
+
+    accuracy                           0.85  43046721
+   macro avg       0.90      0.68      0.72  43046721
+weighted avg       0.87      0.85      0.83  43046721
+
+ROC AUC: 0.6837998683436992
+PR AUC: 0.8438482250796586
+---------- End SGDClassifier ----------
+
+ ---------- BernoulliNB ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 149, 0: 151}
+y_pred {0: 43046721}
+Accuracy: 0.22641856972102475
+Confusion matrix:
+[[ 9746577        0]
+ [33300144        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.23      1.00      0.37   9746577
+           1       0.00      0.00      0.00  33300144
+
+    accuracy                           0.23  43046721
+   macro avg       0.11      0.50      0.18  43046721
+weighted avg       0.05      0.23      0.08  43046721
+
+ROC AUC: 0.5
+PR AUC: 0.7735814302789753
+---------- End BernoulliNB ----------
+
+ ---------- RandomForestClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 149, 0: 151}
+y_pred {1: 30319015, 0: 12727706}
+Accuracy: 0.8361464279706694
+Confusion matrix:
+[[ 7710462  2036115]
+ [ 5017244 28282900]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.61      0.79      0.69   9746577
+           1       0.93      0.85      0.89  33300144
+
+    accuracy                           0.84  43046721
+   macro avg       0.77      0.82      0.79  43046721
+weighted avg       0.86      0.84      0.84  43046721
+
+ROC AUC: 0.8202135069507207
+PR AUC: 0.9088480182726735
+---------- End RandomForestClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 149, 0: 151}
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:582: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+y_pred {1: 35674139, 0: 7372582}
+Accuracy: 0.9122552214836526
+Confusion matrix:
+[[ 6671017  3075560]
+ [  701565 32598579]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.90      0.68      0.78   9746577
+           1       0.91      0.98      0.95  33300144
+
+    accuracy                           0.91  43046721
+   macro avg       0.91      0.83      0.86  43046721
+weighted avg       0.91      0.91      0.91  43046721
+
+ROC AUC: 0.83168961924312
+PR AUC: 0.9108335584494524
+---------- End MLPClassifier ----------
+
+ ---------- SVC ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 149, 0: 151}
+y_pred {1: 30211051, 0: 12835670}
+Accuracy: 0.8686250922573173
+Confusion matrix:
+[[ 8463494  1283083]
+ [ 4372176 28927968]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.66      0.87      0.75   9746577
+           1       0.96      0.87      0.91  33300144
+
+    accuracy                           0.87  43046721
+   macro avg       0.81      0.87      0.83  43046721
+weighted avg       0.89      0.87      0.87  43046721
+
+ROC AUC: 0.8685297587214541
+PR AUC: 0.9333777215397496
+---------- End SVC ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 149, 0: 151}
+y_pred {1: 33714812, 0: 9331909}
+Accuracy: 0.9287226546244951
+Confusion matrix:
+[[ 8005115  1741462]
+ [ 1326794 31973350]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.86      0.82      0.84   9746577
+           1       0.95      0.96      0.95  33300144
+
+    accuracy                           0.93  43046721
+   macro avg       0.90      0.89      0.90  43046721
+weighted avg       0.93      0.93      0.93  43046721
+
+ROC AUC: 0.8907411465295957
+PR AUC: 0.9413839910872674
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 149, 0: 151}
+y_pred {1: 33348392, 0: 9698329}
+Accuracy: 0.9240096359488101
+Confusion matrix:
+[[ 8086885  1659692]
+ [ 1611444 31688700]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.83      0.83      0.83   9746577
+           1       0.95      0.95      0.95  33300144
+
+    accuracy                           0.92  43046721
+   macro avg       0.89      0.89      0.89  43046721
+weighted avg       0.92      0.92      0.92  43046721
+
+ROC AUC: 0.890661947020686
+PR AUC: 0.9416833502281424
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 149, 0: 151}
+y_pred {1: 34445834, 0: 8600887}
+Accuracy: 0.9384427910316329
+Confusion matrix:
+[[ 7848814  1897763]
+ [  752073 32548071]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.91      0.81      0.86   9746577
+           1       0.94      0.98      0.96  33300144
+
+    accuracy                           0.94  43046721
+   macro avg       0.93      0.89      0.91  43046721
+weighted avg       0.94      0.94      0.94  43046721
+
+ROC AUC: 0.8913523027373875
+PR AUC: 0.9410365701217919
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 149, 0: 151}
+y_pred {1: 33788131, 0: 9258590}
+Accuracy: 0.937196075863711
+Confusion matrix:
+[[ 8150832  1595745]
+ [ 1107758 32192386]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.88      0.84      0.86   9746577
+           1       0.95      0.97      0.96  33300144
+
+    accuracy                           0.94  43046721
+   macro avg       0.92      0.90      0.91  43046721
+weighted avg       0.94      0.94      0.94  43046721
+
+ROC AUC: 0.9015052522053778
+PR AUC: 0.9468110955531666
+---------- End MLPClassifier ----------
+
+
+
+ ########## 400 ##########
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+ ---------- XGBClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 194, 0: 206}
+y_pred {1: 33489935, 0: 9556786}
+Accuracy: 0.8949036559602298
+Confusion matrix:
+[[ 7389655  2356922]
+ [ 2167131 31133013]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.77      0.76      0.77   9746577
+           1       0.93      0.93      0.93  33300144
+
+    accuracy                           0.89  43046721
+   macro avg       0.85      0.85      0.85  43046721
+weighted avg       0.89      0.89      0.89  43046721
+
+ROC AUC: 0.8465503925381475
+PR AUC: 0.9194679896161907
+---------- End XGBClassifier ----------
+
+ ---------- LogisticRegression ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 194, 0: 206}
+y_pred {1: 36006548, 0: 7040173}
+Accuracy: 0.8957032755177798
+Confusion matrix:
+[[ 6148559  3598018]
+ [  891614 32408530]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.87      0.63      0.73   9746577
+           1       0.90      0.97      0.94  33300144
+
+    accuracy                           0.90  43046721
+   macro avg       0.89      0.80      0.83  43046721
+weighted avg       0.89      0.90      0.89  43046721
+
+ROC AUC: 0.8020339154371277
+PR AUC: 0.8966864031120282
+---------- End LogisticRegression ----------
+
+ ---------- LinearSVC ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 194, 0: 206}
+y_pred {1: 36155583, 0: 6891138}
+Accuracy: 0.8975504545398475
+Confusion matrix:
+[[ 6113799  3632778]
+ [  777339 32522805]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.89      0.63      0.73   9746577
+           1       0.90      0.98      0.94  33300144
+
+    accuracy                           0.90  43046721
+   macro avg       0.89      0.80      0.84  43046721
+weighted avg       0.90      0.90      0.89  43046721
+
+ROC AUC: 0.8019665587186771
+PR AUC: 0.896583810166143
+---------- End LinearSVC ----------
+
+ ---------- KNeighborsClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 194, 0: 206}
+y_pred {1: 23553151, 0: 19493570}
+Accuracy: 0.6605717076568968
+Confusion matrix:
+[[ 7314436  2432141]
+ [12179134 21121010]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.38      0.75      0.50   9746577
+           1       0.90      0.63      0.74  33300144
+
+    accuracy                           0.66  43046721
+   macro avg       0.64      0.69      0.62  43046721
+weighted avg       0.78      0.66      0.69  43046721
+
+ROC AUC: 0.6923619279075445
+PR AUC: 0.8516950611612034
+---------- End KNeighborsClassifier ----------
+
+ ---------- SGDClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 194, 0: 206}
+y_pred {1: 35662554, 0: 7384167}
+Accuracy: 0.8964538553354622
+Confusion matrix:
+[[ 6336711  3409866]
+ [ 1047456 32252688]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.86      0.65      0.74   9746577
+           1       0.90      0.97      0.94  33300144
+
+    accuracy                           0.90  43046721
+   macro avg       0.88      0.81      0.84  43046721
+weighted avg       0.89      0.90      0.89  43046721
+
+ROC AUC: 0.8093461647666238
+PR AUC: 0.9002708209929131
+---------- End SGDClassifier ----------
+
+ ---------- BernoulliNB ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 194, 0: 206}
+y_pred {0: 43046721}
+Accuracy: 0.22641856972102475
+Confusion matrix:
+[[ 9746577        0]
+ [33300144        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.23      1.00      0.37   9746577
+           1       0.00      0.00      0.00  33300144
+
+    accuracy                           0.23  43046721
+   macro avg       0.11      0.50      0.18  43046721
+weighted avg       0.05      0.23      0.08  43046721
+
+ROC AUC: 0.5
+PR AUC: 0.7735814302789753
+---------- End BernoulliNB ----------
+
+ ---------- RandomForestClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 194, 0: 206}
+y_pred {1: 30843453, 0: 12203268}
+Accuracy: 0.8566857856606546
+Confusion matrix:
+[[ 7890319  1856258]
+ [ 4312949 28987195]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.65      0.81      0.72   9746577
+           1       0.94      0.87      0.90  33300144
+
+    accuracy                           0.86  43046721
+   macro avg       0.79      0.84      0.81  43046721
+weighted avg       0.87      0.86      0.86  43046721
+
+ROC AUC: 0.8400151363913537
+PR AUC: 0.9182864140354876
+---------- End RandomForestClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 194, 0: 206}
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:582: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+y_pred {1: 35079505, 0: 7967216}
+Accuracy: 0.917008707817722
+Confusion matrix:
+[[ 7070645  2675932]
+ [  896571 32403573]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.89      0.73      0.80   9746577
+           1       0.92      0.97      0.95  33300144
+
+    accuracy                           0.92  43046721
+   macro avg       0.91      0.85      0.87  43046721
+weighted avg       0.92      0.92      0.91  43046721
+
+ROC AUC: 0.8492625548837757
+PR AUC: 0.919675810042443
+---------- End MLPClassifier ----------
+
+ ---------- SVC ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 194, 0: 206}
+y_pred {1: 31462946, 0: 11583775}
+Accuracy: 0.8864375755821216
+Confusion matrix:
+[[ 8220931  1525646]
+ [ 3362844 29937300]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.71      0.84      0.77   9746577
+           1       0.95      0.90      0.92  33300144
+
+    accuracy                           0.89  43046721
+   macro avg       0.83      0.87      0.85  43046721
+weighted avg       0.90      0.89      0.89  43046721
+
+ROC AUC: 0.8712413314914458
+PR AUC: 0.9335415072556384
+---------- End SVC ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 194, 0: 206}
+y_pred {1: 33541138, 0: 9505583}
+Accuracy: 0.9344281763063904
+Confusion matrix:
+[[ 8214754  1531823]
+ [ 1290829 32009315]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.86      0.84      0.85   9746577
+           1       0.95      0.96      0.96  33300144
+
+    accuracy                           0.93  43046721
+   macro avg       0.91      0.90      0.91  43046721
+weighted avg       0.93      0.93      0.93  43046721
+
+ROC AUC: 0.9020356528126622
+PR AUC: 0.9473235810991493
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 194, 0: 206}
+y_pred {1: 33395765, 0: 9650956}
+Accuracy: 0.9348661887626702
+Confusion matrix:
+[[ 8296868  1449709]
+ [ 1354088 31946056]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.86      0.85      0.86   9746577
+           1       0.96      0.96      0.96  33300144
+
+    accuracy                           0.93  43046721
+   macro avg       0.91      0.91      0.91  43046721
+weighted avg       0.93      0.93      0.93  43046721
+
+ROC AUC: 0.9052982753393047
+PR AUC: 0.9491483324863892
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 194, 0: 206}
+y_pred {1: 34704448, 0: 8342273}
+Accuracy: 0.9398428512127556
+Confusion matrix:
+[[ 7749641  1996936]
+ [  592632 32707512]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.93      0.80      0.86   9746577
+           1       0.94      0.98      0.96  33300144
+
+    accuracy                           0.94  43046721
+   macro avg       0.94      0.89      0.91  43046721
+weighted avg       0.94      0.94      0.94  43046721
+
+ROC AUC: 0.8886587203898902
+PR AUC: 0.9394533317313027
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 194, 0: 206}
+y_pred {0: 9171296, 1: 33875425}
+Accuracy: 0.9413788799383813
+Confusion matrix:
+[[ 8197213  1549364]
+ [  974083 32326061]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.89      0.84      0.87   9746577
+           1       0.95      0.97      0.96  33300144
+
+    accuracy                           0.94  43046721
+   macro avg       0.92      0.91      0.91  43046721
+weighted avg       0.94      0.94      0.94  43046721
+
+ROC AUC: 0.9058917238127989
+PR AUC: 0.9489776665902966
+---------- End MLPClassifier ----------
+
+
+
+ ########## 500 ##########
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+ ---------- XGBClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 257, 0: 241}
+y_pred {1: 34545192, 0: 8501529}
+Accuracy: 0.9002688265152646
+Confusion matrix:
+[[ 6977503  2769074]
+ [ 1524026 31776118]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.82      0.72      0.76   9746577
+           1       0.92      0.95      0.94  33300144
+
+    accuracy                           0.90  43046721
+   macro avg       0.87      0.84      0.85  43046721
+weighted avg       0.90      0.90      0.90  43046721
+
+ROC AUC: 0.8350631590450048
+PR AUC: 0.9131481739720532
+---------- End XGBClassifier ----------
+
+ ---------- LogisticRegression ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 257, 0: 241}
+y_pred {1: 36780632, 0: 6266089}
+Accuracy: 0.887128917438334
+Confusion matrix:
+[[ 5576968  4169609]
+ [  689121 32611023]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.89      0.57      0.70   9746577
+           1       0.89      0.98      0.93  33300144
+
+    accuracy                           0.89  43046721
+   macro avg       0.89      0.78      0.81  43046721
+weighted avg       0.89      0.89      0.88  43046721
+
+ROC AUC: 0.7757516842434716
+PR AUC: 0.8842961710004688
+---------- End LogisticRegression ----------
+
+ ---------- LinearSVC ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 257, 0: 241}
+y_pred {1: 36656887, 0: 6389834}
+Accuracy: 0.8907313056434658
+Confusion matrix:
+[[ 5716376  4030201]
+ [  673458 32626686]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.89      0.59      0.71   9746577
+           1       0.89      0.98      0.93  33300144
+
+    accuracy                           0.89  43046721
+   macro avg       0.89      0.78      0.82  43046721
+weighted avg       0.89      0.89      0.88  43046721
+
+ROC AUC: 0.7831385023871972
+PR AUC: 0.8877005338341196
+---------- End LinearSVC ----------
+
+ ---------- KNeighborsClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 257, 0: 241}
+y_pred {1: 27370514, 0: 15676207}
+Accuracy: 0.7157083346719951
+Confusion matrix:
+[[ 6592480  3154097]
+ [ 9083727 24216417]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.42      0.68      0.52   9746577
+           1       0.88      0.73      0.80  33300144
+
+    accuracy                           0.72  43046721
+   macro avg       0.65      0.70      0.66  43046721
+weighted avg       0.78      0.72      0.73  43046721
+
+ROC AUC: 0.7018029222705979
+PR AUC: 0.8544344830808914
+---------- End KNeighborsClassifier ----------
+
+ ---------- SGDClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 257, 0: 241}
+y_pred {1: 38015093, 0: 5031628}
+Accuracy: 0.8771218602225243
+Confusion matrix:
+[[ 4744352  5002225]
+ [  287276 33012868]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.94      0.49      0.64   9746577
+           1       0.87      0.99      0.93  33300144
+
+    accuracy                           0.88  43046721
+   macro avg       0.91      0.74      0.78  43046721
+weighted avg       0.89      0.88      0.86  43046721
+
+ROC AUC: 0.73907211481322
+PR AUC: 0.8675966487779944
+---------- End SGDClassifier ----------
+
+ ---------- BernoulliNB ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 257, 0: 241}
+y_pred {0: 43046721}
+Accuracy: 0.22641856972102475
+Confusion matrix:
+[[ 9746577        0]
+ [33300144        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.23      1.00      0.37   9746577
+           1       0.00      0.00      0.00  33300144
+
+    accuracy                           0.23  43046721
+   macro avg       0.11      0.50      0.18  43046721
+weighted avg       0.05      0.23      0.08  43046721
+
+ROC AUC: 0.5
+PR AUC: 0.7735814302789753
+---------- End BernoulliNB ----------
+
+ ---------- RandomForestClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 257, 0: 241}
+y_pred {1: 32351013, 0: 10695708}
+Accuracy: 0.8643967562593211
+Confusion matrix:
+[[ 7302505  2444072]
+ [ 3393203 29906941]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.68      0.75      0.71   9746577
+           1       0.92      0.90      0.91  33300144
+
+    accuracy                           0.86  43046721
+   macro avg       0.80      0.82      0.81  43046721
+weighted avg       0.87      0.86      0.87  43046721
+
+ROC AUC: 0.8236701822928506
+PR AUC: 0.9090781684414444
+---------- End RandomForestClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 257, 0: 241}
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:582: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+y_pred {1: 35616258, 0: 7430463}
+Accuracy: 0.911977267676207
+Confusion matrix:
+[[ 6693975  3052602]
+ [  736488 32563656]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.90      0.69      0.78   9746577
+           1       0.91      0.98      0.95  33300144
+
+    accuracy                           0.91  43046721
+   macro avg       0.91      0.83      0.86  43046721
+weighted avg       0.91      0.91      0.91  43046721
+
+ROC AUC: 0.8323429989543446
+PR AUC: 0.9111798487971964
+---------- End MLPClassifier ----------
+
+ ---------- SVC ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 257, 0: 241}
+y_pred {1: 34118581, 0: 8928140}
+Accuracy: 0.9004651480887476
+Confusion matrix:
+[[ 7195034  2551543]
+ [ 1733106 31567038]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.81      0.74      0.77   9746577
+           1       0.93      0.95      0.94  33300144
+
+    accuracy                           0.90  43046721
+   macro avg       0.87      0.84      0.85  43046721
+weighted avg       0.90      0.90      0.90  43046721
+
+ROC AUC: 0.8430831869701209
+PR AUC: 0.917323649825736
+---------- End SVC ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 257, 0: 241}
+y_pred {1: 34002246, 0: 9044475}
+Accuracy: 0.9372045550229018
+Confusion matrix:
+[[ 8043957  1702620]
+ [ 1000518 32299626]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.89      0.83      0.86   9746577
+           1       0.95      0.97      0.96  33300144
+
+    accuracy                           0.94  43046721
+   macro avg       0.92      0.90      0.91  43046721
+weighted avg       0.94      0.94      0.94  43046721
+
+ROC AUC: 0.8976327613744105
+PR AUC: 0.9446278885582376
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 257, 0: 241}
+y_pred {1: 33712816, 0: 9333905}
+Accuracy: 0.9394931381649255
+Confusion matrix:
+[[ 8237930  1508647]
+ [ 1095975 32204169]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.88      0.85      0.86   9746577
+           1       0.96      0.97      0.96  33300144
+
+    accuracy                           0.94  43046721
+   macro avg       0.92      0.91      0.91  43046721
+weighted avg       0.94      0.94      0.94  43046721
+
+ROC AUC: 0.9061503061231009
+PR AUC: 0.949270963917125
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 257, 0: 241}
+y_pred {1: 36696821, 0: 6349900}
+Accuracy: 0.8911164685458853
+Confusion matrix:
+[[ 5704699  4041878]
+ [  645201 32654943]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.90      0.59      0.71   9746577
+           1       0.89      0.98      0.93  33300144
+
+    accuracy                           0.89  43046721
+   macro avg       0.89      0.78      0.82  43046721
+weighted avg       0.89      0.89      0.88  43046721
+
+ROC AUC: 0.7829637490130461
+PR AUC: 0.8876046566950079
+---------- End MLPClassifier ----------
+
+ ---------- MLPClassifier ----------
+(43046721, 8) (43046721,)
+y_test {1: 33300144, 0: 9746577} y_train {1: 257, 0: 241}
+y_pred {1: 33739001, 0: 9307720}
+Accuracy: 0.945643966703062
+Confusion matrix:
+[[ 8357224  1389353]
+ [  950496 32349648]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.90      0.86      0.88   9746577
+           1       0.96      0.97      0.97  33300144
+
+    accuracy                           0.95  43046721
+   macro avg       0.93      0.91      0.92  43046721
+weighted avg       0.95      0.95      0.95  43046721
+
+ROC AUC: 0.914454455589113
+PR AUC: 0.9535332287681946
+---------- End MLPClassifier ----------
+roc_metrics
+[[0.7514, 0.7159, 0.747, 0.6406, 0.7957, 0.5, 0.7203, 0.7525, 0.756, 0.7823, 0.8285, 0.79, 0.8135], [0.8366, 0.7948, 0.7972, 0.6656, 0.8484, 0.5, 0.8185, 0.8317, 0.8566, 0.8612, 0.8701, 0.8572, 0.8577], [0.8533, 0.7986, 0.8014, 0.6701, 0.6838, 0.5, 0.8202, 0.8317, 0.8685, 0.8907, 0.8907, 0.8914, 0.9015], [0.8466, 0.802, 0.802, 0.6924, 0.8093, 0.5, 0.84, 0.8493, 0.8712, 0.902, 0.9053, 0.8887, 0.9059], [0.8351, 0.7758, 0.7831, 0.7018, 0.7391, 0.5, 0.8237, 0.8323, 0.8431, 0.8976, 0.9062, 0.783, 0.9145]]
+pr_metrics
+[[0.8735, 0.8577, 0.8712, 0.8269, 0.9054, 0.7736, 0.8597, 0.8738, 0.8765, 0.8873, 0.9095, 0.8909, 0.902], [0.9141, 0.8934, 0.8944, 0.8396, 0.9235, 0.7736, 0.908, 0.9112, 0.9268, 0.9256, 0.9303, 0.9234, 0.9237], [0.9233, 0.8951, 0.8963, 0.8421, 0.8438, 0.7736, 0.9088, 0.9108, 0.9334, 0.9414, 0.9417, 0.941, 0.9468], [0.9195, 0.8967, 0.8966, 0.8517, 0.9003, 0.7736, 0.9183, 0.9197, 0.9335, 0.9473, 0.9491, 0.9395, 0.949], [0.9131, 0.8843, 0.8877, 0.8544, 0.8676, 0.7736, 0.9091, 0.9112, 0.9173, 0.9446, 0.9493, 0.8876, 0.9535]]
+f1_metrics
+[[0.6444, 0.5917, 0.6493, 0.4441, 0.5954, 0.3692, 0.5923, 0.6576, 0.6261, 0.7074, 0.7678, 0.7183, 0.7542], [0.7634, 0.7192, 0.7269, 0.4725, 0.7167, 0.3692, 0.6831, 0.7697, 0.7394, 0.8145, 0.8225, 0.8166, 0.8149], [0.7651, 0.7282, 0.7345, 0.4761, 0.5361, 0.3692, 0.6862, 0.7794, 0.7496, 0.8392, 0.8318, 0.8556, 0.8577], [0.7656, 0.7325, 0.7349, 0.5003, 0.7398, 0.3692, 0.7189, 0.7983, 0.7708, 0.8534, 0.8555, 0.8568, 0.8666], [0.7647, 0.6966, 0.7085, 0.5186, 0.6421, 0.3692, 0.7145, 0.7794, 0.7706, 0.8561, 0.8635, 0.7088, 0.8772]]
+

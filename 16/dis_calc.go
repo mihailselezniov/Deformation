@@ -181,7 +181,7 @@ func init_state() *State {
     s.n = [10]float64{0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0}
     s.len_n = len(s.n)
     s.result_dis = [10]float64{-1, -1, -1, -1, -1, -1, -1, -1, -1, -1}
-    s.ex_name = "7_1.txt"
+    s.ex_name = "11_1_mlp_1.txt"
     s.f_threads = "ml_threads/" + s.ex_name
     s.Y_step = 7290000
     for i := 0; i < len(s.f_y); i++ {

@@ -1,0 +1,2626 @@
+0 identity 0 lbfgs (10, 10, 10)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26901636, 0: 3331452}
+Accuracy: 0.9497903422898779
+Confusion matrix:
+[[ 2294383   480924]
+ [ 1037069 26420712]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.69      0.83      0.75   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.84      0.89      0.86  30233088
+weighted avg       0.96      0.95      0.95  30233088
+
+ROC AUC: 0.8944718198192823
+PR AUC: 0.9793309484663973
+0 identity 0 lbfgs (30, 30, 30)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26901635, 0: 3331453}
+Accuracy: 0.9497868031211367
+Confusion matrix:
+[[ 2294330   480977]
+ [ 1037123 26420658]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.69      0.83      0.75   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.84      0.89      0.86  30233088
+weighted avg       0.96      0.95      0.95  30233088
+
+ROC AUC: 0.8944612879982662
+PR AUC: 0.9793289067268006
+0 identity 0 lbfgs (50, 50, 50)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26901931, 0: 3331157}
+Accuracy: 0.9497910368930887
+Confusion matrix:
+[[ 2294246   481061]
+ [ 1036911 26420870]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.69      0.83      0.75   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.84      0.89      0.86  30233088
+weighted avg       0.96      0.95      0.95  30233088
+
+ROC AUC: 0.8944500150095472
+PR AUC: 0.9793266621996292
+0 identity 0 lbfgs (70, 70, 70)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26903820, 0: 3329268}
+Accuracy: 0.9498242786181815
+Confusion matrix:
+[[ 2293804   481503]
+ [ 1035464 26422317]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.69      0.83      0.75   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.84      0.89      0.86  30233088
+weighted avg       0.96      0.95      0.95  30233088
+
+ROC AUC: 0.8943967337232032
+PR AUC: 0.9793159563138966
+0 identity 0 lbfgs (90, 90, 90)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26901434, 0: 3331654}
+Accuracy: 0.9497778394320818
+Confusion matrix:
+[[ 2294295   481012]
+ [ 1037359 26420422]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.69      0.83      0.75   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.84      0.89      0.86  30233088
+weighted avg       0.96      0.95      0.95  30233088
+
+ROC AUC: 0.8944506848827737
+PR AUC: 0.9793268909685238
+0 identity 0 lbfgs (110, 110, 110)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26899449, 0: 3333639}
+Accuracy: 0.9497716541558705
+Confusion matrix:
+[[ 2295194   480113]
+ [ 1038445 26419336]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.69      0.83      0.75   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.84      0.89      0.86  30233088
+weighted avg       0.96      0.95      0.95  30233088
+
+ROC AUC: 0.8945928731314732
+PR AUC: 0.9793548546849383
+0 identity 0 lbfgs (130, 130, 130)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26901224, 0: 3331864}
+Accuracy: 0.9497859762125523
+Confusion matrix:
+[[ 2294523   480784]
+ [ 1037341 26420440]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.69      0.83      0.75   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.84      0.89      0.86  30233088
+weighted avg       0.96      0.95      0.95  30233088
+
+ROC AUC: 0.8944920891954724
+PR AUC: 0.9793349603690271
+0 identity 0 lbfgs (150, 150, 150)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26904904, 0: 3328184}
+Accuracy: 0.9498335399943267
+Confusion matrix:
+[[ 2293402   481905]
+ [ 1034782 26422999]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.69      0.83      0.75   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.84      0.89      0.86  30233088
+weighted avg       0.96      0.95      0.95  30233088
+
+ROC AUC: 0.8943367283693321
+PR AUC: 0.9793041073276796
+0 identity 0 lbfgs (170, 170, 170)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26900538, 0: 3332550}
+Accuracy: 0.9497712241634066
+Confusion matrix:
+[[ 2294643   480664]
+ [ 1037907 26419874]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.69      0.83      0.75   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.84      0.89      0.86  30233088
+weighted avg       0.96      0.95      0.95  30233088
+
+ROC AUC: 0.8945034016929838
+PR AUC: 0.9793372902410906
+0 identity 0 lbfgs (190, 190, 190)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26903038, 0: 3330050}
+Accuracy: 0.949835326116869
+Confusion matrix:
+[[ 2294362   480945]
+ [ 1035688 26422093]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.69      0.83      0.75   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.84      0.89      0.86  30233088
+weighted avg       0.96      0.95      0.95  30233088
+
+ROC AUC: 0.8944931841526249
+PR AUC: 0.9793348116496423
+[0.8945, 0.8945, 0.8945, 0.8944, 0.8945, 0.8946, 0.8945, 0.8943, 0.8945, 0.8945] [0.9793, 0.9793, 0.9793, 0.9793, 0.9793, 0.9794, 0.9793, 0.9793, 0.9793, 0.9793] [0.7514, 0.7514, 0.7514, 0.7515, 0.7514, 0.7514, 0.7514, 0.7515, 0.7514, 0.7516]
+0 identity 1 sgd (10, 10, 10)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 19560154, 0: 10672934}
+Accuracy: 0.736582548233247
+Confusion matrix:
+[[ 2742159    33148]
+ [ 7930775 19527006]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.26      0.99      0.41   2775307
+           1       1.00      0.71      0.83  27457781
+
+    accuracy                           0.74  30233088
+   macro avg       0.63      0.85      0.62  30233088
+weighted avg       0.93      0.74      0.79  30233088
+
+ROC AUC: 0.8496104237889432
+PR AUC: 0.9722805992333619
+0 identity 1 sgd (30, 30, 30)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 25373203, 0: 4859885}
+Accuracy: 0.9170760194922861
+Confusion matrix:
+[[ 2564072   211235]
+ [ 2295813 25161968]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.53      0.92      0.67   2775307
+           1       0.99      0.92      0.95  27457781
+
+    accuracy                           0.92  30233088
+   macro avg       0.76      0.92      0.81  30233088
+weighted avg       0.95      0.92      0.93  30233088
+
+ROC AUC: 0.9201376128148091
+PR AUC: 0.9846955875394824
+0 identity 1 sgd (50, 50, 50)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 25295898, 0: 4937190}
+Accuracy: 0.9154705930138529
+Confusion matrix:
+[[ 2578456   196851]
+ [ 2358734 25099047]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.52      0.93      0.67   2775307
+           1       0.99      0.91      0.95  27457781
+
+    accuracy                           0.92  30233088
+   macro avg       0.76      0.92      0.81  30233088
+weighted avg       0.95      0.92      0.93  30233088
+
+ROC AUC: 0.9215832606148645
+PR AUC: 0.9850008330677794
+0 identity 1 sgd (70, 70, 70)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 21101371, 0: 9131717}
+Accuracy: 0.787597284141137
+Confusion matrix:
+[[ 2742717    32590]
+ [ 6389000 21068781]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.30      0.99      0.46   2775307
+           1       1.00      0.77      0.87  27457781
+
+    accuracy                           0.79  30233088
+   macro avg       0.65      0.88      0.66  30233088
+weighted avg       0.93      0.79      0.83  30233088
+
+ROC AUC: 0.8777863282718444
+PR AUC: 0.9774551794237216
+0 identity 1 sgd (90, 90, 90)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 24789414, 0: 5443674}
+Accuracy: 0.9016395877258717
+Confusion matrix:
+[[ 2622621   152686]
+ [ 2821053 24636728]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.48      0.94      0.64   2775307
+           1       0.99      0.90      0.94  27457781
+
+    accuracy                           0.90  30233088
+   macro avg       0.74      0.92      0.79  30233088
+weighted avg       0.95      0.90      0.92  30233088
+
+ROC AUC: 0.9211213132768766
+PR AUC: 0.9850421350324576
+0 identity 1 sgd (110, 110, 110)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 23706955, 0: 6526133}
+Accuracy: 0.8699064415781809
+Confusion matrix:
+[[ 2684155    91152]
+ [ 3841978 23615803]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.41      0.97      0.58   2775307
+           1       1.00      0.86      0.92  27457781
+
+    accuracy                           0.87  30233088
+   macro avg       0.70      0.91      0.75  30233088
+weighted avg       0.94      0.87      0.89  30233088
+
+ROC AUC: 0.9136164800140542
+PR AUC: 0.9838485270215968
+0 identity 1 sgd (130, 130, 130)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 24814060, 0: 5419028}
+Accuracy: 0.9020301531884537
+Confusion matrix:
+[[ 2616202   159105]
+ [ 2802826 24654955]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.48      0.94      0.64   2775307
+           1       0.99      0.90      0.94  27457781
+
+    accuracy                           0.90  30233088
+   macro avg       0.74      0.92      0.79  30233088
+weighted avg       0.95      0.90      0.92  30233088
+
+ROC AUC: 0.9202967741985676
+PR AUC: 0.9848721979686623
+0 identity 1 sgd (150, 150, 150)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 23635411, 0: 6597677}
+Accuracy: 0.8673514925104574
+Confusion matrix:
+[[ 2681305    94002]
+ [ 3916372 23541409]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.41      0.97      0.57   2775307
+           1       1.00      0.86      0.92  27457781
+
+    accuracy                           0.87  30233088
+   macro avg       0.70      0.91      0.75  30233088
+weighted avg       0.94      0.87      0.89  30233088
+
+ROC AUC: 0.9117483253411869
+PR AUC: 0.983496868616244
+0 identity 1 sgd (170, 170, 170)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 25319460, 0: 4913628}
+Accuracy: 0.91615573639054
+Confusion matrix:
+[[ 2577032   198275]
+ [ 2336596 25121185]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.52      0.93      0.67   2775307
+           1       0.99      0.91      0.95  27457781
+
+    accuracy                           0.92  30233088
+   macro avg       0.76      0.92      0.81  30233088
+weighted avg       0.95      0.92      0.93  30233088
+
+ROC AUC: 0.9217298404080314
+PR AUC: 0.9850237409279049
+0 identity 1 sgd (190, 190, 190)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 24052707, 0: 6180381}
+Accuracy: 0.8803809918457552
+Confusion matrix:
+[[ 2669618   105689]
+ [ 3510763 23947018]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.43      0.96      0.60   2775307
+           1       1.00      0.87      0.93  27457781
+
+    accuracy                           0.88  30233088
+   macro avg       0.71      0.92      0.76  30233088
+weighted avg       0.94      0.88      0.90  30233088
+
+ROC AUC: 0.9170288409328745
+PR AUC: 0.9844305651240775
+[0.8496, 0.9201, 0.9216, 0.8778, 0.9211, 0.9136, 0.9203, 0.9117, 0.9217, 0.917] [0.9723, 0.9847, 0.985, 0.9775, 0.985, 0.9838, 0.9849, 0.9835, 0.985, 0.9844] [0.4078, 0.6716, 0.6686, 0.4607, 0.6382, 0.5771, 0.6385, 0.5721, 0.6703, 0.5962]
+0 identity 2 adam (10, 10, 10)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26621269, 0: 3611819}
+Accuracy: 0.945443548472455
+Confusion matrix:
+[[ 2368858   406449]
+ [ 1242961 26214820]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.66      0.85      0.74   2775307
+           1       0.98      0.95      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.82      0.90      0.86  30233088
+weighted avg       0.95      0.95      0.95  30233088
+
+ROC AUC: 0.9041400074697051
+PR AUC: 0.981267841494318
+0 identity 2 adam (30, 30, 30)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26583448, 0: 3649640}
+Accuracy: 0.9444658448386086
+Confusion matrix:
+[[ 2372989   402318]
+ [ 1276651 26181130]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.65      0.86      0.74   2775307
+           1       0.98      0.95      0.97  27457781
+
+    accuracy                           0.94  30233088
+   macro avg       0.82      0.90      0.85  30233088
+weighted avg       0.95      0.94      0.95  30233088
+
+ROC AUC: 0.904270762155508
+PR AUC: 0.9813014023769024
+0 identity 2 adam (50, 50, 50)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26779783, 0: 3453305}
+Accuracy: 0.9469657217946112
+Confusion matrix:
+[[ 2312611   462696]
+ [ 1140694 26317087]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.67      0.83      0.74   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.83      0.90      0.86  30233088
+weighted avg       0.95      0.95      0.95  30233088
+
+ROC AUC: 0.895868792955424
+PR AUC: 0.9796263972708176
+0 identity 2 adam (70, 70, 70)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26665285, 0: 3567803}
+Accuracy: 0.9451701394181103
+Confusion matrix:
+[[ 2342717   432590]
+ [ 1225086 26232695]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.66      0.84      0.74   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.82      0.90      0.85  30233088
+weighted avg       0.95      0.95      0.95  30233088
+
+ROC AUC: 0.8997559381212159
+PR AUC: 0.9804051414124325
+0 identity 2 adam (90, 90, 90)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26498930, 0: 3734158}
+Accuracy: 0.9420682730126675
+Confusion matrix:
+[[ 2379005   396302]
+ [ 1355153 26102628]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.64      0.86      0.73   2775307
+           1       0.99      0.95      0.97  27457781
+
+    accuracy                           0.94  30233088
+   macro avg       0.81      0.90      0.85  30233088
+weighted avg       0.95      0.94      0.95  30233088
+
+ROC AUC: 0.9039251024961229
+PR AUC: 0.9812521581269962
+0 identity 2 adam (110, 110, 110)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26153251, 0: 4079837}
+Accuracy: 0.9361318301326017
+Confusion matrix:
+[[ 2462106   313201]
+ [ 1617731 25840050]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.60      0.89      0.72   2775307
+           1       0.99      0.94      0.96  27457781
+
+    accuracy                           0.94  30233088
+   macro avg       0.80      0.91      0.84  30233088
+weighted avg       0.95      0.94      0.94  30233088
+
+ROC AUC: 0.9141151131771587
+PR AUC: 0.983321554898965
+0 identity 2 adam (130, 130, 130)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26772152, 0: 3460936}
+Accuracy: 0.9474175115687818
+Confusion matrix:
+[[ 2323256   452051]
+ [ 1137680 26320101]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.67      0.84      0.75   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.83      0.90      0.86  30233088
+weighted avg       0.95      0.95      0.95  30233088
+
+ROC AUC: 0.8978414830656836
+PR AUC: 0.9800109963774501
+0 identity 2 adam (150, 150, 150)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26576414, 0: 3656674}
+Accuracy: 0.9449744928470423
+Confusion matrix:
+[[ 2384195   391112]
+ [ 1272479 26185302]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.65      0.86      0.74   2775307
+           1       0.99      0.95      0.97  27457781
+
+    accuracy                           0.94  30233088
+   macro avg       0.82      0.91      0.86  30233088
+weighted avg       0.95      0.94      0.95  30233088
+
+ROC AUC: 0.9063656090842811
+PR AUC: 0.9817113421759008
+0 identity 2 adam (170, 170, 170)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26457796, 0: 3775292}
+Accuracy: 0.9412839667585395
+Confusion matrix:
+[[ 2387716   387591]
+ [ 1387576 26070205]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.63      0.86      0.73   2775307
+           1       0.99      0.95      0.97  27457781
+
+    accuracy                           0.94  30233088
+   macro avg       0.81      0.90      0.85  30233088
+weighted avg       0.95      0.94      0.95  30233088
+
+ROC AUC: 0.9049040629063413
+PR AUC: 0.9814519481300604
+0 identity 2 adam (190, 190, 190)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26732174, 0: 3500914}
+Accuracy: 0.9476763670320412
+Confusion matrix:
+[[ 2347158   428149]
+ [ 1153756 26304025]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.67      0.85      0.75   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.83      0.90      0.86  30233088
+weighted avg       0.96      0.95      0.95  30233088
+
+ROC AUC: 0.9018549330011072
+PR AUC: 0.9807995041750984
+[0.9041, 0.9043, 0.8959, 0.8998, 0.9039, 0.9141, 0.8978, 0.9064, 0.9049, 0.9019] [0.9813, 0.9813, 0.9796, 0.9804, 0.9813, 0.9833, 0.98, 0.9817, 0.9815, 0.9808] [0.7418, 0.7387, 0.7426, 0.7387, 0.7309, 0.7183, 0.7451, 0.7414, 0.729, 0.748]
+1 logistic 0 lbfgs (10, 10, 10)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 0 lbfgs (30, 30, 30)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 0 lbfgs (50, 50, 50)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 0 lbfgs (70, 70, 70)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 0 lbfgs (90, 90, 90)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 0 lbfgs (110, 110, 110)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 0 lbfgs (130, 130, 130)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 0 lbfgs (150, 150, 150)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 0 lbfgs (170, 170, 170)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 0 lbfgs (190, 190, 190)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+[0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5] [0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082] [0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682]
+1 logistic 1 sgd (10, 10, 10)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 1 sgd (30, 30, 30)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 1 sgd (50, 50, 50)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 1 sgd (70, 70, 70)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 1 sgd (90, 90, 90)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 1 sgd (110, 110, 110)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 1 sgd (130, 130, 130)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 1 sgd (150, 150, 150)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 1 sgd (170, 170, 170)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 1 sgd (190, 190, 190)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+[0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5] [0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082] [0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682]
+1 logistic 2 adam (10, 10, 10)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 2 adam (30, 30, 30)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 2 adam (50, 50, 50)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 2 adam (70, 70, 70)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 2 adam (90, 90, 90)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 2 adam (110, 110, 110)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 2 adam (130, 130, 130)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 2 adam (150, 150, 150)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 2 adam (170, 170, 170)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+1 logistic 2 adam (190, 190, 190)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+[0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5] [0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082] [0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682]
+2 tanh 0 lbfgs (10, 10, 10)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26220226, 0: 4012862}
+Accuracy: 0.9380855505067826
+Confusion matrix:
+[[ 2458152   317155]
+ [ 1554710 25903071]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.61      0.89      0.72   2775307
+           1       0.99      0.94      0.97  27457781
+
+    accuracy                           0.94  30233088
+   macro avg       0.80      0.91      0.84  30233088
+weighted avg       0.95      0.94      0.94  30233088
+
+ROC AUC: 0.9145503577509779
+PR AUC: 0.9833913571873435
+2 tanh 0 lbfgs (30, 30, 30)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26434370, 0: 3798718}
+Accuracy: 0.9515752740838117
+Confusion matrix:
+[[ 2554998   220309]
+ [ 1243720 26214061]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.67      0.92      0.78   2775307
+           1       0.99      0.95      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.83      0.94      0.88  30233088
+weighted avg       0.96      0.95      0.95  30233088
+
+ROC AUC: 0.9376612149882287
+PR AUC: 0.9878853037185064
+2 tanh 0 lbfgs (50, 50, 50)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27128140, 0: 3104948}
+Accuracy: 0.9621517656416705
+Confusion matrix:
+[[ 2367993   407314]
+ [  736955 26720826]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.76      0.85      0.81   2775307
+           1       0.98      0.97      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.87      0.91      0.89  30233088
+weighted avg       0.96      0.96      0.96  30233088
+
+ROC AUC: 0.9131984240048534
+PR AUC: 0.9829247429223343
+2 tanh 0 lbfgs (70, 70, 70)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27215485, 0: 3017603}
+Accuracy: 0.965431450469102
+Confusion matrix:
+[[ 2373898   401409]
+ [  643705 26814076]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.79      0.86      0.82   2775307
+           1       0.99      0.98      0.98  27457781
+
+    accuracy                           0.97  30233088
+   macro avg       0.89      0.92      0.90  30233088
+weighted avg       0.97      0.97      0.97  30233088
+
+ROC AUC: 0.9159603317460064
+PR AUC: 0.9834444489149
+2 tanh 0 lbfgs (90, 90, 90)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26924533, 0: 3308555}
+Accuracy: 0.9651030023793798
+Confusion matrix:
+[[ 2514409   260898]
+ [  794146 26663635]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.76      0.91      0.83   2775307
+           1       0.99      0.97      0.98  27457781
+
+    accuracy                           0.97  30233088
+   macro avg       0.88      0.94      0.90  30233088
+weighted avg       0.97      0.97      0.97  30233088
+
+ROC AUC: 0.9385353318005473
+PR AUC: 0.9879352912179417
+2 tanh 0 lbfgs (110, 110, 110)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26986523, 0: 3246565}
+Accuracy: 0.9654419025936087
+Confusion matrix:
+[[ 2488537   286770]
+ [  758028 26699753]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.77      0.90      0.83   2775307
+           1       0.99      0.97      0.98  27457781
+
+    accuracy                           0.97  30233088
+   macro avg       0.88      0.93      0.90  30233088
+weighted avg       0.97      0.97      0.97  30233088
+
+ROC AUC: 0.9345319264750396
+PR AUC: 0.9871327051247268
+2 tanh 0 lbfgs (130, 130, 130)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27119648, 0: 3113440}
+Accuracy: 0.964472004976799
+Confusion matrix:
+[[ 2407313   367994]
+ [  706127 26751654]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.77      0.87      0.82   2775307
+           1       0.99      0.97      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.88      0.92      0.90  30233088
+weighted avg       0.97      0.96      0.97  30233088
+
+ROC AUC: 0.9208436959210757
+PR AUC: 0.9844189545734844
+2 tanh 0 lbfgs (150, 150, 150)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26747196, 0: 3485892}
+Accuracy: 0.9583405770525326
+Confusion matrix:
+[[ 2500853   274454]
+ [  985039 26472742]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.72      0.90      0.80   2775307
+           1       0.99      0.96      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.85      0.93      0.89  30233088
+weighted avg       0.96      0.96      0.96  30233088
+
+ROC AUC: 0.9326169609842614
+PR AUC: 0.9868138853136057
+2 tanh 0 lbfgs (170, 170, 170)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27222801, 0: 3010287}
+Accuracy: 0.9661343889185253
+Confusion matrix:
+[[ 2380866   394441]
+ [  629421 26828360]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.79      0.86      0.82   2775307
+           1       0.99      0.98      0.98  27457781
+
+    accuracy                           0.97  30233088
+   macro avg       0.89      0.92      0.90  30233088
+weighted avg       0.97      0.97      0.97  30233088
+
+ROC AUC: 0.9174757967794201
+PR AUC: 0.9837384978063489
+2 tanh 0 lbfgs (190, 190, 190)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26868954, 0: 3364134}
+Accuracy: 0.9617883889333435
+Confusion matrix:
+[[ 2492093   283214]
+ [  872041 26585740]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.74      0.90      0.81   2775307
+           1       0.99      0.97      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.87      0.93      0.90  30233088
+weighted avg       0.97      0.96      0.96  30233088
+
+ROC AUC: 0.9330964253013597
+PR AUC: 0.9868787824475276
+[0.9146, 0.9377, 0.9132, 0.916, 0.9385, 0.9345, 0.9208, 0.9326, 0.9175, 0.9331] [0.9834, 0.9879, 0.9829, 0.9834, 0.9879, 0.9871, 0.9844, 0.9868, 0.9837, 0.9869] [0.7242, 0.7773, 0.8054, 0.8196, 0.8266, 0.8265, 0.8176, 0.7988, 0.823, 0.8118]
+2 tanh 1 sgd (10, 10, 10)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 29872592, 1: 360496}
+Accuracy: 0.10372089678699047
+Confusion matrix:
+[[ 2775307        0]
+ [27097285   360496]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       1.00      0.01      0.03  27457781
+
+    accuracy                           0.10  30233088
+   macro avg       0.55      0.51      0.10  30233088
+weighted avg       0.92      0.10      0.04  30233088
+
+ROC AUC: 0.5065645508644708
+PR AUC: 0.9094082049419511
+2 tanh 1 sgd (30, 30, 30)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+2 tanh 1 sgd (50, 50, 50)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 29487882, 1: 745206}
+Accuracy: 0.11644569684711002
+Confusion matrix:
+[[ 2775307        0]
+ [26712575   745206]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       1.00      0.03      0.05  27457781
+
+    accuracy                           0.12  30233088
+   macro avg       0.55      0.51      0.11  30233088
+weighted avg       0.92      0.12      0.06  30233088
+
+ROC AUC: 0.5135700332084373
+PR AUC: 0.9106943695697646
+2 tanh 1 sgd (70, 70, 70)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+2 tanh 1 sgd (90, 90, 90)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+2 tanh 1 sgd (110, 110, 110)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 12880820, 0: 17352268}
+Accuracy: 0.5178468372135854
+Confusion matrix:
+[[ 2775298        9]
+ [14576970 12880811]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.16      1.00      0.28   2775307
+           1       1.00      0.47      0.64  27457781
+
+    accuracy                           0.52  30233088
+   macro avg       0.58      0.73      0.46  30233088
+weighted avg       0.92      0.52      0.61  30233088
+
+ROC AUC: 0.734555042113347
+PR AUC: 0.9512658644347873
+2 tanh 1 sgd (130, 130, 130)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 24797592, 0: 5435496}
+Accuracy: 0.9013884059742756
+Confusion matrix:
+[[ 2614735   160572]
+ [ 2820761 24637020]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.48      0.94      0.64   2775307
+           1       0.99      0.90      0.94  27457781
+
+    accuracy                           0.90  30233088
+   macro avg       0.74      0.92      0.79  30233088
+weighted avg       0.95      0.90      0.91  30233088
+
+ROC AUC: 0.9197058868079009
+PR AUC: 0.9847595235294329
+2 tanh 1 sgd (150, 150, 150)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30210678, 1: 22410}
+Accuracy: 0.09253824816042609
+Confusion matrix:
+[[ 2775307        0]
+ [27435371    22410]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       1.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.55      0.50      0.08  30233088
+weighted avg       0.92      0.09      0.02  30233088
+
+ROC AUC: 0.5004080810463162
+PR AUC: 0.9082779139322062
+2 tanh 1 sgd (170, 170, 170)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 24123853, 0: 6109235}
+Accuracy: 0.8820313690748361
+Confusion matrix:
+[[ 2658993   116314]
+ [ 3450242 24007539]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.44      0.96      0.60   2775307
+           1       1.00      0.87      0.93  27457781
+
+    accuracy                           0.88  30233088
+   macro avg       0.72      0.92      0.76  30233088
+weighted avg       0.94      0.88      0.90  30233088
+
+ROC AUC: 0.9162167120498023
+PR AUC: 0.9842494527119687
+2 tanh 1 sgd (190, 190, 190)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 11144388, 0: 19088700}
+Accuracy: 0.46041261150696877
+Confusion matrix:
+[[ 2775307        0]
+ [16313393 11144388]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.15      1.00      0.25   2775307
+           1       1.00      0.41      0.58  27457781
+
+    accuracy                           0.46  30233088
+   macro avg       0.57      0.70      0.42  30233088
+weighted avg       0.92      0.46      0.55  30233088
+
+ROC AUC: 0.7029367923067054
+PR AUC: 0.9454609731064418
+[0.5066, 0.5, 0.5136, 0.5, 0.5, 0.7346, 0.9197, 0.5004, 0.9162, 0.7029] [0.9094, 0.9082, 0.9107, 0.9082, 0.9082, 0.9513, 0.9848, 0.9083, 0.9842, 0.9455] [0.17, 0.1682, 0.172, 0.1682, 0.1682, 0.2758, 0.6369, 0.1683, 0.5986, 0.2539]
+2 tanh 2 adam (10, 10, 10)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27507642, 0: 2725446}
+Accuracy: 0.9765459287519687
+Confusion matrix:
+[[ 2395832   379475]
+ [  329614 27128167]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.88      0.86      0.87   2775307
+           1       0.99      0.99      0.99  27457781
+
+    accuracy                           0.98  30233088
+   macro avg       0.93      0.93      0.93  30233088
+weighted avg       0.98      0.98      0.98  30233088
+
+ROC AUC: 0.9256314929254896
+PR AUC: 0.9852683789891941
+2 tanh 2 adam (30, 30, 30)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27453006, 0: 2780082}
+Accuracy: 0.9778056743657809
+Confusion matrix:
+[[ 2442193   333114]
+ [  337889 27119892]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.88      0.88      0.88   2775307
+           1       0.99      0.99      0.99  27457781
+
+    accuracy                           0.98  30233088
+   macro avg       0.93      0.93      0.93  30233088
+weighted avg       0.98      0.98      0.98  30233088
+
+ROC AUC: 0.9338332163426117
+PR AUC: 0.9868857136297047
+2 tanh 2 adam (50, 50, 50)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27212995, 0: 3020093}
+Accuracy: 0.9738250356695287
+Confusion matrix:
+[[ 2502025   273282]
+ [  518068 26939713]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.83      0.90      0.86   2775307
+           1       0.99      0.98      0.99  27457781
+
+    accuracy                           0.97  30233088
+   macro avg       0.91      0.94      0.92  30233088
+weighted avg       0.98      0.97      0.97  30233088
+
+ROC AUC: 0.9413315453992881
+PR AUC: 0.9884151343945399
+2 tanh 2 adam (70, 70, 70)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27291826, 0: 2941262}
+Accuracy: 0.9752617066440583
+Confusion matrix:
+[[ 2484327   290980]
+ [  456935 27000846]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.84      0.90      0.87   2775307
+           1       0.99      0.98      0.99  27457781
+
+    accuracy                           0.98  30233088
+   macro avg       0.92      0.94      0.93  30233088
+weighted avg       0.98      0.98      0.98  30233088
+
+ROC AUC: 0.9392562874574636
+PR AUC: 0.9879879989257971
+2 tanh 2 adam (90, 90, 90)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27349327, 0: 2883761}
+Accuracy: 0.9760883836940507
+Confusion matrix:
+[[ 2468073   307234]
+ [  415688 27042093]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.86      0.89      0.87   2775307
+           1       0.99      0.98      0.99  27457781
+
+    accuracy                           0.98  30233088
+   macro avg       0.92      0.94      0.93  30233088
+weighted avg       0.98      0.98      0.98  30233088
+
+ROC AUC: 0.937079061339602
+PR AUC: 0.9875466432884595
+2 tanh 2 adam (110, 110, 110)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27293667, 0: 2939421}
+Accuracy: 0.9754304952243052
+Confusion matrix:
+[[ 2485958   289349]
+ [  453463 27004318]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.85      0.90      0.87   2775307
+           1       0.99      0.98      0.99  27457781
+
+    accuracy                           0.98  30233088
+   macro avg       0.92      0.94      0.93  30233088
+weighted avg       0.98      0.98      0.98  30233088
+
+ROC AUC: 0.9396133531605104
+PR AUC: 0.9880577362059952
+2 tanh 2 adam (130, 130, 130)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26737135, 0: 3495953}
+Accuracy: 0.9476587373410219
+Confusion matrix:
+[[ 2344411   430896]
+ [ 1151542 26306239]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.67      0.84      0.75   2775307
+           1       0.98      0.96      0.97  27457781
+
+    accuracy                           0.95  30233088
+   macro avg       0.83      0.90      0.86  30233088
+weighted avg       0.96      0.95      0.95  30233088
+
+ROC AUC: 0.9014003492379942
+PR AUC: 0.9807100295506599
+2 tanh 2 adam (150, 150, 150)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27020198, 0: 3212890}
+Accuracy: 0.9713207926362004
+Confusion matrix:
+[[ 2560568   214739]
+ [  652322 26805459]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.80      0.92      0.86   2775307
+           1       0.99      0.98      0.98  27457781
+
+    accuracy                           0.97  30233088
+   macro avg       0.89      0.95      0.92  30233088
+weighted avg       0.97      0.97      0.97  30233088
+
+ROC AUC: 0.9494339317885266
+PR AUC: 0.9900606097348523
+2 tanh 2 adam (170, 170, 170)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27596644, 0: 2636444}
+Accuracy: 0.975127284384579
+Confusion matrix:
+[[ 2329886   445421]
+ [  306558 27151223]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.88      0.84      0.86   2775307
+           1       0.98      0.99      0.99  27457781
+
+    accuracy                           0.98  30233088
+   macro avg       0.93      0.91      0.92  30233088
+weighted avg       0.97      0.98      0.97  30233088
+
+ROC AUC: 0.9141704897096461
+PR AUC: 0.9830149118093576
+2 tanh 2 adam (190, 190, 190)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27402914, 0: 2830174}
+Accuracy: 0.9739178148126979
+Confusion matrix:
+[[ 2408468   366839]
+ [  421706 27036075]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.85      0.87      0.86   2775307
+           1       0.99      0.98      0.99  27457781
+
+    accuracy                           0.97  30233088
+   macro avg       0.92      0.93      0.92  30233088
+weighted avg       0.97      0.97      0.97  30233088
+
+ROC AUC: 0.9262310232787595
+PR AUC: 0.9854088891571432
+[0.9256, 0.9338, 0.9413, 0.9393, 0.9371, 0.9396, 0.9014, 0.9494, 0.9142, 0.9262] [0.9853, 0.9869, 0.9884, 0.988, 0.9875, 0.9881, 0.9807, 0.9901, 0.983, 0.9854] [0.8711, 0.8792, 0.8635, 0.8692, 0.8723, 0.87, 0.7477, 0.8552, 0.861, 0.8593]
+3 relu 0 lbfgs (10, 10, 10)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26325356, 0: 3907732}
+Accuracy: 0.9429074859967993
+Confusion matrix:
+[[ 2478478   296829]
+ [ 1429254 26028527]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.63      0.89      0.74   2775307
+           1       0.99      0.95      0.97  27457781
+
+    accuracy                           0.94  30233088
+   macro avg       0.81      0.92      0.85  30233088
+weighted avg       0.96      0.94      0.95  30233088
+
+ROC AUC: 0.9204968204392873
+PR AUC: 0.9845332230867525
+3 relu 0 lbfgs (30, 30, 30)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27298024, 0: 2935064}
+Accuracy: 0.9681362684486613
+Confusion matrix:
+[[ 2373516   401791]
+ [  561548 26896233]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.81      0.86      0.83   2775307
+           1       0.99      0.98      0.98  27457781
+
+    accuracy                           0.97  30233088
+   macro avg       0.90      0.92      0.91  30233088
+weighted avg       0.97      0.97      0.97  30233088
+
+ROC AUC: 0.9173875709736697
+PR AUC: 0.983704961776243
+3 relu 0 lbfgs (50, 50, 50)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27023583, 0: 3209505}
+Accuracy: 0.9641990920676049
+Confusion matrix:
+[[ 2451220   324087]
+ [  758285 26699496]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.76      0.88      0.82   2775307
+           1       0.99      0.97      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.88      0.93      0.90  30233088
+weighted avg       0.97      0.96      0.97  30233088
+
+ROC AUC: 0.927804206553368
+PR AUC: 0.985803346591808
+3 relu 0 lbfgs (70, 70, 70)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27325634, 0: 2907454}
+Accuracy: 0.9603762936819421
+Confusion matrix:
+[[ 2242407   532900]
+ [  665047 26792734]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.77      0.81      0.79   2775307
+           1       0.98      0.98      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.88      0.89      0.88  30233088
+weighted avg       0.96      0.96      0.96  30233088
+
+ROC AUC: 0.8918822474457093
+PR AUC: 0.9787471246655391
+3 relu 0 lbfgs (90, 90, 90)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27888398, 0: 2344690}
+Accuracy: 0.9653591786588257
+Confusion matrix:
+[[ 2036349   738958]
+ [  308341 27149440]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.87      0.73      0.80   2775307
+           1       0.97      0.99      0.98  27457781
+
+    accuracy                           0.97  30233088
+   macro avg       0.92      0.86      0.89  30233088
+weighted avg       0.96      0.97      0.96  30233088
+
+ROC AUC: 0.8612543226891509
+PR AUC: 0.9727697356800706
+3 relu 0 lbfgs (110, 110, 110)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27528425, 0: 2704663}
+Accuracy: 0.9698809463327067
+Confusion matrix:
+[[ 2284689   490618]
+ [  419974 27037807]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.84      0.82      0.83   2775307
+           1       0.98      0.98      0.98  27457781
+
+    accuracy                           0.97  30233088
+   macro avg       0.91      0.90      0.91  30233088
+weighted avg       0.97      0.97      0.97  30233088
+
+ROC AUC: 0.9039625071548512
+PR AUC: 0.9810463034825796
+3 relu 0 lbfgs (130, 130, 130)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27112340, 0: 3120748}
+Accuracy: 0.9650479302676591
+Confusion matrix:
+[[ 2419673   355634]
+ [  701075 26756706]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.78      0.87      0.82   2775307
+           1       0.99      0.97      0.98  27457781
+
+    accuracy                           0.97  30233088
+   macro avg       0.88      0.92      0.90  30233088
+weighted avg       0.97      0.97      0.97  30233088
+
+ROC AUC: 0.9231624723786745
+PR AUC: 0.9848740247116239
+3 relu 0 lbfgs (150, 150, 150)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 27053528, 0: 3179560}
+Accuracy: 0.9583055161285543
+Confusion matrix:
+[[ 2347157   428150]
+ [  832403 26625378]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.74      0.85      0.79   2775307
+           1       0.98      0.97      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.86      0.91      0.88  30233088
+weighted avg       0.96      0.96      0.96  30233088
+
+ROC AUC: 0.9077065185024753
+PR AUC: 0.9818708515204234
+3 relu 0 lbfgs (170, 170, 170)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26889776, 0: 3343312}
+Accuracy: 0.960597442113753
+Confusion matrix:
+[[ 2463679   311628]
+ [  879633 26578148]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.74      0.89      0.81   2775307
+           1       0.99      0.97      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.86      0.93      0.89  30233088
+weighted avg       0.97      0.96      0.96  30233088
+
+ROC AUC: 0.9278391033801027
+PR AUC: 0.985841383453957
+3 relu 0 lbfgs (190, 190, 190)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26716672, 0: 3516416}
+Accuracy: 0.9594680172928416
+Confusion matrix:
+[[ 2533158   242149]
+ [  983258 26474523]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.72      0.91      0.81   2775307
+           1       0.99      0.96      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.86      0.94      0.89  30233088
+weighted avg       0.97      0.96      0.96  30233088
+
+ROC AUC: 0.9384694694345771
+PR AUC: 0.9879737404052338
+[0.9205, 0.9174, 0.9278, 0.8919, 0.8613, 0.904, 0.9232, 0.9077, 0.9278, 0.9385] [0.9845, 0.9837, 0.9858, 0.9787, 0.9728, 0.981, 0.9849, 0.9819, 0.9858, 0.988] [0.7417, 0.8313, 0.8191, 0.7892, 0.7954, 0.8338, 0.8208, 0.7883, 0.8053, 0.8052]
+3 relu 1 sgd (10, 10, 10)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+3 relu 1 sgd (30, 30, 30)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+3 relu 1 sgd (50, 50, 50)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+3 relu 1 sgd (70, 70, 70)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+3 relu 1 sgd (90, 90, 90)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+3 relu 1 sgd (110, 110, 110)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+3 relu 1 sgd (130, 130, 130)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+3 relu 1 sgd (150, 150, 150)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+3 relu 1 sgd (170, 170, 170)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+3 relu 1 sgd (190, 190, 190)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {0: 30233088}
+Accuracy: 0.0917970073053735
+Confusion matrix:
+[[ 2775307        0]
+ [27457781        0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.09      1.00      0.17   2775307
+           1       0.00      0.00      0.00  27457781
+
+    accuracy                           0.09  30233088
+   macro avg       0.05      0.50      0.08  30233088
+weighted avg       0.01      0.09      0.02  30233088
+
+ROC AUC: 0.5
+PR AUC: 0.9082029926946265
+[0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5] [0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082] [0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682]
+3 relu 2 adam (10, 10, 10)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 25548445, 0: 4684643}
+Accuracy: 0.922724532803265
+Confusion matrix:
+[[ 2561837   213470]
+ [ 2122806 25334975]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.55      0.92      0.69   2775307
+           1       0.99      0.92      0.96  27457781
+
+    accuracy                           0.92  30233088
+   macro avg       0.77      0.92      0.82  30233088
+weighted avg       0.95      0.92      0.93  30233088
+
+ROC AUC: 0.9228853731135869
+PR AUC: 0.9851935016316898
+3 relu 2 adam (30, 30, 30)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26909665, 0: 3323423}
+Accuracy: 0.9628562586792325
+Confusion matrix:
+[[ 2487880   287427]
+ [  835543 26622238]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.75      0.90      0.82   2775307
+           1       0.99      0.97      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.87      0.93      0.90  30233088
+weighted avg       0.97      0.96      0.96  30233088
+
+ROC AUC: 0.9330020305219113
+PR AUC: 0.9868504564483734
+3 relu 2 adam (50, 50, 50)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26875341, 0: 3357747}
+Accuracy: 0.9672418510474352
+Confusion matrix:
+[[ 2571337   203970]
+ [  786410 26671371]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.77      0.93      0.84   2775307
+           1       0.99      0.97      0.98  27457781
+
+    accuracy                           0.97  30233088
+   macro avg       0.88      0.95      0.91  30233088
+weighted avg       0.97      0.97      0.97  30233088
+
+ROC AUC: 0.9489323652675554
+PR AUC: 0.9899987527309743
+3 relu 2 adam (70, 70, 70)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26873643, 0: 3359445}
+Accuracy: 0.9634088320716693
+Confusion matrix:
+[[ 2514244   261063]
+ [  845201 26612580]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.75      0.91      0.82   2775307
+           1       0.99      0.97      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.87      0.94      0.90  30233088
+weighted avg       0.97      0.96      0.96  30233088
+
+ROC AUC: 0.9375759053228963
+PR AUC: 0.987758885700913
+3 relu 2 adam (90, 90, 90)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26646476, 0: 3586612}
+Accuracy: 0.9614855419333943
+Confusion matrix:
+[[ 2598754   176553]
+ [  987858 26469923]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.72      0.94      0.82   2775307
+           1       0.99      0.96      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.86      0.95      0.90  30233088
+weighted avg       0.97      0.96      0.96  30233088
+
+ROC AUC: 0.9502034961612759
+PR AUC: 0.9903100104388187
+3 relu 2 adam (110, 110, 110)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26837975, 0: 3395113}
+Accuracy: 0.9616450029848093
+Confusion matrix:
+[[ 2505415   269892]
+ [  889698 26568083]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.74      0.90      0.81   2775307
+           1       0.99      0.97      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.86      0.94      0.90  30233088
+weighted avg       0.97      0.96      0.96  30233088
+
+ROC AUC: 0.9351749901495485
+PR AUC: 0.9872950590546911
+3 relu 2 adam (130, 130, 130)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26651445, 0: 3581643}
+Accuracy: 0.9602078358651289
+Confusion matrix:
+[[ 2576955   198352]
+ [ 1004688 26453093]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.72      0.93      0.81   2775307
+           1       0.99      0.96      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.86      0.95      0.89  30233088
+weighted avg       0.97      0.96      0.96  30233088
+
+ROC AUC: 0.9459697123900086
+PR AUC: 0.9894709944994525
+3 relu 2 adam (150, 150, 150)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26893624, 0: 3339464}
+Accuracy: 0.9657613869942759
+Confusion matrix:
+[[ 2539816   235491]
+ [  799648 26658133]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.76      0.92      0.83   2775307
+           1       0.99      0.97      0.98  27457781
+
+    accuracy                           0.97  30233088
+   macro avg       0.88      0.94      0.91  30233088
+weighted avg       0.97      0.97      0.97  30233088
+
+ROC AUC: 0.943012473066078
+PR AUC: 0.9888252352661756
+3 relu 2 adam (170, 170, 170)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26794035, 0: 3439053}
+Accuracy: 0.963829033937916
+Confusion matrix:
+[[ 2560400   214907]
+ [  878653 26579128]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.74      0.92      0.82   2775307
+           1       0.99      0.97      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.87      0.95      0.90  30233088
+weighted avg       0.97      0.96      0.97  30233088
+
+ROC AUC: 0.9452822283966565
+PR AUC: 0.9892984429216819
+3 relu 2 adam (190, 190, 190)
+(30233088, 8) (30233088,)
+y_test {1: 27457781, 0: 2775307} y_train {1: 157, 0: 339}
+predict
+y_pred {1: 26658872, 0: 3574216}
+Accuracy: 0.9634781270110416
+Confusion matrix:
+[[ 2622677   152630]
+ [  951539 26506242]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.73      0.95      0.83   2775307
+           1       0.99      0.97      0.98  27457781
+
+    accuracy                           0.96  30233088
+   macro avg       0.86      0.96      0.90  30233088
+weighted avg       0.97      0.96      0.97  30233088
+
+ROC AUC: 0.9551748305963198
+PR AUC: 0.9912919190293066
+[0.9229, 0.933, 0.9489, 0.9376, 0.9502, 0.9352, 0.946, 0.943, 0.9453, 0.9552] [0.9852, 0.9869, 0.99, 0.9878, 0.9903, 0.9873, 0.9895, 0.9888, 0.9893, 0.9913] [0.6868, 0.8159, 0.8385, 0.8197, 0.817, 0.8121, 0.8108, 0.8307, 0.824, 0.8261]
+roc_metrics
+[[0.8945, 0.8945, 0.8945, 0.8944, 0.8945, 0.8946, 0.8945, 0.8943, 0.8945, 0.8945], [0.8496, 0.9201, 0.9216, 0.8778, 0.9211, 0.9136, 0.9203, 0.9117, 0.9217, 0.917], [0.9041, 0.9043, 0.8959, 0.8998, 0.9039, 0.9141, 0.8978, 0.9064, 0.9049, 0.9019], [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5], [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5], [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5], [0.9146, 0.9377, 0.9132, 0.916, 0.9385, 0.9345, 0.9208, 0.9326, 0.9175, 0.9331], [0.5066, 0.5, 0.5136, 0.5, 0.5, 0.7346, 0.9197, 0.5004, 0.9162, 0.7029], [0.9256, 0.9338, 0.9413, 0.9393, 0.9371, 0.9396, 0.9014, 0.9494, 0.9142, 0.9262], [0.9205, 0.9174, 0.9278, 0.8919, 0.8613, 0.904, 0.9232, 0.9077, 0.9278, 0.9385], [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5], [0.9229, 0.933, 0.9489, 0.9376, 0.9502, 0.9352, 0.946, 0.943, 0.9453, 0.9552]]
+pr_metrics
+[[0.9793, 0.9793, 0.9793, 0.9793, 0.9793, 0.9794, 0.9793, 0.9793, 0.9793, 0.9793], [0.9723, 0.9847, 0.985, 0.9775, 0.985, 0.9838, 0.9849, 0.9835, 0.985, 0.9844], [0.9813, 0.9813, 0.9796, 0.9804, 0.9813, 0.9833, 0.98, 0.9817, 0.9815, 0.9808], [0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082], [0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082], [0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082], [0.9834, 0.9879, 0.9829, 0.9834, 0.9879, 0.9871, 0.9844, 0.9868, 0.9837, 0.9869], [0.9094, 0.9082, 0.9107, 0.9082, 0.9082, 0.9513, 0.9848, 0.9083, 0.9842, 0.9455], [0.9853, 0.9869, 0.9884, 0.988, 0.9875, 0.9881, 0.9807, 0.9901, 0.983, 0.9854], [0.9845, 0.9837, 0.9858, 0.9787, 0.9728, 0.981, 0.9849, 0.9819, 0.9858, 0.988], [0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082, 0.9082], [0.9852, 0.9869, 0.99, 0.9878, 0.9903, 0.9873, 0.9895, 0.9888, 0.9893, 0.9913]]
+f1_metrics
+[[0.7514, 0.7514, 0.7514, 0.7515, 0.7514, 0.7514, 0.7514, 0.7515, 0.7514, 0.7516], [0.4078, 0.6716, 0.6686, 0.4607, 0.6382, 0.5771, 0.6385, 0.5721, 0.6703, 0.5962], [0.7418, 0.7387, 0.7426, 0.7387, 0.7309, 0.7183, 0.7451, 0.7414, 0.729, 0.748], [0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682], [0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682], [0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682], [0.7242, 0.7773, 0.8054, 0.8196, 0.8266, 0.8265, 0.8176, 0.7988, 0.823, 0.8118], [0.17, 0.1682, 0.172, 0.1682, 0.1682, 0.2758, 0.6369, 0.1683, 0.5986, 0.2539], [0.8711, 0.8792, 0.8635, 0.8692, 0.8723, 0.87, 0.7477, 0.8552, 0.861, 0.8593], [0.7417, 0.8313, 0.8191, 0.7892, 0.7954, 0.8338, 0.8208, 0.7883, 0.8053, 0.8052], [0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682, 0.1682], [0.6868, 0.8159, 0.8385, 0.8197, 0.817, 0.8121, 0.8108, 0.8307, 0.824, 0.8261]]
+
+

@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['%', 'XGBoost', 'Logistic Regression', 'Linear SVC', 'Multi-layer Perceptron'],
+          ['100', 0.6735, 0.6866, 0.6786, 0.729],
+          ['200', 0.6827, 0.746, 0.7084, 0.7516],
+          ['300', 0.6313, 0.7593, 0.7565, 0.7861],
+          ['400', 0.7266, 0.7437, 0.7758, 0.7773],
+          ['500', 0.7421, 0.7504, 0.7703, 0.7904]
+        ]);
+
+        var options = {
+          title: '',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1300px; height: 700px"></div>
+  </body>
+</html>
+
+<!--
+
+  [[0.6735, 0.6866, 0.6786, 0.4072, 0.6635, 0.3692, 0.4494, 0.729, 0.4946],
+   [0.6827, 0.746, 0.7084, 0.405, 0.4483, 0.3692, 0.4851, 0.7516, 0.5659],
+   [0.6313, 0.7593, 0.7565, 0.4012, 0.4851, 0.3692, 0.4462, 0.7861, 0.5371],
+   [0.7266, 0.7437, 0.7758, 0.3966, 0.6991, 0.3692, 0.4726, 0.7773, 0.5445],
+   [0.7421, 0.7504, 0.7703, 0.3939, 0.6765, 0.3692, 0.4728, 0.7904, 0.5735]]
+
+
+    fit_model(XGBClassifier(random_state=42))
+    fit_model(LogisticRegression())
+    fit_model(LinearSVC(random_state=42, tol=1e-5))
+    fit_model(KNeighborsClassifier(n_neighbors=5))
+    fit_model(SGDClassifier(random_state=42))
+    fit_model(BernoulliNB())
+    fit_model(RandomForestClassifier(random_state=42))
+    fit_model(MLPClassifier())
+    fit_model(SVC(random_state=42))
+
+-->

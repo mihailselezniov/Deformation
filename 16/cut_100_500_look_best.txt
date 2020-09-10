@@ -1,0 +1,8 @@
+1) {'name': 'relu + adam', 'val': 0.7666, 'layer': (50, 50, 50)} (8_1_mlp_1)
+
+2) {'name': 'relu + adam', 'val': 0.7672, 'layer': (70, 70, 70)}
+
+3) {'name': 'tanh + adam', 'val': 0.8812, 'layer': (90, 90, 90)}
+
+4) {'name': 'tanh + adam', 'val': 0.8834, 'layer': (70, 70, 70)}
+
