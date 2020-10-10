@@ -94,6 +94,7 @@ for i0, l in e2_0:
                         for i6, pa in e2_6:
                             for i7, s in e2_7:
                                 #if 0 not in [i4, i5, i6]:
+                                #print(l, di, y, de, pt, pr, pa, s)
                                 x_test.append([l, di, y, de, pt, pr, pa, s])
     print(i0)
 x_test, y_test = np.array(x_test), np.array(y_test)
@@ -106,7 +107,7 @@ def make_str(data):
 def make_set(data):
     return {make_str(i) for i in data}
 
-source_f = 'ml_threads/10_1_mlp_3.txt'
+source_f = 'ml_threads/12_1_mlp_1_2.txt'
 with open(source_f, 'r') as f:
     threads = f.readlines()
 
@@ -144,40 +145,24 @@ for cut in [100, 200, 300, 400, 500]:
     x_train = (x_train - extreme_values.min(axis=0)) / (extreme_values.max(axis=0) - extreme_values.min(axis=0))
     #print(x_train)
 
-    def predict_proba_model(model):
-        model.fit(x_train, y_train)
-        pred_p = model.predict_proba(xt0)
-        pred_p = np.concatenate((pred_p, model.predict_proba(xt1)))
-        pred_p = np.concatenate((pred_p, model.predict_proba(xt2)))
-        pred_p = np.concatenate((pred_p, model.predict_proba(xt3)))
-        pred_p = np.concatenate((pred_p, model.predict_proba(xt4)))
-        return pred_p[:, 0]
-
-    def make_new_x_train():
-        print('make new_x_train')
-        y0_pp = predict_proba_model(MLPClassifier(activation='relu', solver='adam', hidden_layer_sizes=(50, 50, 50), max_iter=100000, random_state=42))
-        y1_pp = predict_proba_model(MLPClassifier(activation='relu', solver='adam', hidden_layer_sizes=(70, 70, 70), max_iter=100000, random_state=42))
-        y2_pp = predict_proba_model(MLPClassifier(activation='tanh', solver='adam', hidden_layer_sizes=(90, 90, 90), max_iter=100000, random_state=42))
-        y3_pp = predict_proba_model(MLPClassifier(activation='tanh', solver='adam', hidden_layer_sizes=(70, 70, 70), max_iter=100000, random_state=42))
-        print('done new_x_train')
-        return np.vstack((y0_pp, y1_pp, y2_pp, y3_pp)).T
 
     def fit_model(model):
         global roc_metric
         global pr_metric
         global f1_metric
         print('\n', '-'*10, model.__class__.__name__, '-'*10)
-        print(new_x_train.shape, y_test.shape)
+        print(x_test.shape, y_test.shape)
         print('y_test', dict(collections.Counter(y_test)), 'y_train', dict(collections.Counter(y_train)))
         # fit model on training data
-        model.fit(new_x_train, y_train)
+        model.fit(x_train, y_train)
 
         #y_pred = model.predict(x_test)
-        y_pred = model.predict(nxt0)
-        y_pred = np.concatenate((y_pred, model.predict(nxt1)))
-        y_pred = np.concatenate((y_pred, model.predict(nxt2)))
-        y_pred = np.concatenate((y_pred, model.predict(nxt3)))
-        y_pred = np.concatenate((y_pred, model.predict(nxt4)))
+        y_pred = model.predict(x_test[:10000000])
+        y_pred = np.concatenate((y_pred, model.predict(x_test[10000000:20000000])))
+        y_pred = np.concatenate((y_pred, model.predict(x_test[20000000:30000000])))
+        y_pred = np.concatenate((y_pred, model.predict(x_test[30000000:40000000])))
+        y_pred = np.concatenate((y_pred, model.predict(x_test[40000000:])))
+
 
 
         print('y_pred', dict(collections.Counter(y_pred)))
@@ -213,19 +198,6 @@ for cut in [100, 200, 300, 400, 500]:
 
 
     roc_metric, pr_metric, f1_metric = [], [], []
-
-    xt0 = x_test[:10000000]
-    xt1 = x_test[10000000:20000000]
-    xt2 = x_test[20000000:30000000]
-    xt3 = x_test[30000000:40000000]
-    xt4 = x_test[40000000:]
-
-    new_x_train = make_new_x_train()
-    #nxt0 = new_x_train[:10000000]
-    #nxt1 = new_x_train[10000000:20000000]
-    #nxt2 = new_x_train[20000000:30000000]
-    #nxt3 = new_x_train[30000000:40000000]
-    #nxt4 = new_x_train[40000000:]
 
 
     fit_model(XGBClassifier(random_state=42))
