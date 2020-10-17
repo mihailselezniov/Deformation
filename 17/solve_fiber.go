@@ -202,8 +202,9 @@ func start() {
 
     arg := os.Args[1]
     s_arg := strings.Split(arg, ",")
-    fmt.Println(s_arg)
-    // 15.0,0.04,206.67,1611.11,27.78,4.72,11.11,9.46
+    //fmt.Println(s_arg)
+    // #15.0,0.04,206.67,1611.11,27.78,4.72,11.11,9.46  1
+    //  #1.0,0.04,206.67,1611.11,27.78,4.72,11.11,9.46  0
 
     var f_arg []float64
     for _, arg := range s_arg {
@@ -211,7 +212,7 @@ func start() {
             f_arg = append(f_arg, n)
         }
     }
-    fmt.Println(f_arg)
+    //fmt.Println(f_arg)
     f = init_fiber(f_arg[0], f_arg[1], f_arg[2], f_arg[3], f_arg[4], f_arg[5], f_arg[6], f_arg[7])
     fmt.Println("#"+arg+" ", f.test_fiber())
     return
@@ -220,7 +221,7 @@ func start() {
 
 
 
-
+    /*
     i_length, err := strconv.Atoi(arg)
     if err != nil {
         // handle error
@@ -271,6 +272,7 @@ func start() {
 
     res := strings.Trim(strings.Join(strings.Fields(fmt.Sprint(count_state_arr)), ","), "[]")
     save_to_file(res)
+    */
 }
 
 func main() {
