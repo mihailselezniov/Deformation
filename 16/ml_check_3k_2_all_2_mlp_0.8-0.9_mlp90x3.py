@@ -13,14 +13,8 @@ from xgboost import XGBClassifier, XGBRegressor
 import collections
 
 
-ex_name = '13_1_mlp_2.txt'
-ppl = [0.8, 0.9]# predict_proba_limits
-folder_name = 'ml_threads/'
-f_name = folder_name + ex_name
-
 par = {}
 parts = 10
-parts4 = 100
 par['pressure_time'] = {'Min': 0.0, 'Max': 100.0}
 par['pressure_radius'] = {'Min': 0.0, 'Max': 5.0}
 par['pressure_amplitude'] = {'Min': 0.0, 'Max': 200.0}
@@ -29,18 +23,9 @@ par['diameter'] = {'Min': 0.01, 'Max': 0.5}
 par['young'] = {'Min': 60.0, 'Max': 300.0}
 par['density'] = {'Min': 1000.0, 'Max': 2000.0}
 par['strength'] = {'Min': 0.2, 'Max': 10.0}
-order_par = ['length', 'diameter', 'young', 'density', 'pressure_time', 'pressure_radius', 'pressure_amplitude', 'strength']
 
 def get_list(Min, Max):
     return list(map(lambda x: round(x, 2), np.arange(Min, Max+0.01, (Max-Min)/(parts-1))))
-
-def get_list4(Min, Max):
-    return list(map(lambda x: round(x, 4), np.arange(Min, Max+0.01, (Max-Min)/(parts4-1))))
-
-def get_raw(par_inxs):
-    return [get_list4(**par[par_name])[par_inxs[pi]] for pi, par_name in enumerate(order_par)]
-
-#print(get_list(**{'Min': 0, 'Max': 1}))
 
 e0 = tuple(enumerate(get_list(**par['length'])))
 e1 = tuple(enumerate(get_list(**par['diameter'])))
@@ -50,7 +35,6 @@ e4 = tuple(enumerate(get_list(**par['pressure_time'])))
 e5 = tuple(enumerate(get_list(**par['pressure_radius'])))
 e6 = tuple(enumerate(get_list(**par['pressure_amplitude'])))
 e7 = tuple(enumerate(get_list(**par['strength'])))
-
 
 
 extreme_values = [[
@@ -86,7 +70,6 @@ y_test = []
 for i, val in enumerate(data_is_broken):
     y_test.extend([i%2]*val)
 
-
 new_parts = 19
 def get_new_list(Min, Max):
     return list(map(lambda x: round(x, 2), np.arange(Min, Max+0.01, (Max-Min)/(new_parts-1))))[1::2]
@@ -100,6 +83,7 @@ e2_5 = tuple(enumerate(get_new_list(**par['pressure_radius'])))
 e2_6 = tuple(enumerate(get_new_list(**par['pressure_amplitude'])))
 e2_7 = tuple(enumerate(get_new_list(**par['strength'])))
 
+
 x_test = []
 for i0, l in e2_0:
     for i1, di in e2_1:
@@ -110,12 +94,11 @@ for i0, l in e2_0:
                         for i6, pa in e2_6:
                             for i7, s in e2_7:
                                 #if 0 not in [i4, i5, i6]:
-                                #print(l, di, y, de, pt, pr, pa, s)
                                 x_test.append([l, di, y, de, pt, pr, pa, s])
     print(i0)
 x_test, y_test = np.array(x_test), np.array(y_test)
-
 x_test = (x_test - extreme_values.min(axis=0)) / (extreme_values.max(axis=0) - extreme_values.min(axis=0))
+
 
 
 def make_str(data):
@@ -123,24 +106,59 @@ def make_str(data):
 def make_set(data):
     return {make_str(i) for i in data}
 
-with open(f_name, 'r') as f:
+source_f = 'ml_threads/10_1_mlp_3.txt'
+with open(source_f, 'r') as f:
     threads = f.readlines()
+
+
+X = []
+for i0, l in e0:
+    for i1, di in e1:
+        for i2, y in e2:
+            for i3, de in e3:
+                for i4, pt in e4:
+                    for i5, pr in e5:
+                        for i6, pa in e6:
+                            for i7, s in e7:
+                                if 0 not in [i4, i5, i6]:
+                                    X.append([l, di, y, de, pt, pr, pa, s])
+    print(i0)
+X = np.array(X)
+X = (X - extreme_values.min(axis=0)) / (extreme_values.max(axis=0) - extreme_values.min(axis=0))
+
+
 
 roc_metrics, pr_metrics, f1_metrics = [], [], []
 roc_metric, pr_metric, f1_metric = [], [], []
 
 for cut in [100, 200, 300, 400, 500]:
-    #cut = 500
+    #cut = 500#100
     print('\n\n\n', '#'*10, cut, '#'*10)
-
-    x_train, y_train = [], []
+    x_train_dict = {}
     for t in threads[:cut]:
         tr = list(map(int, t.replace('\n', '').split(',')))
-        x_train.append(tr[:-1])
-        y_train.append(tr[-1])
+        x_train_dict[make_str(tr[:-1])] = tr[-1]
+
+    i = 0
+    x_train, y_train = [], []
+    for i0, l in e0:
+        for i1, di in e1:
+            for i2, y in e2:
+                for i3, de in e3:
+                    for i4, pt in e4:
+                        for i5, pr in e5:
+                            for i6, pa in e6:
+                                for i7, s in e7:
+                                    if 0 not in [i4, i5, i6]:
+                                        key = make_str([i0, i1, i2, i3, i4, i5, i6, i7])
+                                        if key in x_train_dict:
+                                            x_train.append([l, di, y, de, pt, pr, pa, s])
+                                            y_train.append(x_train_dict[key])
+                                    i += 1
+        print(i0)
     x_train, y_train = np.array(x_train), np.array(y_train)
 
-    x_train = np.array(list(map(get_raw, x_train)))
+
     x_train = (x_train - extreme_values.min(axis=0)) / (extreme_values.max(axis=0) - extreme_values.min(axis=0))
     #print(x_train)
 
@@ -153,7 +171,7 @@ for cut in [100, 200, 300, 400, 500]:
         print(x_test.shape, y_test.shape)
         print('y_test', dict(collections.Counter(y_test)), 'y_train', dict(collections.Counter(y_train)))
         # fit model on training data
-        model.fit(x_train, y_train)
+        #model.fit(x_train, y_train)
 
         #y_pred = model.predict(x_test)
         y_pred = model.predict(x_test[:10000000])
@@ -199,24 +217,43 @@ for cut in [100, 200, 300, 400, 500]:
     roc_metric, pr_metric, f1_metric = [], [], []
 
 
-    fit_model(XGBClassifier(random_state=42))
-    fit_model(LogisticRegression())
-    fit_model(LinearSVC(random_state=42, tol=1e-5))
-    fit_model(KNeighborsClassifier(n_neighbors=5))
-    fit_model(SGDClassifier(random_state=42))
-    fit_model(BernoulliNB())
-    fit_model(RandomForestClassifier(random_state=42))
-    fit_model(MLPClassifier())
-    fit_model(SVC(random_state=42))
-    fit_model(MLPClassifier(activation='relu', solver='adam', hidden_layer_sizes=(50, 50, 50), max_iter=100000, random_state=42))
-    fit_model(MLPClassifier(activation='relu', solver='adam', hidden_layer_sizes=(70, 70, 70), max_iter=100000, random_state=42))
-    fit_model(MLPClassifier(activation='tanh', solver='adam', hidden_layer_sizes=(90, 90, 90), max_iter=100000, random_state=42))
-    fit_model(MLPClassifier(activation='tanh', solver='adam', hidden_layer_sizes=(70, 70, 70), max_iter=100000, random_state=42))
+    #fit_model(XGBClassifier(random_state=42))
+    #fit_model(LogisticRegression())
+    #fit_model(LinearSVC(random_state=42, tol=1e-5))
+    #fit_model(KNeighborsClassifier(n_neighbors=5))
+    #fit_model(SGDClassifier(random_state=42))
+    #fit_model(BernoulliNB())
+    #fit_model(RandomForestClassifier(random_state=42))
+    #fit_model(MLPClassifier())
+    #fit_model(SVC(random_state=42))
+    #fit_model(MLPClassifier(activation='relu', solver='adam', hidden_layer_sizes=(50, 50, 50), max_iter=100000, random_state=42))
+    #fit_model(MLPClassifier(activation='relu', solver='adam', hidden_layer_sizes=(70, 70, 70), max_iter=100000, random_state=42))
+    #fit_model(MLPClassifier(activation='tanh', solver='adam', hidden_layer_sizes=(90, 90, 90), max_iter=100000, random_state=42))
+    #fit_model(MLPClassifier(activation='tanh', solver='adam', hidden_layer_sizes=(70, 70, 70), max_iter=100000, random_state=42))
+
+    model = MLPClassifier(activation='tanh', solver='adam', hidden_layer_sizes=(90, 90, 90), max_iter=100000, random_state=42)
+    print('Fit 90x3')
+    model.fit(x_train, y_train)
+    print('Pred 90x3')
+    y_pred = model.predict(X[:10000000])
+    y_pred = np.concatenate((y_pred, model.predict(X[10000000:20000000])))
+    y_pred = np.concatenate((y_pred, model.predict(X[20000000:30000000])))
+    y_pred = np.concatenate((y_pred, model.predict(X[30000000:40000000])))
+    y_pred = np.concatenate((y_pred, model.predict(X[40000000:50000000])))
+    y_pred = np.concatenate((y_pred, model.predict(X[50000000:60000000])))
+    y_pred = np.concatenate((y_pred, model.predict(X[60000000:70000000])))
+    y_pred = np.concatenate((y_pred, model.predict(X[70000000:])))
+
+    model = MLPClassifier()
+    print('Fit 100')
+    model.fit(X, y_pred)
+    print('Pred 100')
+    fit_model(model)
+
 
     roc_metrics.append(roc_metric[:])
     pr_metrics.append(pr_metric[:])
     f1_metrics.append(f1_metric[:])
-
     #break
 
 

@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_auc_score, average_precision_score, f1_score
 from sklearn.linear_model import LogisticRegression, SGDClassifier
@@ -13,7 +15,7 @@ from xgboost import XGBClassifier, XGBRegressor
 import collections
 
 
-ex_name = '13_1_mlp_2.txt'
+ex_name = '13_1_mlp_4.txt'
 ppl = [0.8, 0.9]# predict_proba_limits
 folder_name = 'ml_threads/'
 f_name = folder_name + ex_name
@@ -163,6 +165,25 @@ for cut in [100, 200, 300, 400, 500]:
         y_pred = np.concatenate((y_pred, model.predict(x_test[40000000:])))
 
 
+        y_pred_proba = model.predict_proba(x_test[:10000000])
+        y_pred_proba = np.concatenate((y_pred_proba, model.predict_proba(x_test[10000000:20000000])))
+        y_pred_proba = np.concatenate((y_pred_proba, model.predict_proba(x_test[20000000:30000000])))
+        y_pred_proba = np.concatenate((y_pred_proba, model.predict_proba(x_test[30000000:40000000])))
+        y_pred_proba = np.concatenate((y_pred_proba, model.predict_proba(x_test[40000000:])))
+        y_pred_proba = y_pred_proba[:, 0]
+
+
+        #for i in range(len(y_test)):
+        #    if y_test[i] != y_pred
+
+        y_tail = y_pred_proba[y_test != y_pred]
+        sns.distplot(y_tail)
+        import pandas as pd
+        y_series = pd.Series(y_tail)
+        y_series.describe()
+
+
+        return
 
         print('y_pred', dict(collections.Counter(y_pred)))
         # make predictions for test data
@@ -198,7 +219,7 @@ for cut in [100, 200, 300, 400, 500]:
 
     roc_metric, pr_metric, f1_metric = [], [], []
 
-
+    '''
     fit_model(XGBClassifier(random_state=42))
     fit_model(LogisticRegression())
     fit_model(LinearSVC(random_state=42, tol=1e-5))
@@ -211,6 +232,7 @@ for cut in [100, 200, 300, 400, 500]:
     fit_model(MLPClassifier(activation='relu', solver='adam', hidden_layer_sizes=(50, 50, 50), max_iter=100000, random_state=42))
     fit_model(MLPClassifier(activation='relu', solver='adam', hidden_layer_sizes=(70, 70, 70), max_iter=100000, random_state=42))
     fit_model(MLPClassifier(activation='tanh', solver='adam', hidden_layer_sizes=(90, 90, 90), max_iter=100000, random_state=42))
+    '''
     fit_model(MLPClassifier(activation='tanh', solver='adam', hidden_layer_sizes=(70, 70, 70), max_iter=100000, random_state=42))
 
     roc_metrics.append(roc_metric[:])

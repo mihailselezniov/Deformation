@@ -1,0 +1,501 @@
+ ########## 100 ##########
+
+ ---------- LogisticRegression ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 33, 0: 67}
+y_pred {0: 65536}
+Accuracy: 0.9883270263671875
+Confusion matrix:
+[[64771     0]
+ [  765     0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5
+PR AUC: 0.0116729736328125
+---------- End LogisticRegression ----------
+
+ ---------- MLPClassifier ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 33, 0: 67}
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:582: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+y_pred {0: 65535, 1: 1}
+Accuracy: 0.988311767578125
+Confusion matrix:
+[[64770     1]
+ [  765     0]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.49999228049590094
+PR AUC: 0.0116729736328125
+---------- End MLPClassifier ----------
+
+ ---------- SVC ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 33, 0: 67}
+y_pred {0: 65536}
+Accuracy: 0.9883270263671875
+Confusion matrix:
+[[64771     0]
+ [  765     0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5
+PR AUC: 0.0116729736328125
+---------- End SVC ----------
+
+ ---------- MLPClassifier ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 33, 0: 67}
+y_pred {0: 65359, 1: 177}
+Accuracy: 0.987518310546875
+Confusion matrix:
+[[64656   115]
+ [  703    62]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.35      0.08      0.13       765
+
+    accuracy                           0.99     65536
+   macro avg       0.67      0.54      0.56     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5396351328456019
+PR AUC: 0.03911583606295552
+---------- End MLPClassifier ----------
+
+
+
+ ########## 200 ##########
+
+ ---------- LogisticRegression ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 68, 0: 132}
+y_pred {0: 65536}
+Accuracy: 0.9883270263671875
+Confusion matrix:
+[[64771     0]
+ [  765     0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5
+PR AUC: 0.0116729736328125
+---------- End LogisticRegression ----------
+
+ ---------- MLPClassifier ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 68, 0: 132}
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:582: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+y_pred {0: 65536}
+Accuracy: 0.9883270263671875
+Confusion matrix:
+[[64771     0]
+ [  765     0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5
+PR AUC: 0.0116729736328125
+---------- End MLPClassifier ----------
+
+ ---------- SVC ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 68, 0: 132}
+y_pred {0: 65536}
+Accuracy: 0.9883270263671875
+Confusion matrix:
+[[64771     0]
+ [  765     0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5
+PR AUC: 0.0116729736328125
+---------- End SVC ----------
+
+ ---------- MLPClassifier ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 68, 0: 132}
+y_pred {0: 65362, 1: 174}
+Accuracy: 0.9875030517578125
+Confusion matrix:
+[[64657   114]
+ [  705    60]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.34      0.08      0.13       765
+
+    accuracy                           0.99     65536
+   macro avg       0.67      0.54      0.56     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5383356628072173
+PR AUC: 0.03780274716803478
+---------- End MLPClassifier ----------
+
+
+
+ ########## 300 ##########
+
+ ---------- LogisticRegression ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 99, 0: 201}
+y_pred {0: 65536}
+Accuracy: 0.9883270263671875
+Confusion matrix:
+[[64771     0]
+ [  765     0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5
+PR AUC: 0.0116729736328125
+---------- End LogisticRegression ----------
+
+ ---------- MLPClassifier ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 99, 0: 201}
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:582: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+y_pred {0: 65536}
+Accuracy: 0.9883270263671875
+Confusion matrix:
+[[64771     0]
+ [  765     0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5
+PR AUC: 0.0116729736328125
+---------- End MLPClassifier ----------
+
+ ---------- SVC ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 99, 0: 201}
+y_pred {0: 65536}
+Accuracy: 0.9883270263671875
+Confusion matrix:
+[[64771     0]
+ [  765     0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5
+PR AUC: 0.0116729736328125
+---------- End SVC ----------
+
+ ---------- MLPClassifier ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 99, 0: 201}
+y_pred {0: 65381, 1: 155}
+Accuracy: 0.987640380859375
+Confusion matrix:
+[[64671   100]
+ [  710    55]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.35      0.07      0.12       765
+
+    accuracy                           0.99     65536
+   macro avg       0.67      0.54      0.56     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5351757620083949
+PR AUC: 0.03634502001510449
+---------- End MLPClassifier ----------
+
+
+
+ ########## 400 ##########
+
+ ---------- LogisticRegression ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 150, 0: 250}
+y_pred {0: 65536}
+Accuracy: 0.9883270263671875
+Confusion matrix:
+[[64771     0]
+ [  765     0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5
+PR AUC: 0.0116729736328125
+---------- End LogisticRegression ----------
+
+ ---------- MLPClassifier ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 150, 0: 250}
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:582: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+y_pred {0: 65536}
+Accuracy: 0.9883270263671875
+Confusion matrix:
+[[64771     0]
+ [  765     0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5
+PR AUC: 0.0116729736328125
+---------- End MLPClassifier ----------
+
+ ---------- SVC ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 150, 0: 250}
+y_pred {0: 65536}
+Accuracy: 0.9883270263671875
+Confusion matrix:
+[[64771     0]
+ [  765     0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5
+PR AUC: 0.0116729736328125
+---------- End SVC ----------
+
+ ---------- MLPClassifier ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 150, 0: 250}
+y_pred {0: 65485, 1: 51}
+Accuracy: 0.988067626953125
+Confusion matrix:
+[[64737    34]
+ [  748    17]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.33      0.02      0.04       765
+
+    accuracy                           0.99     65536
+   macro avg       0.66      0.51      0.52     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5108486479717431
+PR AUC: 0.018820981626157408
+---------- End MLPClassifier ----------
+
+
+
+ ########## 500 ##########
+
+ ---------- LogisticRegression ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 182, 0: 318}
+y_pred {0: 65536}
+Accuracy: 0.9883270263671875
+Confusion matrix:
+[[64771     0]
+ [  765     0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5
+PR AUC: 0.0116729736328125
+---------- End LogisticRegression ----------
+
+ ---------- MLPClassifier ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 182, 0: 318}
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:582: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+y_pred {0: 65536}
+Accuracy: 0.9883270263671875
+Confusion matrix:
+[[64771     0]
+ [  765     0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5
+PR AUC: 0.0116729736328125
+---------- End MLPClassifier ----------
+
+ ---------- SVC ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 182, 0: 318}
+y_pred {0: 65536}
+Accuracy: 0.9883270263671875
+Confusion matrix:
+[[64771     0]
+ [  765     0]]
+Precision, recall and f1-score:
+/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.00      0.00      0.00       765
+
+    accuracy                           0.99     65536
+   macro avg       0.49      0.50      0.50     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5
+PR AUC: 0.0116729736328125
+---------- End SVC ----------
+
+ ---------- MLPClassifier ----------
+(65536, 8) (65536,)
+y_test {0: 64771, 1: 765} y_train {1: 182, 0: 318}
+y_pred {0: 65135, 1: 401}
+Accuracy: 0.98614501953125
+Confusion matrix:
+[[64499   272]
+ [  636   129]]
+Precision, recall and f1-score:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99     64771
+           1       0.32      0.17      0.22       765
+
+    accuracy                           0.99     65536
+   macro avg       0.66      0.58      0.61     65536
+weighted avg       0.98      0.99      0.98     65536
+
+ROC AUC: 0.5822140203752527
+PR AUC: 0.06395132594467416
+---------- End MLPClassifier ----------
+roc_metrics
+[[0.5, 0.5, 0.5, 0.5396], [0.5, 0.5, 0.5, 0.5383], [0.5, 0.5, 0.5, 0.5352], [0.5, 0.5, 0.5, 0.5108], [0.5, 0.5, 0.5, 0.5822]]
+pr_metrics
+[[0.0117, 0.0117, 0.0117, 0.0391], [0.0117, 0.0117, 0.0117, 0.0378], [0.0117, 0.0117, 0.0117, 0.0363], [0.0117, 0.0117, 0.0117, 0.0188], [0.0117, 0.0117, 0.0117, 0.064]]
+f1_metrics
+[[0.9941, 0.9941, 0.9941, 0.9937], [0.9941, 0.9941, 0.9941, 0.9937], [0.9941, 0.9941, 0.9941, 0.9938], [0.9941, 0.9941, 0.9941, 0.994], [0.9941, 0.9941, 0.9941, 0.993]]

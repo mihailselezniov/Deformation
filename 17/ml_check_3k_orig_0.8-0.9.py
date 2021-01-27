@@ -13,7 +13,7 @@ from xgboost import XGBClassifier, XGBRegressor
 import collections
 
 
-ex_name = '13_1_mlp_2.txt'
+ex_name = '13_1_mlp_4.txt'
 ppl = [0.8, 0.9]# predict_proba_limits
 folder_name = 'ml_threads/'
 f_name = folder_name + ex_name

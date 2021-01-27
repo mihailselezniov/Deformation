@@ -13,7 +13,7 @@ from xgboost import XGBClassifier, XGBRegressor
 import collections
 
 
-ex_name = '13_1_mlp_2.txt'
+ex_name = '15_1_mlp_6.txt'
 ppl = [0.8, 0.9]# predict_proba_limits
 folder_name = 'ml_threads/'
 f_name = folder_name + ex_name
@@ -100,7 +100,8 @@ e2_5 = tuple(enumerate(get_new_list(**par['pressure_radius'])))
 e2_6 = tuple(enumerate(get_new_list(**par['pressure_amplitude'])))
 e2_7 = tuple(enumerate(get_new_list(**par['strength'])))
 
-x_test = []
+x_test, y_test_ = [], []
+i = -1
 for i0, l in e2_0:
     for i1, di in e2_1:
         for i2, y in e2_2:
@@ -109,14 +110,38 @@ for i0, l in e2_0:
                     for i5, pr in e2_5:
                         for i6, pa in e2_6:
                             for i7, s in e2_7:
-                                #if 0 not in [i4, i5, i6]:
-                                #print(l, di, y, de, pt, pr, pa, s)
+                                i += 1
+                                if 0 in [i0, i1, i2, i3, i7]:
+                                    continue
+                                if 1 in [i0, i1, i2, i3, i7]:
+                                    continue
+                                if 2 in [i0, i1, i2, i3, i7]:
+                                    continue
+                                if 3 in [i0, i1, i2, i3, i7]:
+                                    continue
+                                if 4 in [i0, i1, i2, i3, i7]:
+                                    continue
+                                if 8 in [i4, i5, i6]:
+                                    continue
+                                if 7 in [i4, i5, i6]:
+                                    continue
+                                if 6 in [i4, i5, i6]:
+                                    continue
+                                if 5 in [i4, i5, i6]:
+                                    continue
+                                if 4 in [i4, i5, i6]:
+                                    continue
                                 x_test.append([l, di, y, de, pt, pr, pa, s])
+                                y_test_.append(y_test[i])
     print(i0)
-x_test, y_test = np.array(x_test), np.array(y_test)
+x_test, y_test = np.array(x_test), np.array(y_test_)
+
+#print('!!!')
+#print(i0, i1, i2, i3, i4, i5, i6, i7)
 
 x_test = (x_test - extreme_values.min(axis=0)) / (extreme_values.max(axis=0) - extreme_values.min(axis=0))
 
+xt = np.array_split(x_test, 10)
 
 def make_str(data):
     return ''.join(map(str, data))
@@ -130,7 +155,7 @@ roc_metrics, pr_metrics, f1_metrics = [], [], []
 roc_metric, pr_metric, f1_metric = [], [], []
 
 for cut in [100, 200, 300, 400, 500]:
-    #cut = 500
+    #cut = 200
     print('\n\n\n', '#'*10, cut, '#'*10)
 
     x_train, y_train = [], []
@@ -156,13 +181,10 @@ for cut in [100, 200, 300, 400, 500]:
         model.fit(x_train, y_train)
 
         #y_pred = model.predict(x_test)
-        y_pred = model.predict(x_test[:10000000])
-        y_pred = np.concatenate((y_pred, model.predict(x_test[10000000:20000000])))
-        y_pred = np.concatenate((y_pred, model.predict(x_test[20000000:30000000])))
-        y_pred = np.concatenate((y_pred, model.predict(x_test[30000000:40000000])))
-        y_pred = np.concatenate((y_pred, model.predict(x_test[40000000:])))
 
-
+        y_pred = model.predict(xt[0])
+        for i in range(1, len(xt)):
+            y_pred = np.concatenate((y_pred, model.predict(xt[i])))
 
         print('y_pred', dict(collections.Counter(y_pred)))
         # make predictions for test data
@@ -199,19 +221,19 @@ for cut in [100, 200, 300, 400, 500]:
     roc_metric, pr_metric, f1_metric = [], [], []
 
 
-    fit_model(XGBClassifier(random_state=42))
+    #fit_model(XGBClassifier(random_state=42))
     fit_model(LogisticRegression())
-    fit_model(LinearSVC(random_state=42, tol=1e-5))
-    fit_model(KNeighborsClassifier(n_neighbors=5))
-    fit_model(SGDClassifier(random_state=42))
-    fit_model(BernoulliNB())
-    fit_model(RandomForestClassifier(random_state=42))
+    #fit_model(LinearSVC(random_state=42, tol=1e-5))
+    #fit_model(KNeighborsClassifier(n_neighbors=5))
+    #fit_model(SGDClassifier(random_state=42))
+    #fit_model(BernoulliNB())
+    #fit_model(RandomForestClassifier(random_state=42))
     fit_model(MLPClassifier())
     fit_model(SVC(random_state=42))
-    fit_model(MLPClassifier(activation='relu', solver='adam', hidden_layer_sizes=(50, 50, 50), max_iter=100000, random_state=42))
-    fit_model(MLPClassifier(activation='relu', solver='adam', hidden_layer_sizes=(70, 70, 70), max_iter=100000, random_state=42))
+    #fit_model(MLPClassifier(activation='relu', solver='adam', hidden_layer_sizes=(50, 50, 50), max_iter=100000, random_state=42))
+    #fit_model(MLPClassifier(activation='relu', solver='adam', hidden_layer_sizes=(70, 70, 70), max_iter=100000, random_state=42))
     fit_model(MLPClassifier(activation='tanh', solver='adam', hidden_layer_sizes=(90, 90, 90), max_iter=100000, random_state=42))
-    fit_model(MLPClassifier(activation='tanh', solver='adam', hidden_layer_sizes=(70, 70, 70), max_iter=100000, random_state=42))
+    #fit_model(MLPClassifier(activation='tanh', solver='adam', hidden_layer_sizes=(70, 70, 70), max_iter=100000, random_state=42))
 
     roc_metrics.append(roc_metric[:])
     pr_metrics.append(pr_metric[:])

@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['%', 'Logistic Regression', 'Linear SVC', 'MLP', 'MLP 90x3'],
+          ['100', 0.6208, 0.7129, 0.6956, 0.8239],
+          ['200', 0.7129, 0.7627, 0.7196, 0.8465],
+          ['300', 0.7263, 0.7626, 0.7804, 0.8741],
+          ['400', 0.722, 0.7533, 0.7919, 0.8813],
+          ['500', 0.7315, 0.7549, 0.788, 0.8916]
+        ]);
+
+        var options = {
+          title: 'F1-score',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1300px; height: 700px"></div>
+  </body>
+</html>
+
+<!--
+
+[[0.7176, 0.6208, 0.7129, 0.6956],
+[0.7277, 0.7129, 0.7627, 0.7196],
+[0.7372, 0.7263, 0.7626, 0.7804],
+[0.7334, 0.722, 0.7533, 0.7919],
+[0.7298, 0.7315, 0.7549, 0.788]]
+
+-->
