@@ -19,7 +19,8 @@ def cartesian_coord(*arrays):
 
 a = np.arange(100)
 X = cartesian_coord(*4*[a])
-X = X[Y == 0]
+X = X[::10]
+X = X[Y[::10] == 0]
 
 print(X.shape)
 df = pd.DataFrame(X)
@@ -30,5 +31,5 @@ df = pd.DataFrame(X)
 g = sns.PairGrid(df)
 g = g.map_diag(sns.kdeplot)#, color="r")
 g = g.map_offdiag(sns.kdeplot)#, color="r")
-g.savefig('pairplot_all.png')
+g.savefig('pairplot_all2.png')
 #export QT_QPA_PLATFORM='offscreen'
