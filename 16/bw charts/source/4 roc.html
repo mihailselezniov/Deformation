@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['%', 'XGBoost', 'Logistic Regression', 'Linear SVC', 'Multi-layer Perceptron'],
+          ['100', 0.8571, 0.8713, 0.8734, 0.894],
+          ['200', 0.8695, 0.8745, 0.8727, 0.9063],
+          ['300', 0.8768, 0.8841, 0.8896, 0.916],
+          ['400', 0.8872, 0.8899, 0.8964, 0.9329],
+          ['500', 0.909, 0.8831, 0.8467, 0.9263]
+        ]);
+
+        var options = {
+          title: '',
+          curveType: 'function',
+          legend: { position: 'bottom' },
+          lineWidth: 6,
+          series: {
+            0: { lineDashStyle: [10, 2] },
+            1: { lineDashStyle: [4, 4] },
+            2: { lineDashStyle: [2, 2, 20, 2, 20, 2] },
+            3: { lineDashStyle: [4, 1] }
+          },
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1300px; height: 700px"></div>
+  </body>
+</html>
+<!--
+        var data = google.visualization.arrayToDataTable([
+          ['%', 'XGBoost', 'Logistic Regression', 'Linear SVC', 'KNeighborsClassifier', 'SGDClassifier', 'BernoulliNB', 'RandomForestClassifier', 'Multi-layer Perceptron', 'SVC'],
+          ['100', 0.8571, 0.8713, 0.8734, 0.615, 0.9052, 0.6401, 0.6992, 0.894, 0.5],
+          ['200', 0.8695, 0.8745, 0.8727, 0.6274, 0.8238, 0.6401, 0.7847, 0.9063, 0.4997],
+          ['300', 0.8768, 0.8841, 0.8896, 0.6282, 0.8608, 0.6401, 0.7593, 0.916, 0.4996],
+          ['400', 0.8872, 0.8899, 0.8964, 0.6368, 0.832, 0.6401, 0.7505, 0.9329, 0.4996],
+          ['500', 0.909, 0.8831, 0.8467, 0.6512, 0.8647, 0.6401, 0.7549, 0.9263, 0.4998]
+        ]);
+-->

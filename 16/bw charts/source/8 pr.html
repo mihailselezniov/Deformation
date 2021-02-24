@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['%', 'XGBoost', 'Logistic Regression', 'Linear SVC', 'Multi-layer Perceptron'],
+          ['100', 0.9122, 0.9209, 0.9224, 0.932],
+          ['200', 0.9123, 0.9352, 0.9197, 0.9373],
+          ['300', 0.9177, 0.9348, 0.9243, 0.9395],
+          ['400', 0.9152, 0.9341, 0.9242, 0.9387],
+          ['500', 0.9272, 0.9305, 0.9186, 0.9334]
+        ]);
+
+        var options = {
+          title: '',
+          curveType: 'function',
+          legend: { position: 'bottom' },
+          lineWidth: 6,
+          series: {
+            0: { lineDashStyle: [10, 2] },
+            1: { lineDashStyle: [4, 4] },
+            2: { lineDashStyle: [2, 2, 20, 2, 20, 2] },
+            3: { lineDashStyle: [4, 1] }
+          },
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1300px; height: 700px"></div>
+  </body>
+</html>
+      
