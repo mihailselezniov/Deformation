@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['%', 'MLP relu 50x3', 'MLP relu 70x3', 'MLP tanh 90x3'],
+          ['20', 0.8392, 0.8258, 0.829],
+          ['40', 0.8365, 0.8246, 0.8238],
+          ['60', 0.8449, 0.8296, 0.8311],
+          ['80', 0.8418, 0.8423, 0.8382],
+          ['100', 0.8538, 0.8474, 0.8476]
+        ]);
+
+        var options = {
+          title: '',
+          curveType: 'function',
+          legend: { position: 'bottom' },
+          lineWidth: 4,
+          series: {
+            0: { lineDashStyle: [10, 2] },
+            1: { lineDashStyle: [4, 4] },
+            2: { lineDashStyle: [2, 2, 20, 2, 20, 2] },
+            3: { lineDashStyle: [4, 1] }
+          },
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1300px; height: 700px"></div>
+  </body>
+</html>
+      
