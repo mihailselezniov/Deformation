@@ -12,15 +12,14 @@ import os
 from warnings import simplefilter
 simplefilter(action='ignore', category=FutureWarning)
 
-from get_shift import gen_shift
-rang = [0, 10]
-g_shift = gen_shift(rang)
 
-ex_name = '15_1_mlp_1_500_gen.txt'
+ex_name = '15_1_mlp_1_even.txt'
 ppl = [0.8, 0.9]# predict_proba_limits
 folder_name = 'ml_threads/'
 f_name = folder_name + ex_name
-Xx = joblib.load('../16/border_vars/X.j')*10
+X = joblib.load('../16/border_vars/X.j')
+X = np.asarray([x for x in X if not (set(x) - {0,2,4,6,8})])
+X = X*10
 
 
 #print(X[0])
@@ -70,13 +69,10 @@ par['strength'] = {'Min': 0.2, 'Max': 10.0}
 order_par = ['length', 'diameter', 'young', 'density', 'pressure_time', 'pressure_radius', 'pressure_amplitude', 'strength']
 
 def get_list(Min, Max):
-    return list(map(lambda x: round(x, 4), np.arange(Min, Max+0.01, (Max-Min)/(parts))))
+    return list(map(lambda x: round(x, 4), np.arange(Min, Max+0.01, (Max-Min)/(parts-1))))
 
 def get_raw(par_inxs):
     return [get_list(**par[par_name])[int(par_inxs[pi]*100)] for pi, par_name in enumerate(order_par)]
-
-def get_raw2(par_inxs):
-    return [par[par_name]['Min']+((par[par_name]['Max']-par[par_name]['Min'])/100*par_inxs[pi]) for pi, par_name in enumerate(order_par)]
 
 def get_range(num, start, end, epoch):
     step = 1 if epoch else 3
@@ -128,24 +124,14 @@ def get_closest(grid, zero, one):
     #print('len low_grid =', len(low_grid[ind_max]))
     return low_grid[ind_max][0]
 
-import random
-shift = [0.02*i for i in range(1, 501)]
-random.shuffle(shift, lambda *x: 0.42)
-
-# -----
-for i in range(2401-2):
-    g_shift.__next__()
-# -----
-
 while 1:
     with open(f_name, 'r') as f:
         threads = f.readlines()
 
-    #if len(threads) >= 500:
-    #    break
+    if len(threads) >= 1000:
+        break
 
-    X = Xx + g_shift.__next__()#shift[len(threads)-2]# (0.02*(len(threads)-1))
-    xt = np.array_split(X, 30)
+    xt = np.array_split(X, 5)
 
     x_train, y_train = [], []
     for t in threads:
@@ -192,8 +178,7 @@ while 1:
     point = get_closest(Xr, zero, one)
     point = [float(p) for p in point]
     #print('point:', point)
-    raw_point = get_raw2(point)
-    #print(raw_point)
+    raw_point = get_raw(point)
     str_point = ','.join(list(map(str, raw_point)))
 
     stream = os.popen('go run ../17/solve_fiber.go {}'.format(str_point))
